@@ -1,8 +1,33 @@
 # Introduction
 
-This short tutorial series will help you go from **zero** programming experience to writing Python scripts that can:
+This short tutorial series will help you go from **zero** programming experience to writing Python scripts that can solve your indecision, to scripts that can help organize your files and folders.
 
-1. Organize your messy `Downloads` folder
+Here's a complete list of the projects we will complete:
+
+Misc:
+
+1. Solve your indecision by writing a program that will choose for you
+
+Text:
+
+1. Formatting (Title/lower/upper case, trim spaces, etc),
+2. Descriptive stats (word and character count, frequency of words, repetitiveness)
+
+Numbers:
+
+1. Custom formulas
+
+Internet
+
+1. Remind yourself to stay hydrated with refreshing water facts
+2. Keep track of updates to specific websites
+
+Files and Folders
+
+1. Clean up file names
+1. Combine zip files
+2. Generate a report of all files that were modified recently in a folder, with support for filters and sorting
+3. Organize your messy `Downloads` folder
 
 
 ## Prerequisites

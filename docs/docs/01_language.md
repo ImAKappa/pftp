@@ -101,7 +101,7 @@ Python can be tricky initially because:
 1. We're not yet fluent in the language
 2. We're used to human languages, which are much more powerful and flexible than Python[^2]
 
-[^2]: In my opinion
+[^2]: In my opinion. The interpreters for natural languages, our brains, are extraordinarily complex, flexible, and powerful, and the power of a language tends to be limited to the complexity of its interpreter.
 
 There are lots of valid ways to ask someone to sum up the numbers 1 up to, but not including, 10 in English or any other human language. But in Python we say
 
@@ -145,7 +145,7 @@ For now, I highly recommend you try the exercises below.
 
 **Q2.** What is syntax?
 
-**Q3.** Which of the following has the correct syntax for asking someone to throw a Frisbee in English?
+**Q3.** State whether each sentence has the correct syntax in English:
 
 
 a) "Hey! Hey! Hey! Frisbee! Hey! Frisbee! Frisbee!"
@@ -159,7 +159,7 @@ d) "Frisbee here now the !throw"
 
 **Q4.** Which of the following has the correct syntax for displaying the numbers 1 up to, but not including, 5 in Python?
 
-??? note "Hint"
+!!! note "Hint"
 
     Try typing all these options into IDLE. The output should look like:
 
@@ -192,13 +192,13 @@ print(1 up to, but not including, 5)
 
 **Q5.** Calculate the sum of the numbers 1 to 53,786 using Python. You should get 1,446,493,791
 
-??? note "Hint"
+!!! note "Hint"
 
     The sum should include the number 53,786 but remember that `range(a, b)` only includes up to `b - 1`
 
 **Q6.** Type `help()` in the interpreter, then press the return/enter key. Read the text.
 
-!!! note
+!!! info
 
     To quit the help menu, enter `q` or just hit the `enter` key
 
