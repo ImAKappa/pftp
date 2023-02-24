@@ -23,34 +23,25 @@ The Python language is the same. On its own the language is kind of useless, it'
 
 !!! info "Where can I get a Python interpreter?"
 
-    You can download the "official"[^1] Python interpreter [here](https://www.python.org/downloads/).
-    This tutorial uses Python version `3.11` (or `Python 3.11` for short)
-
-    [^1]: By "official", we mean the most up-to-date interpreter. There's no "pirated" version of the Python interpreter because it's completely open-source and free!
-
-Follow the installation instructions for your operating system (i.e. Windows or Mac), then when the software is finished installing, test to see if Python works. We test the Python installation by running the IDLE program, which is a program that is installed alongside the Python interpreter.
-
-!!! note "What's IDLE?"
-
-    IDLE is the name of the Python interpreter. It stands for 
+    While you could download the latest "official"[^1] Python interpreter [here](https://www.python.org/downloads/), for this tutorial we will use [Thonny](https://thonny.org/). It comes with version 3.10 of the "official" Python interpreter (as of time of writing). When we get more experience using Python, we will transition to the latest Python interpreter.
     
-    - **I**ntegrated
-    - **D**evelopment (and)
-    - **L**earning
-    - **E**nvironment
+    [^1]: By "official", we mean the most up-to-date interpreter. There's no "pirated" version of the Python interpreter because it's completely open-source and free! There are, however, several alternative implementations of the Python interpreter, like PyPy (for Python that runs fast), or MicroPython (for running Python on micro controllers). Most people should stick to the interpreter from the [Python Software Foundation](https://www.python.org/psf-landing/)
 
-=== "Windows"
+Follow the installation instructions for [Thonny](https://thonny.org/) for your operating system (i.e. Windows or Mac)
 
-    Click the "Start" menu, then search for "Python IDLE". Open the app.
 
-=== "Mac"
+!!! note "Thonny Initial Settings"
 
-    Click the "Spotlight" menu, then search "Python IDLE". Open the app.
+    Make sure to pick "Standard"
+    
+    ![Thonny Install](./imgs/language/thonny-install-2023-02-21.png)
+
+
+When the software is finished installing, open it.
 
 You should see something like this:
 
-
-![Python IDLE](./imgs/python-idle-2023-02-19.png)
+![Thonny Install](./imgs/language/thonny-app-2023-02-21.png)
 
 
 ## Syntax 📝
@@ -80,9 +71,9 @@ Let's revisit the sum example, where you texted your friend:
 Calculate the sum of the numbers 1 up to, but not including, 10
 ```
 
-If you try typing this into IDLE:
+If you try typing this into Thonny, specifically the part of the app that says "Shell":
 
-![Python Syntax](./imgs/python-syntax-2023-02-19.png)
+![Python Syntax](./imgs/language/python-syntax-error-2023-02-19.png)
 
 
 The Python interpreter doesn't understand what we're saying, because we haven't structured the sentence correctly in the Python language. Unlike your friend, the Python interpreter won't bother to ask us to clarify or rephrase what we meant. It will give up trying to understand our instructions very quickly, but will usually tell us why it gave up.
@@ -109,7 +100,7 @@ There are lots of valid ways to ask someone to sum up the numbers 1 up to, but n
 sum(range(1, 10))
 ```
 
-![Python Syntax Part 2](./imgs/python-syntax-p12-2023-02-19.png)
+![Python Syntax Part 2](./imgs/language/python-syntax-sum-2023-02-19.png)
 
 Python looks like a bare-bones version of English, kind of like a cave-person language. But it's still pretty powerful.
 Now imagine you text your friend
@@ -121,7 +112,7 @@ Calculate the sum of the numbers 1 up to, but not including, 478,862,301
 It would probably take your friend a significantly longer amount of time to do this calculation by hand. 
 But the Python interpreter just takes a few seconds:
 
-![Python Syntax Part 3](./imgs/python-syntax-pt3-2023-02-19png.png)
+![Python Syntax Part 3](./imgs/language/python-syntax-big-sum-2023-02-19.png)
 
 !!! note "Making numbers easier to read"
 
@@ -161,7 +152,7 @@ d) "Frisbee here now the !throw"
 
 !!! note "Hint"
 
-    Try typing all these options into IDLE. The output should look like:
+    Try typing all these options into Thonny. The output should look like:
 
     ```python
     >>> ???
