@@ -134,63 +134,94 @@ For now, I highly recommend you try the exercises below.
 
 **Q1.** What is an interpreter?
 
+??? success "Answer"
+
+    Something that can understand instructions in a language and execute those instructions
+
+    For the English language, people are the interpreter.
+
+    For Python, it is a piece of software called the Python Interpreter. 
+
 **Q2.** What is syntax?
 
-**Q3.** State whether each sentence has the correct syntax in English:
+??? success "Answer"
+
+    Syntax is the structure of sentences in a language.
+
+**Q3.** Imagine you want your friend to throw a frisbee at you. State whether each sentence has the correct syntax in English:
 
 
-a) "Hey! Hey! Hey! Frisbee! Hey! Frisbee! Frisbee!"
+i. "Hey! Hey! Hey! Frisbee! Hey! Frisbee! Frisbee!"
 
-b) "Hey, throw the Frisbee here!"
+ii. "Hey, throw the Frisbee here!"
 
-c) "May you please pass that rotating plastic disk to my general direction by means of sudden impulse using your hands?"
+iii. "May you please pass that rotating plastic disk to my general direction by means of sudden impulse using your hands?"
 
-d) "Frisbee here now the !throw"
+iv. "Frisbee here now the !throw"
 
+??? success "Answer"
 
-**Q4.** Which of the following has the correct syntax for displaying the numbers 1 up to, but not including, 5 in Python?
+    i., ii., and iii., are perfectly valid ways to ask for a frisbee in English
 
-!!! note "Hint"
+    iv. is not valid English syntax
 
-    Try typing all these options into Thonny. The output should look like:
-
-    ```python
-    >>> ???
-    1 2 3 4
-    ``` 
-    
-    Which ones result in a syntax error? Which ones work, but don't give the correct answer?
-
-a)
-```python
-print(range(1, 5))
-``` 
-
-b)
-```python
-print range(1, 5)
-```
-
-c)
-```python
-print(*range(1, 5))
-```
-
-d)
-```python
-print(1 up to, but not including, 5)
-```
-
-**Q5.** Calculate the sum of the numbers 1 to 53,786 using Python. You should get 1,446,493,791
+**Q4.** Calculate the sum of the numbers 1 to 53,786 using Python. You should get 1,446,493,791
 
 !!! note "Hint"
 
     The sum should include the number 53,786 but remember that `range(a, b)` only includes up to `b - 1`
 
-**Q6.** Type `help()` in the interpreter, then press the return/enter key. Read the text.
+??? success "Answer"
 
-!!! info
+    ```python
+    sum(range(53_787))
+    ```
+    or
+    ```python
+    sum(range(53787))
+    ```
 
-    To quit the help menu, enter `q` or just hit the `enter` key
+    Notice that to include 53,786 we need to go one number higher and use 53,787
 
-**Q7.** If you haven't already, skim through the [official Python tutorial](https://docs.python.org/3.11/tutorial/). A lot of it might not make sense just yet, but you should still look through it to get some more context about Python
+    Alternatively, we could write:
+
+    ```python
+    sum(range(53_786 + 1))
+    ```
+
+    In later tutorials we will discuss number crunching in Python
+
+
+**Q5.** Read [section 4.3](https://docs.python.org/3/tutorial/controlflow.html#the-range-function) of the Python documentation on `range()`.
+
+i. Try typing in some the examples given.
+
+ii. Write down a list of things that confuse you.
+
+iii. Create a `list` of the **even** numbers from 1 to 20 (including 20). Then try the **odd** numbers. Test your solutions in the Thonny shell.
+
+??? success "Answer"
+
+    Even
+    ```python
+    list(range(2, 20 + 1, 2))
+    ```
+
+    Odd
+    ```python
+    list(range(1, 21, 2))
+    ```
+
+**Q6.** If you haven't already, skim through the [official Python tutorial](https://docs.python.org/3.11/tutorial/). A lot of it might not make sense just yet, but you should still look through it to get some more context about Python
+
+**Q7.** Finally, and most importantly, why do you want to learn Python?
+
+??? success "Possible answers"
+
+    Develop industry-relevant skills
+
+    Automate boring, repetitive tasks at work and home
+
+    Learn for the fun of it
+
+    I'm soooooooooooo boooooooored
