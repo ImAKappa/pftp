@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pftp"
+description = 'Python for the People. An intro to Python for people with zero programming experience'
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = []
+authors = [
+  { name = "ImAKappa", email = "imaninconsp1cuouskappa@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "mkdocs",
+  "mkdocs-material"
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/unknown/pftp#readme"
+Issues = "https://github.com/unknown/pftp/issues"
+Source = "https://github.com/unknown/pftp"
+
+[tool.hatch.version]
+path = "pftp/__about__.py"
+
+[tool.hatch.envs.default]
+python = "311"
+dependencies = [
+  "pytest",
+  "pytest-cov",
+]
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=pftp --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+docs = "mkdocs serve --config-file ./pftp/mkdocs.yml"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = [
+  "pftp/__about__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]

@@ -8,6 +8,7 @@ import subprocess
 import platform
 # "datetime" provides date and time related methods
 from datetime import date
+# "dateutil" is a a third-party module that provides methods for manipulating dates 
 from dateutil.relativedelta import relativedelta
 
 def get_clipboard_command() -> str:
