@@ -1,4 +1,4 @@
-# Development 🧑‍💻
+# 🧑‍💻 Development
 
 Let's get familiar with the two main parts of Thonny.
 
@@ -61,35 +61,14 @@ It's important to have a good grasp of the problem you're trying to solve with P
     Python is one of the best languages for creating scripts.
     For example, this script fetches a random useless fact from the internet:
 
-    ```python
-    """uselessfact.py
-    This script fetches a useless fact from the useless facts website
-    """
-    from urllib import request
-    # Data from the internet is passed around in a format called JSON
-    import json
-
-    # Fetch useless fact from some website in JSON form
-    response = request.urlopen("https://uselessfacts.jsph.pl/api/v2/facts/random")
-
-    match response.status:
-        case 200:
-            # Successful request!
-            print("Did you know?")
-            # Convert JSON form to something easier to work with in Python
-            useless_fact = json.loads(response.read())
-            print(useless_fact["text"])
-        case 404:
-            print("Uh oh, couldn't find a useless fact :(")
-        case _:
-            # Any other response code is a mystery...
-            print("Not sure what happend, but no useless fact :(")
+    ```python title="uselessfact.py"
+    --8<-- "uselessfact.py"
     ```
 
     Even if you don't understand what exactly is happening, don't worry.
     Type the script into the Thonny code editor, and run it a few times (by pressing the green run button, or pressing `F5` on your keyboard) to get some useless facts.
 
-    
+
 ## Exercises
 
 **Q1.** What is the process for writing code?

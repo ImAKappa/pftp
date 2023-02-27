@@ -1,4 +1,4 @@
-# The Python Language 🐍
+# 🐍 The Python Language
 
 Python is famous for being an easy-to-learn, yet powerful, programming language.
 The Python language is, in some ways, very similar to English.
@@ -96,18 +96,35 @@ Python can be tricky initially because:
 
 There are lots of valid ways to ask someone to sum up the numbers 1 up to, but not including, 10 in English or any other human language. But in Python we say
 
-```python
-sum(range(1, 10))
-```
+=== "Python"
+
+    ```python
+    sum(range(1, 10))
+    ```
+
+=== "English"
+
+    ```text
+    Calculate the sum of the numbers 1 up to, but not including, 10
+    ```
+
 
 ![Python Syntax Part 2](./imgs/language/python-syntax-sum-2023-02-19.png)
 
 Python looks like a bare-bones version of English, kind of like a cave-person language. But it's still pretty powerful.
 Now imagine you text your friend
 
-```
-Calculate the sum of the numbers 1 up to, but not including, 478,862,301
-```
+=== "English (big sum)"
+
+    ```text
+    Calculate the sum of the numbers 1 up to, but not including, 478,862,301
+    ```
+
+=== "Python (big sum)"
+
+    ```python
+    sum(range(1, 478_862_301))
+    ```
 
 It would probably take your friend a significantly longer amount of time to do this calculation by hand. 
 But the Python interpreter just takes a few seconds:

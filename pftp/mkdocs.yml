@@ -6,7 +6,10 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - footnotes
+  - pymdownx.snippets:
+      base_path: ["../pftp/scripts"]
+  - pymdownx.superfences
+
