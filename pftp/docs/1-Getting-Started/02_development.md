@@ -2,7 +2,7 @@
 
 Let's get familiar with the two main parts of Thonny.
 
-![Thonny Editor](/imgs/development/thonny-ide-2023-02-21.png)
+![Thonny Editor](../imgs/development/thonny-ide-2023-02-21.png)
 
 1. The **code editor**: This is where we will write our Python code. We use it like we do Microsoft Word
 
@@ -14,7 +14,7 @@ Thonny is an **IDE**: An Integrated Development Environment. An IDE is any kind 
 
     To see your files, select "View" then check "Files" in the menu.
 
-    ![Thonny Files](/imgs/development/thonny-ide-files-2023-02-24.png)
+    ![Thonny Files](../imgs/development/thonny-ide-files-2023-02-24.png)
 
 !!! note "Code IDEs vs Word Processors"
 
@@ -99,7 +99,7 @@ else:
 
 Type it into Thonny, then run it. You can enter an age by typing it into the Shell, then pressing the `enter`/`return` key.
 
-![Thonny interactive](/imgs/development/thonny-ide-testing-2023-02-24.png)
+![Thonny interactive](../imgs/development/thonny-ide-testing-2023-02-24.png)
 
 i. Does the program do what it's supposed to? Why or why not? Rerun the code and try a few different ages
 

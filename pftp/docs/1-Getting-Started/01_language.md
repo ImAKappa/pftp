@@ -41,7 +41,7 @@ When the software is finished installing, open it.
 
 You should see something like this:
 
-![Thonny Install](/imgs/language/thonny-app-2023-02-21.png)
+![Thonny Install](../imgs/language/thonny-app-2023-02-21.png)
 
 
 ## Syntax 📝
@@ -73,7 +73,7 @@ Calculate the sum of the numbers 1 up to, but not including, 10
 
 If you try typing this into Thonny, specifically the part of the app that says "Shell":
 
-![Python Syntax](/imgs/language/python-syntax-error-2023-02-19.png)
+![Python Syntax](../imgs/language/python-syntax-error-2023-02-19.png)
 
 
 The Python interpreter doesn't understand what we're saying, because we haven't structured the sentence correctly in the Python language. Unlike your friend, the Python interpreter won't bother to ask us to clarify or rephrase what we meant. It will give up trying to understand our instructions very quickly, but will usually tell us why it gave up.
@@ -109,7 +109,7 @@ There are lots of valid ways to ask someone to sum up the numbers 1 up to, but n
     ```
 
 
-![Python Syntax Part 2](/imgs/language/python-syntax-sum-2023-02-19.png)
+![Python Syntax Part 2](../imgs/language/python-syntax-sum-2023-02-19.png)
 
 Python looks like a bare-bones version of English, kind of like a cave-person language. But it's still pretty powerful.
 Now imagine you text your friend
@@ -129,7 +129,7 @@ Now imagine you text your friend
 It would probably take your friend a significantly longer amount of time to do this calculation by hand. 
 But the Python interpreter just takes a few seconds:
 
-![Python Syntax Part 3](/imgs/language/python-syntax-big-sum-2023-02-19.png)
+![Python Syntax Part 3](../imgs/language/python-syntax-big-sum-2023-02-19.png)
 
 !!! note "Making numbers easier to read"
 
