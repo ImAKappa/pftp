@@ -34,7 +34,7 @@ Follow the installation instructions for [Thonny](https://thonny.org/) for your 
 
     Make sure to pick "Standard"
     
-    ![Thonny Install](/imgs/language/thonny-install-2023-02-21.png)
+    ![Thonny Install](../imgs/language/thonny-install-2023-02-21.png)
 
 
 When the software is finished installing, open it.
