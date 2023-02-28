@@ -1,33 +1,30 @@
-# Introduction
+# 0 Introduction
 
-This short tutorial series will help you go from **zero** programming experience to writing Python scripts that can solve your indecision, to scripts that can help organize your files and folders.
+This short tutorial series will help you go from **zero** programming experience to writing Clippy, a Python program that augments your clipboard:
 
-Here's a complete list of the projects we will complete:
+1. Modify text on the clipboard (upper, lower, title, sentence cases)
+2. Clip sequences of generated text. Useful for writing email templates
+3. Quick web searching for clipped text
+4. Store up to 2 pieces of text and 2 images
 
-Misc:
+!!! note "Clipboard"
 
-1. Solve your indecision by writing a program that will choose for you
+    Your computer likely has a **clipboard**, a temporary storage space for text and images that you copy/cut from other apps like Word or your web browser.
 
-Text:
+    === "Windows"
 
-1. Formatting (Title/lower/upper case, trim spaces, etc),
-2. Descriptive stats (word and character count, frequency of words, repetitiveness)
+        Try clipping `Hello World!` by selecting the highlighted text with your cursor, then pressing `Ctrl-C`.
+        Paste the text somewhere else, like your browser search bar or Notepad.
 
-Numbers:
+        Then clip `Goodbye universe!` and paste that somewhere else. Notice that the previous text, "Hello World", was replaced with the most recently clipped text.
 
-1. Custom formulas
+    === "MacOS"
 
-Internet
+        Try clipping `Hello World!` by selecting the highlighted text with your cursor, then pressing `Cmd-C`.
+        Paste the text somewhere else, like your browser search bar or TextEdit.
 
-1. Remind yourself to stay hydrated with refreshing water facts
-2. Keep track of updates to specific websites
+        Then clip `Goodbye universe!` and paste that somewhere else. Notice that the previous text, "Hello World", was replaced with the most recently clipped text.
 
-Files and Folders
-
-1. Clean up file names
-1. Combine zip files
-2. Generate a report of all files that were modified recently in a folder, with support for filters and sorting
-3. Organize your messy `Downloads` folder
 
 
 ## Prerequisites
@@ -37,7 +34,7 @@ The computer needs to have an operating system, like Windows 10 or Mac OS, and y
 
 Also, you should be familiar with:
 
-* Using a web browser, like Google Chrome or Mozilla Firefox
-* Familiar with your keyboard (the `enter`/`return` key, letters, numbers, space bar, etc.)
 * Reading and writing in English
+* Your keyboard (the `enter`/`return` key, `Ctrl`/`Cmd` keys, letters, numbers, space bar, etc.)
+* Using a web browser, like Google Chrome or Mozilla Firefox
 * Basic arithmetic (like adding, subtracting, multiplying, and dividing whole and decimal numbers)

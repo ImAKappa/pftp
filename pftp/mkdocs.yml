@@ -3,6 +3,7 @@ theme:
   name: material
   features:
     - content.tabs.link
+    - navigation.tabs
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -12,4 +13,3 @@ markdown_extensions:
   - pymdownx.snippets:
       base_path: ["../pftp/scripts"]
   - pymdownx.superfences
-
