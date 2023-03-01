@@ -1,11 +1,8 @@
 # 0 Introduction
 
-This short tutorial series will help you go from **zero** programming experience to writing Clippy, a Python program that augments your clipboard:
+This short tutorial series will help you go from **zero** programming experience to writing Clippy, a Python program that lets you sequentially clip a set of template text to your clipboard.
+You can use it to make cookie-cutter emails slightly less tedious to write.
 
-1. Modify text on the clipboard (upper, lower, title, sentence cases)
-2. Clip sequences of generated text. Useful for writing email templates
-3. Quick web searching for clipped text
-4. Store up to 2 pieces of text and 2 images
 
 !!! note "Clipboard"
 

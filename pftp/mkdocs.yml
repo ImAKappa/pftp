@@ -11,5 +11,9 @@ markdown_extensions:
       alternate_style: true
   - footnotes
   - pymdownx.snippets:
-      base_path: ["../pftp/scripts"]
+      base_path: ["../pftp/scripts", "../pftp/clippy-in-parts"]
+#   - pymdownx.highlight:
+#       anchor_linenums: true
+#       line_spans: __span
+#       pygments_lang_class: true
   - pymdownx.superfences

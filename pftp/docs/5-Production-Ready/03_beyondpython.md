@@ -1,4 +1,4 @@
-# 🪜 Next Steps
+# 🗻 Beyond Python
 
 Practice makes permanent
 
