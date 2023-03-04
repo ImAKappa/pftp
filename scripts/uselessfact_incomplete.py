@@ -9,13 +9,13 @@ import json
 # Fetch useless fact from some website in JSON form
 response = request.urlopen("https://uselessfacts.jsph.pl/api/v2/facts/random")
 
-if response.status == 200:
+if response.status == ???:
     # Successful request!
     print("Did you know?")
     # Convert JSON form to something easier to work with in Python
     useless_fact = json.loads(response.read())
     print(useless_fact["text"])
-elif response.status == 404:
+elif response.status == ???:
         print("Uh oh, couldn't find a useless fact :(")
 else:
     # Any other status code is a mystery...
