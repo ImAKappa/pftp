@@ -19,7 +19,6 @@ Write a passive-agressive login authenticator.
 
 ## 2. Fetching Useless Facts
 
-
 When you type in a website URL in your browser, your browser has to download the website from another computer. Your browser asks the other computer for the website, and the other computer always responds with a status code.
 
 Two important status codes are:
