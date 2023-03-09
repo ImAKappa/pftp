@@ -1,6 +1,40 @@
 # ✍️ Writing
 
-## 1. Login Authentication
+To learn a language, you usually practice speaking and writing.
+Start with basic sentences, then work up to paragraphs, then essays, then stories and reports.
+
+Python is a written language only. We wrote some simple sentences in the previous section.
+Now let's try writing short paragraphs. 
+
+!!! note "Reusing code"
+
+    Other smarter, more experienced people have written Python code that we can reuse.
+
+    Some of this reusable code comes with Python. It's called the **Standard Library**.
+    The standard library isn't loaded into the intepreter by default, so we have to import it.
+
+    For example,
+
+    ```python
+    import random
+
+    # Gets a random integer from 1 to 10
+    my_secret_number = random.randint(1, 10)
+    print(my_secret_number)
+    ```
+
+    ```python
+    import random
+    import string
+
+    # Gets3 random latin letters
+    rand_letters = random.choices(string.ascii_letters, k=3)
+    print(rand_letters)
+    ```
+
+## Writing Paragraphs
+
+### 1. Login Authentication
 
 Write a passive-agressive login authenticator.
 
@@ -11,13 +45,18 @@ Write a passive-agressive login authenticator.
 5. Also, the user only has 5 attempts to log in. If they fail all 5, print a message saying to try again later. 
 6. Otherwise, tell them they entered the wrong password.
 
+
+```python title="password.py" linenums="1"
+--8<-- "password_incomplete.py"
+```
+
 ??? success "Possible solution"
 
     ```python title="password.py" linenums="1"
     --8<-- "password.py"
     ```
 
-## 2. Fetching Useless Facts
+### 2. Fetching Useless Facts
 
 When you type in a website URL in your browser, your browser has to download the website from another computer. Your browser asks the other computer for the website, and the other computer always responds with a status code.
 
@@ -46,7 +85,7 @@ Based on what you just learned about status codes, try to complete the Python sc
     --8<-- "uselessfact.py"
     ```
 
-## 3. Powerball
+### 3. Powerball
 
 Write a program that simulates the chances of winning the [Powerball :fontawesome-solid-up-right-from-square:](https://www.powerball.ca/how-to-play/), and how much money you would realistically need to spend on to win.
 

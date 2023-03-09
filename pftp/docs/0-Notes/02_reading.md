@@ -2,19 +2,27 @@
 
 To get good at writing in a language, you need to read a lot.
 
-It also helps to know the parts of speech.
+It also helps to know the parts of speech:
 
-In English, we have:
+| Part of Speech | English | Part of Speech | Python | Purpose/Description |
+| --- | --- | --- | --- | --- |
+| Concrete noun | dog, chair | Data | `3`, `"Hello"`, `[1, 2]` | Something that exists |
+| Abstract Noun | animal, furniture | Data type | `int`, `str`, `list` | A kind or type of thing |
+| Pronoun | he, she, they, it | Variable | `age`, almost any english word | A placeholder for another thing |
+| Verb | Run, repeat | Function | `print`, `range`, `math.sqrt` | An action |
+| Conjunction | and, but, or, not | Logical operators | `and`, `or`, `not` | Joins statements with logic |
 
-1. Nouns
-2. Pronouns
-3. Verbs
+!!! note
 
-## Nouns (Data Types)
+    These are loose analogies
 
-Nouns are things. There are _types_ of things
+Below, we state a sentence in English and an analogous sentence in Python.
 
-Data types are things.
+!!! warning "Type everything"
+
+    Type all the examples to better remember Python
+
+## Data & Data Types (Nouns)
 
 ### Strings
 
@@ -70,12 +78,51 @@ A list is a collection of things
 Write a list containing the following grocery items: apples, bananas, bread, milk, eggs
 
 ```python
-print(["apples", "banans", "bread", "milk", "eggs"])
+print(["apples", "bananas", "bread", "milk", "eggs"])
+```
+
+Write the second item in the grocery list
+
+```python
+print(["apples", "bananas", "bread", "milk", "eggs"][1])
+```
+
+!!! warning "0-indexed counting"
+
+    In Python, we start counting from 0.
+    That's why the position, or **index**, of the second item is **1** instead of 2.
+
+### Tuples
+
+Also a collection of things, but you use round brackets.
+
+??? note "Tuples vs Lists"
+
+    You can modify a list, but not a tuple
+
+    ```python
+    groceries = ["apples", "bananas", "bread", "milk", "eggs"]
+    groceries[1] = "carrots"
+    print(groceries)
+    ```
+
+    ```python
+    groceries = ("apples", "bananas", "bread", "milk", "eggs")
+    groceries[1] = "carrots"
+    print(groceries)
+    ```
+
+---
+
+Write a collection containing the following hardware items: saw, cutting bench, power drill, level,  
+
+```python
+print(("saw", "cutting bench", "power drill", "level"))
 ```
 
 ### True/False (Bools)
 
-Tell me, is 3 greather than 5?
+Tell me, is 3 greater than 5?
 
 ```python
 print(3 > 5)
@@ -99,7 +146,19 @@ Is "Joseph" and "Josef" spelled the same?
 print("Joseph" == "Josef")
 ```
 
-## Variables
+### Dictionary
+
+A collection of mappings. A set of key-value pairs.
+
+---
+
+Amanda got a test score of 89, Shruthi got 87, George got 85, and Michael got 91
+
+```python
+{"Amanda": 89, "Shruthi": 87, "George": 85, "Michael": 91 }
+```
+
+## Variables (Pronouns)
 
 Variables are things that can change their value. You can think of them as a box, or a label.
 
@@ -125,7 +184,7 @@ print(f"In 10 years, I will be {age + 10}")
 !!! note "Format strings"
 
     In Python, you can write template strings be prepending an `f` to a string.
-    Then, place any values for the template inside `{ }`
+    Then, place any values for the template inside curly braces `{ }`
 
     For example,
 
@@ -137,10 +196,10 @@ print(f"In 10 years, I will be {age + 10}")
     print(f"I am wearing {clothing} today")
     ``` 
 
-### Comments
+## Comments
 
 Comments are lines of text that the Python interpreter ignores.
-You usually write comments to annotate your code so that other people can understand your code.
+You usually write comments to annotate your code so that other people, and your future self, can understand your code.
 
 > "Code is more often read than written" 
 > 
@@ -148,14 +207,14 @@ You usually write comments to annotate your code so that other people can unders
 
 ---
 
-Write "hungry" (this is how I am feeling right now)
+Write "Hungry" (this is how I am feeling right now)
 
 ```python
 # This is how I am feeling right now
 print("Hungry")
 ```
 
-### Functions
+## Functions (Verbs)
 
 _Functions_ are actions that the Python interpreter can do.
 
@@ -185,26 +244,55 @@ Sum the list of numbers from 1 up to (but not including) 10
 print(sum(list(range(1, 10))))
 ```
 
-My name is "Joseph". Write my name in uppercase.
+I am working on a paper called "attention is all you need".
+Could you write it in title case for me?
 
 ```python
-name = "Joseph"
-print(name.upper())
+paper_title = "attention is all you need"
+print(paper_title.title())
 ```
 
-My name is "Joseph", but my grandfather spells it differently. Replace the "ph" with "f", then write my name.
+Put a period between each letter of the acronym "YMMV".
 
 ```python
-name = "Joseph"
-print(name.replace("ph", "f"))
+text_msg = "YMMV"
+text_msg = ".".join(list(text_msg))
+print(text_msg)
 ```
 
-My name is "Joseph". Put a period between each letter of my name.
+Say "You have so much irresistable charisma", but like you're Gen Z.
 
 ```python
-name = "Joseph"
-name = ".".join(name.split())
+phrase = "You have so much irresistable charisma"
+print(phrase.replace("have", "got").replace("so much", "mad").replace("irresistable charisma", "rizz"))
 ```
+
+!!! note "Methods"
+
+    When a function is attached to a data type we call it a method
+
+    For example, this is a function:
+
+    ```python
+    alphabet = ["Ball", "Apple", "Dog", "Car"]
+    alphabet = sorted(alphabet)
+    print(alphabet)
+    ```
+
+    And this is a method (notice the "dot" syntax):
+
+    ```python
+    alphabet = ["Ball", "Apple", "Dog", "Car"]
+    alphabet.sort()
+    print(alphabet)
+    ```
+
+## Logic (Conjunctions)
+
+This section is related to conjunctions ("and", "or", "not"),
+but goes a bit beyond parts of speech and into control flow.
+
+**Control flow** is the logic of when and how certain parts of a program should be executed.
 
 ### Repetition
 
@@ -253,9 +341,3 @@ if age >= 19:
 else:
     print("Sorry, I can't let you in.")
 ```
-
-## Reusing code
-
-imports
-
-Standard library
