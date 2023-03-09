@@ -10,7 +10,7 @@ powerball = random.choice(range(1, 27))
 tickets = 0
 earnings = 0
 
-# This script is inefficient; it takes around 10s to run 5,000,000 iterations
+# This script is inefficient; it takes around 12s to run 5,000,000 iterations
 NUM_DRAWS = 5_000_000
 
 print("Notable winnings".center(30, "="))

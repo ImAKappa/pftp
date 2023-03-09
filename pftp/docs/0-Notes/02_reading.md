@@ -2,7 +2,19 @@
 
 To get good at writing in a language, you need to read a lot.
 
-## Types of things
+It also helps to know the parts of speech.
+
+In English, we have:
+
+1. Nouns
+2. Pronouns
+3. Verbs
+
+## Nouns (Data Types)
+
+Nouns are things. There are _types_ of things
+
+Data types are things.
 
 ### Strings
 
