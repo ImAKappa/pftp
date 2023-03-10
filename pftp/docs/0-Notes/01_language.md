@@ -49,6 +49,8 @@ Download [Thonny :fontawesome-solid-up-right-from-square:](https://thonny.org/) 
 
     This is like how _Microsoft Word_ is an app that makes it convenient to edit human languages.
 
+    **Please [don't write code :fontawesome-solid-up-right-from-square:](https://www.youtube.com/watch?v=X34ZmkeZDos&t=7s) using Microsoft Word.**
+
 ![Thonny Editor](../imgs/development/thonny-ide-2023-02-21.png)
 
 1. **Code Editor**: For running multiple lines of code

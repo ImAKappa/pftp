@@ -341,3 +341,36 @@ if age >= 19:
 else:
     print("Sorry, I can't let you in.")
 ```
+
+!!! note "Getting user input"
+
+    Here's an interactive version of the program. The program will wait for you to type a number and press `enter`:
+
+    ```python
+    age = int(input("What is your age? "))
+
+    print(f"It says on your ID that you're {age}")
+
+    if age >= 19:
+        print("Welcome!")
+    else:
+        print("Sorry, I can't let you in.")
+    ```
+
+Write a program that decides if I want to go out today.
+
+ - I will only go outside if the weather is sunny, or if it is raining and I have an umbrella.
+ - If I'm not going outside, I'm watching a popular show.
+
+```python
+weather = "sunny"
+has_umbrella = True
+a_popular_show = "The Last of Us"
+
+print(f"The weather outside is {weather}")
+
+if weather == "sunny" or (weather == "raining" and has_umbrella):
+    print("I'm going for a nice walk outside")
+else:
+    print(f"Yeah, I'm staying inside and watching {a_popular_show} today")
+```

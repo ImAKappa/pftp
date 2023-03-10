@@ -8,7 +8,7 @@ Now let's try writing short paragraphs.
 
 !!! note "Reusing code"
 
-    Other smarter, more experienced people have written Python code that we can reuse.
+    Other smart, more experienced programmers have written Python code that we can reuse.
 
     Some of this reusable code comes with Python. It's called the **Standard Library**.
     The standard library isn't loaded into the intepreter by default, so we have to import it.
