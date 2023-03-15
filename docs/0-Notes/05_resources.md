@@ -32,6 +32,8 @@ I don't remember everything about writing Python code, so when I forget things I
 
     There's a [running joke :fontawesome-solid-up-right-from-square:](https://youtube.com/shorts/qol2X_8JF9I?feature=share) that a software developer's job is just copy-pasting answers off of StackOverflow
 
+4. Use "cheatsheets". Ideally, you would make your own as you continue to use the language, but just to get started you could use this popular [Python cheatsheet](https://github.com/gto76/python-cheatsheet)
+
 Given Python's popularity, there are an insane amount of beginner-friendly tutorials out there on the internet.
 But how do we know which one's are good? Here are my recommendations:
 

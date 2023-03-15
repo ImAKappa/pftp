@@ -44,7 +44,7 @@ dependencies = [
 [tool.hatch.envs.default.scripts]
 cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=pftp --cov=tests {args}"
 no-cov = "cov --no-cov {args}"
-docs = "mkdocs serve --config-file ./pftp/mkdocs.yml"
+docs = "mkdocs serve --config-file ./mkdocs.yml"
 clippy = "python -m clippy"
 
 [[tool.hatch.envs.test.matrix]]
