@@ -48,6 +48,29 @@ print(f"5.3 is a {type(5.3)}")
 print(f"5 is a {type(5)}")
 ```
 
+=== "English (big sum)"
+
+    ```text
+    Calculate the sum of the numbers 1 up to, but not including, 478,862,301
+    ```
+
+=== "Python (big sum)"
+
+    ```python
+    sum(range(1, 478_862_301))
+    ```
+
+!!! note "Making numbers easier to read"
+
+    We could write `478862301`, but that's a little tricky to read.
+    Lot's of languages have ways to make numbers easier to read, including Python.
+
+    | Language | Separator | Syntax |
+    | --- | --- | --- |
+    | English | comma (`,`) | `478,862,301` |
+    | French | period (`.`) | `478.862.301` |
+    | **Python** | underscore (`_`) | `478_862_301` |
+
 ### Variables
 
 ```python title="Saving data"

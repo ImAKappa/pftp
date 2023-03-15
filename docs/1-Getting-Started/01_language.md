@@ -2,24 +2,38 @@
 
 Python is famous for being an easy-to-learn, yet powerful, programming language.
 The Python language is, in some ways, very similar to English.
-Let's compare Python and English by looking at key components of languages in general: 
-1) Interpreters and 2) Syntax.
+Let's compare Python and English by looking at key components of languages in general:
+1) Interpreters, 2) Syntax, and 3) Semantics.
 
-## Interpreters 👂
+## 🧠 Interpreters
 
 You can write instructions in English like
 
 ```text
-Calculate the sum of the numbers 1 up to, but not including, 10
+Hey, write the word 'apple' in uppercase letters
 ```
 
 Of course, nothing will happen if you write down these instructions on a piece of paper,
 or if you say these instructions out loud in an empty room.
 
 Instructions in any language are only useful if there is someone there to **interpret** the instructions.
-So, you text your friend the instructions to sum up the numbers. They respond with "45". Your friend is the interpreter for the instruction.
+So, you text your friend the instructions to write "apple" in uppercase. They respond with "APPLE". Your friend is the interpreter for the instruction.
 
 The Python language is the same. On its own the language is kind of useless, it's just a bunch of rules for how to arrange words and numbers. You need a Python **interpreter** that can understand the instructions and execute them.
+
+```mermaid
+flowchart LR
+    lang(["Hey, write 'apple' in upper case letters"]) -- "👂 Listen" --> interp["Person"]
+    interp["Person"] -- "✍️ Write" --> result(["'APPLE'"])
+    style interp fill:#36464e,stroke:#333,color:#fff
+```
+
+```mermaid
+flowchart LR
+    lang(["print('apple'.upper())"]) -- "👂 Parse" --> interp["Python Interpreter"]
+    interp["Python Interpreter"] -- "✍️ Print" --> result(["'APPLE'"])
+    style interp fill:#36464e,stroke:#333,color:#fff
+```
 
 !!! info "Where can I get a Python interpreter?"
 
@@ -29,7 +43,6 @@ The Python language is the same. On its own the language is kind of useless, it'
 
 Follow the installation instructions for [Thonny](https://thonny.org/) for your operating system (i.e. Windows or Mac)
 
-
 !!! note "Thonny Initial Settings"
 
     Make sure to pick "Standard"
@@ -37,44 +50,34 @@ Follow the installation instructions for [Thonny](https://thonny.org/) for your 
     ![Thonny Install](../imgs/language/thonny-install-2023-02-21.png)
 
 
-When the software is finished installing, open it.
-
-You should see something like this:
+When the software is finished installing, open it. You should see something like this:
 
 ![Thonny Install](../imgs/language/thonny-app-2023-02-21.png)
 
+## 📝 Syntax 
 
-## Syntax 📝
+**Syntax** means the correct (i.e. mutually agreed-upon, or comprehensible) way to structure sentences
 
-**Syntax** is the structure of words in a sentence.
-
-For example, in English we say:
-
-```
-That dog is so fluffy and cute!
-```
-
-But we wouldn't say:
-
-```
-fuffy !That so dog cute is and
-```
-
-The sentence above uses the exact same words and punctuation, but it doesn't make sense.
+For example, in English we say "My birthday is today!", but we wouldn't say "is !my today Birthday"
+The second sentence uses the exact same words and punctuation, but it doesn't make sense.
 It doesn't use correct English syntax.
 
 Python also has a syntax; there is a right and wrong way to structure sentences in Python.
 
+|Language| Comprehensible | Incomprehensible |
+| --- | --- | --- |
+| 📝 English | `Hey, write the word 'apple' in uppercase letters` | `'apple' in, uppercase write Hey letters word the` |
+| 🐍 Python | `print('apple'.upper())` | `Hey, write the word 'apple' in uppercase letters` |
+
 Let's revisit the sum example, where you texted your friend:
 
 ```
-Calculate the sum of the numbers 1 up to, but not including, 10
+Hey, write the word 'apple' in uppercase letters
 ```
 
-If you try typing this into Thonny, specifically the part of the app that says "Shell":
+If you try typing this into Thonny, specifically the section of the app that says "Shell", then press `enter`:
 
-![Python Syntax](../imgs/language/python-syntax-error-2023-02-19.png)
-
+![Python Syntax](../imgs/language/python-syntax-error-2023-03-15.png)
 
 The Python interpreter doesn't understand what we're saying, because we haven't structured the sentence correctly in the Python language. Unlike your friend, the Python interpreter won't bother to ask us to clarify or rephrase what we meant. It will give up trying to understand our instructions very quickly, but will usually tell us why it gave up.
 In this case, the interpreter gave up, or **threw an error**, because it didn't understand the syntax of the instruction we provided to it. The Python interpreter doesn't speak English, it speaks Python.
@@ -90,63 +93,56 @@ In this case, the interpreter gave up, or **threw an error**, because it didn't 
 Python can be tricky initially because:
 
 1. We're not yet fluent in the language
-2. We're used to human languages, which are much more powerful and flexible than Python[^2]
+2. We're used to human languages, which are a lot more flexible than Python[^2]
 
 [^2]: In my opinion. The interpreters for natural languages, our brains, are extraordinarily complex, flexible, and powerful, and the power of a language tends to be limited to the complexity of its interpreter.
 
-There are lots of valid ways to ask someone to sum up the numbers 1 up to, but not including, 10 in English or any other human language. But in Python we say
+There are lots of valid ways to ask someone to write "apple" in uppercase letters, but in Python we say:
 
 === "Python"
 
     ```python
-    sum(range(1, 10))
+    print('apple'.upper())
     ```
 
 === "English"
 
     ```text
-    Calculate the sum of the numbers 1 up to, but not including, 10
+    Hey, write the word 'apple' in uppercase letters
     ```
 
+![Python Syntax Part 2](../imgs/language/python-syntax-correct-2023-03-15.png)
 
-![Python Syntax Part 2](../imgs/language/python-syntax-sum-2023-02-19.png)
+## 💡 Semantics
 
-Python looks like a bare-bones version of English, kind of like a cave-person language. But it's still pretty powerful.
-Now imagine you text your friend
+You can have sentence with correct syntax, yet it doesn't make sense.
+The meaning, or _semantics_, of sentences are extremely important.
 
-=== "English (big sum)"
+Here's an example of a syntactically correct, but semantically meaningless, sentence in English:
 
-    ```text
-    Calculate the sum of the numbers 1 up to, but not including, 478,862,301
-    ```
+```text
+Write the number 1.50 in upper case
+```
 
-=== "Python (big sum)"
+Here's the same example in Python:
 
-    ```python
-    sum(range(1, 478_862_301))
-    ```
+```python
+1.50.upper()
+```
 
-It would probably take your friend a significantly longer amount of time to do this calculation by hand. 
-But the Python interpreter just takes a few seconds:
+When you give the Python interpreter a semantically meaningless sentence, the interpreter will throw an error, but usually a different kind of error depending on what you were trying to do.
 
-![Python Syntax Part 3](../imgs/language/python-syntax-big-sum-2023-02-19.png)
+![Python Syntax Part 2](../imgs/language/semantics/python-semantic-error-2023-03-15.png)
 
-!!! note "Making numbers easier to read"
+!!! note "Errors"
 
-    We could write `478862301`, but that's a little tricky to read.
-    Lot's of languages have ways to make numbers easier to read, including Python.
+    The Python interpreter will throw lots of different kinds of errors.
+    We will discuss types of errors and how to handle them later in the guide.
 
-    | Language | Separator | Syntax |
-    | --- | --- | --- |
-    | English | comma (`,`) | `478,862,301` |
-    | French | period (`.`) | `478.862.301` |
-    | **Python** | underscore (`_`) | `478_862_301` |
-
+## 🏋️‍♀️ Exercises
 
 We'll look at a lot of examples of how to write Python with proper syntax throughout this tutorial.
 For now, I highly recommend you try the exercises below.
-
-## Exercises 🏋️‍♀️
 
 
 **Q1.** What is an interpreter?
@@ -182,52 +178,79 @@ iv. "Frisbee here now the !throw"
 
     iv. is not valid English syntax
 
-**Q4.** Calculate the sum of the numbers 1 to 53,786 using Python. You should get 1,446,493,791
+**Q4.** Write the following sentence[^3] in lower case letters:
 
-!!! note "Hint"
+[^3]: [Monty Python](https://youtu.be/Cj8n4MfhjUc) skit. By the way, the Python language was named after this comedy group, not the snake!
 
-    The sum should include the number 53,786 but remember that `range(a, b)` only includes up to `b - 1`
+```text
+NOBODY EXPECTS THE SPANISH INQUISITION!
+```
 
 ??? success "Answer"
 
+    The phrase is short enough that you could retype it in lower case yourself:
+
+    ```text
+    nobody expects the spanish inquisition!
+    ```
+
+    But it's faster to use Python (and more scalable; imagine rewriting a much longer sentence by hand)
+
     ```python
-    sum(range(53_787))
+    'NOBODY EXPECTS THE SPANISH INQUISITION!'.lower()
     ```
     or
     ```python
-    sum(range(53787))
+    "NOBODY EXPECTS THE SPANISH INQUISITION!".lower()
     ```
 
-    Notice that to include 53,786 we need to go one number higher and use 53,787
+    The Python language is particular about many things, but quotation marks are not one of those things.
+    It's up to you to use single-quotes or double-quotes, but it's good style to be consistent with your choice.
 
-    Alternatively, we could write:
+**Q5.** Read the ["String Methods" section](https://docs.python.org/3/library/stdtypes.html#string-methods) of the Python documentation on string methods.
 
-    ```python
-    sum(range(53_786 + 1))
-    ```
+!!! info "Method"
 
-    In later tutorials we will discuss number crunching in Python
+    A method is an action that is attached to a piece of data.
+    We will talk more about methods later in the guide.
 
+Now consider this quote[^4]:
 
-**Q5.** Read [section 4.3](https://docs.python.org/3/tutorial/controlflow.html#the-range-function) of the Python documentation on `range()`.
+[^4]: Dr. Ian Malcolm, _Jurrasic Park_
 
-i. Try typing in some the examples given.
+```text
+God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates dinosaurs.
+```
 
-ii. Write down a list of things that confuse you.
+Using the string methods described in the documentation:
 
-iii. Create a `list` of the **even** numbers from 1 to 20 (including 20). Then try the **odd** numbers. Test your solutions in the Thonny shell.
+i. Replace `dinosaurs` with `yogurt`
+
+ii. Which letter occurs more frequently, `e` or `a`?
 
 ??? success "Answer"
 
-    Even
+    Note that the `>>>` represents the prompt in the "Shell" section of Thonny.
+    You shouldn't type the arrows into the Shell.
+
+    i.
+
     ```python
-    list(range(2, 20 + 1, 2))
+    >>> 'God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates dinosaurs.'.replace('dinosaurs', 'yogurt')
+    'God creates yogurt. God destroys yogurt. God creates Man. Man destroys God. Man creates yogurt.'
     ```
 
-    Odd
+    ii. 
+
     ```python
-    list(range(1, 21, 2))
+    >>> 'God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates dinosaurs.'.count('e')
+    8
+    >>> 'God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates dinosaurs.'.count('a')
+    9
     ```
+
+    So, there are more `a`s that `e`s in the quote.
+
 
 **Q6.** If you haven't already, skim through the [official Python tutorial](https://docs.python.org/3.11/tutorial/). A lot of it might not make sense just yet, but you should still look through it to get some more context about Python
 
@@ -235,10 +258,8 @@ iii. Create a `list` of the **even** numbers from 1 to 20 (including 20). Then t
 
 ??? success "Possible answers"
 
-    Develop industry-relevant skills
-
-    Automate boring, repetitive tasks at work and home
-
-    Learn for the fun of it
-
-    I'm soooooooooooo boooooooored
+    1. Develop industry-relevant skills
+    2. I need to pass a course in school
+    3. Automate boring, repetitive tasks at work and home
+    4. Learn for the fun of it
+    5. I'm soooooooooooo boooooooored
