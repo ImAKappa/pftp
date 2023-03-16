@@ -30,18 +30,6 @@ Below, we state a sentence in English and an analogous sentence in Python.
 
 ---
 
-Write the word "Apple"
-
-```python
-print("Apple")
-```
-
-Write the japanese word for "Apple"
-
-```python
-print("りんご")
-```
-
 ### Numbers
 
 Python has two kinds of numbers:

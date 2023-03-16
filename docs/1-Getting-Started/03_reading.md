@@ -1,14 +1,66 @@
-# 📔 Reading Python Code
+# 📔 Reading
 
+To write, you must read. Let's practice reading Python code.
 
-To write, you must read. Let's practice reading Python code. For each example:
+It also helps to know the parts of speech:
+
+| Part of Speech | English | Part of Speech | Python | Purpose/Description |
+| --- | --- | --- | --- | --- |
+| Noun (instance) | that dog over there, this chair | Data | `3`, `"Hello"`, `[1, 2]` | Something that exists |
+| Noun (type) | animal, furniture | Data type | `int`, `str`, `list` | A kind or type of thing |
+| Pronoun | he, she, they, it | Variable | `age`, almost any english word | A placeholder for another thing |
+| Verb | Run, repeat | Function | `print`, `range`, `math.sqrt` | An action |
+| Conjunction | and, but, or, not | Logical operators | `and`, `or`, `not` | Joins statements with logic |
+
+Below, we state a sentence in English and an analogous sentence in Python.
+
+!!! warning "Type everything"
+
+    Type all the examples to better remember Python
+
+For each example:
 
 1. Explain in English what you _think_ the code does.
-2. Then type the code into the Thonny code editor (do **not** copy-paste, it is essential that you develop muscle memory for writing Python)
+2. Then type the code into the Thonny code editor (**avoid copy-pasting**, it is essential to develop muscle memory for writing Python)
 3. Finally, run it to see if you were right
+
+## Comments
+
+!!! info 
+
+    Comments are lines of text that the Python interpreter ignores.
+    You usually write comments to annotate your code so that other people, and your future self, can understand your code.
+
+    > "Code is more often read than written" 
+    > 
+    > \- Guido van Rossum (creator of the Python programming language)
+
+Write "Hungry" (this is how I am feeling right now)
+
+```python
+# This is how I am feeling right now
+print("Hungry")
+```
+
+## Data & Data Types (Nouns)
 
 ### Strings of Text
 
+!!! info
+
+    "String" is short for "string of characters"
+
+Write the word "Apple"
+
+```python title="String"
+print("Apple")
+```
+
+Write the japanese word for "Apple"
+
+```python title="Multilingual"
+print("りんご")
+```
 
 ```python title="Title case"
 print("the quick brown fox jumps over the lazy dog".title())
@@ -22,7 +74,8 @@ print("the quick brown fox jumps over the lazy dog".upper())
 print("the quick brown fox jumps over the lazy dog".replace("dog", "frog"))
 ```
 
-```python title="Format/Template text"
+```python title="Format text"
+print("323 + 456 is equal to {323 + 456}")
 print(f"323 + 456 is equal to {323 + 456}")
 ```
 
@@ -33,32 +86,39 @@ print("##".join("the quick brown fox jumps over the lazy dog".split(" ")))
 ```
 
 ### Numbers
- 
-```python title="Operators"
-print(f"{5 + 2 =}")
-print(f"{5 - 2 =}")
-print(f"{5 * 2 =}")
-print(f"{5 / 2 =}")
-print(f"{5 // 2 =}")
-print(f"{5 % 2 =}")
-```
+
+!!! info
+
+    Python has two kinds of numbers:
+
+   1. **Integers**, like `1` or `345` or `-12`
+   2. **Floats**, like `3.14` or `-68.72`. These are similar to decimal numbers.
 
 ```python title="Number types"
 print(f"5.3 is a {type(5.3)}")
 print(f"5 is a {type(5)}")
+``` 
+
+
+```python title="Operators"
+print(f"Addition: {5 + 2 =}")
+print(f"Subtraction: {5 - 2 =}")
+print(f"Multiplication: {5 * 2 =}")
+print(f"Division: {5 / 2 =}")
+print(f"Floor division: {5 // 2 =}")
+print(f"Remainder: {5 % 2 =}")
 ```
 
-=== "English (big sum)"
+```python title="Spacers"
+print(478_862_301)
+```
 
-    ```text
-    Calculate the sum of the numbers 1 up to, but not including, 478,862,301
-    ```
-
-=== "Python (big sum)"
-
-    ```python
-    sum(range(1, 478_862_301))
-    ```
+```python title="Float format"
+print(f"{47.288459}")
+print(f"{47.288459:.2f}")
+# Percentage
+print(f"{0.928:.2%}")
+```
 
 !!! note "Making numbers easier to read"
 
@@ -73,12 +133,12 @@ print(f"5 is a {type(5)}")
 
 ### Variables
 
-```python title="Saving data"
+```python title="Binding data to labels"
 age = 18
 print(f"My age is {age}. In ten years I will be {age + 10}")
 ```
 
-```python title="Readability"
+```python title="Readable variable names"
 seconds_per_minute = 60
 minutes_per_hour = 60
 
