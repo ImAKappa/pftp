@@ -1,4 +1,4 @@
-# 🧑‍💻 Development
+# 👩‍💻 Development
 
 Let's get familiar with the two main parts of Thonny.
 
@@ -20,12 +20,11 @@ Thonny is an **IDE**: An Integrated Development Environment. An IDE is any kind 
 
     MS Word and Google Docs are examples of word processors. These apps deal with _rich_ text, which is text that is embellished with lots of extra notation so that the text can have fancy styles like bolding, colours, highlights, and different sizes.
 
-    However, this also means we can't write Python code in MS Word. All the extra markup confuses the Python interpreter. See [this video](https://www.youtube.com/watch?v=X34ZmkeZDos) to get an idea.
+    However, all the extra markup means it would be difficult to write Python code in MS Word. **Please [don't write code :fontawesome-solid-up-right-from-square:](https://www.youtube.com/watch?v=X34ZmkeZDos) using Microsoft Word.**
 
     Instead we write Python code in a plain text file with the file extension `.py`. Plain text is the kind you would write in Notepad (Windows) or TextEdit (Mac). You can't change the styling of the text, but it's much simpler; it's plain.
 
-
-## Coding is Writing is Thinking
+## 💡 Coding is Writing is Thinking
 
 Writing Python code is more than typing some words into Thonny.
 It is writing, and writing is thinking on paper.
@@ -38,12 +37,12 @@ Just like writing, learning to code well takes time. Goole developer and leading
     Even if you don't understand most of it, please read [Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html).
     The blog post is aimed at people interested in professional software development. That may or may not be you, but all I want you to get out of it is that learning to code will take time and effort, so don't worry if you feel it's taking a long time for you get the hang of Python. We're all in the same boat!
 
-## Solving Problems with Code
+## 🔨 Solving Problems with Code
 
 It's important to have a good grasp of the problem you're trying to solve with Python
 (or knowing if you even need Python at all!). In his book, "Code Complete", Steve McConnell laid out a few key components of the development process[^1]:
 
-[^1]: The full software development process is much lengthier and much more involved, but for a beginner programmer it may be a bit intimidating
+[^1]: The full software development process is much lengthier and much more involved, but this list is good enough for most of the software you write as beginner Python programmer
 
 | Part of Process | Description |
 | --- | --- |
@@ -51,25 +50,38 @@ It's important to have a good grasp of the problem you're trying to solve with P
 | Requirements development | What features does our solution have to have? Does Python offer these features? |
 | Construction planning | Think about how we could implement the solution, step by step |
 | Coding & debugging | Implement the solution in Python. Fix bugs. |
-| Unit testing | Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes |
+| Testing | Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes |
 
-!!! info "Apps vs Scripts"
+## 📦 Scripts vs Apps vs Libraries
 
-    A **script** is a short piece of code, usually in a single file, that does one main thing.
-    Scripts are different from applications, or apps, which are more complicated pieces of software that can do many things. Compare the script above to something like your calendar app. If you want to make a calendar app, you need to seriously make a solid plan for how you will develop the app and make sure to test, test, test!
+A **script** is a short piece of code, usually in a single file, that does one main thing.
+For example, this script fetches a random useless fact from the internet
 
-    Python is one of the best languages for creating scripts.
-    For example, this script fetches a random useless fact from the internet:
+```python title="uselessfact.py"
+--8<-- "uselessfact.py"
+```
 
-    ```python title="uselessfact.py"
-    --8<-- "uselessfact.py"
-    ```
+Scripts are different from applications, or **apps**, which are bundles of code that you use to accomplish one or more tasks. 
+Apps are typically more complicated than scripts.
+Compare the script above to something like your calendar app, which can send notifications, set reminders, store data related to events, dates, and times, has a user interface, and synchronize data across multiple devices.
 
-    Even if you don't understand what exactly is happening, don't worry.
-    Type the script into the Thonny code editor, and run it a few times (by pressing the green run button, or pressing `F5` on your keyboard) to get some useless facts.
+There is another kind of software called a **library**.
+A library is a bundle of code that is meant to be used in other people's code.
+Libraries tend to be pretty hard to write because you have to think about how the code will be used on many different operating, and write lot's of tests, publish documentation on how to use the library, and maintain it when people find bugs or are looking for more features.
 
+Python comes pre-installed with many libraries.
+For example, we can import the `random` library which lets us write code that can generate random numbers
 
-## Exercises
+```python title="Python random library"
+import random
+print("Here's a random number from 1 to 10:", random.randint(1, 10))
+```
+
+!!! note
+
+    In this guide, we will stick to writing scripts
+
+## 🏋️‍♂️ Exercises
 
 **Q1.** What is the process for writing code?
 
@@ -81,10 +93,20 @@ It's important to have a good grasp of the problem you're trying to solve with P
     | Requirements development | What features does our solution have to have? Does Python offer these features? |
     | Construction planning | Think about how we could implement the solution, step by step |
     | Coding & debugging | Implement the solution in Python. Fix bugs. |
-    | Unit testing | Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes |
+    | Testing | Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes |
+
+**Q2.** What is the difference between a script, an app, and a library? Provide an example for each
+
+??? success "Answer"
+
+    | Type of Software | Description | Example |
+    | --- | -- | --- |
+    | Script | Typically a single file of code that accomplishes a few simple/short tasks | A script to download files from the internet |
+    | App | A bundle of software that people use to accomplish a few complicated tasks | [Thonny](https://thonny.org/) is an app for editing Python code |
+    | Library| A bundle of software that people can use in their own code | [pandas](https://pandas.pydata.org/) is data analysis library for Python |
 
 
-**Q2.** Consider this Python code that verifies if someone is old enough to drink
+**Q3.** Consider this Python code that verifies if someone is old enough to drink
 
 ```python
 age = int(input("Please enter your age: "))
@@ -105,7 +127,7 @@ i. Does the program do what it's supposed to? Why or why not? Rerun the code and
 
 ??? success "Answer"
 
-    No, the code produces an incorrect result for ages greater than 19. It should respond "You may enter the bar".
+    **No**, the code produces an incorrect result for ages greater than 19. It should respond "You may enter the bar".
 
     This is because the code checks if `age` equals `drinking age`. Instead it should check if `age` is greater than or equal to `drinking_age`.
     
@@ -123,7 +145,7 @@ ii. Can you think of any inputs you can give that will crash the program (i.e. c
 
 iii. Why is testing your code so important?
 
-??? success "Possible Answers"
+??? success "Possible Answer"
 
     It's easy to accidentally mistype something without realizing it, so you need to run tests to bring your attention to errors in your code
 

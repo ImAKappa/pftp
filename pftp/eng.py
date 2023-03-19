@@ -40,33 +40,53 @@ This module could convert that to Mkdocs Material syntax:
         Sort a list of grocery items alphabetically
         ```
 """
-from collections import namedtuple
-from typing import Callable
 
-py_src = """#eng Write 'apple' in upper case
+from collections import namedtuple
+import logging
+
+logging.basicConfig(level=logging.WARNING)
+from combparser import ParserCombinator, ParserError
+
+# A collection to hold an English expression and a roughly equivalent Python expression
+EngVsPy = namedtuple("EngVsPy", ["english", "python"])
+
+p = ParserCombinator()
+
+src = """#eng Write 'apple' in upper case
 print('apple'.upper())
 
 #eng Sort a list of grocery items alphabetically
 print(sorted(['dragonfruit', 'yam', 'apple', 'banana']))
 """
 
-print(py_src.split("#eng"))
+content = []
 
-# A collection to hold an English expression and a roughly equivalent Python expression
-EngVsPy = namedtuple('EngVsPy', ['english', 'python'])
+while len(src) > 0:
+    english_tag, src = p.tag("#eng", src)
+    english, src = p.take_while(lambda c: c != "\n", src)
+    try:
+        code, src = p.take_until("#eng", src)
+    except ParserError as err:
+        # Take until EOF
+        code, src = p.take_while(lambda c: True, src)
+    eng_vs_py = EngVsPy(english=english.strip(), python=code.strip())
+    logging.debug(eng_vs_py)
+    content.append(eng_vs_py)
 
-# A collection to represent the result of a parser combinator operation
-Result = namedtuple('Result', ['captured', 'rest'])
 
-class Parser:
+def format_eng_vs_py(evp: EngVsPy) -> str:
+    return f"""=== "English"
 
-    def take_while(src: str, fn: Callable) -> Result:
-        pos = 0
-        while pos < len(str) and fn(src[pos]):
-            pos += 1
-        return Result(src[:pos], src[pos:])
+    {evp.english}
 
-    def tag(src: str):
-        """Matches a specific sequence of characters at the start of `src`"""
+=== "Python"
 
-    def parse(src: str) -> None:
+    ```python
+    # {evp.english}
+    {evp.python}
+    ```
+"""
+
+
+outputs = [format_eng_vs_py(evp) for evp in content]
+print("\n---\n\n".join(outputs))

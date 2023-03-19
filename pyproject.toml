@@ -40,6 +40,7 @@ python = "311"
 dependencies = [
   "pytest",
   "pytest-cov",
+  "black"
 ]
 [tool.hatch.envs.default.scripts]
 cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=pftp --cov=tests {args}"

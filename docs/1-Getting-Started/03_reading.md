@@ -2,21 +2,17 @@
 
 To write, you must read. Let's practice reading Python code.
 
-It also helps to know the parts of speech:
+## 🔣 Parts of Speech
+
+When using a language, it's helpful to know the parts of speech:
 
 | Part of Speech | English | Part of Speech | Python | Purpose/Description |
 | --- | --- | --- | --- | --- |
 | Noun (instance) | that dog over there, this chair | Data | `3`, `"Hello"`, `[1, 2]` | Something that exists |
 | Noun (type) | animal, furniture | Data type | `int`, `str`, `list` | A kind or type of thing |
-| Pronoun | he, she, they, it | Variable | `age`, almost any english word | A placeholder for another thing |
+| Pronoun | he, she, they, it, we, us, that, them | Variable | `age`, almost any english word | A placeholder for another thing |
 | Verb | Run, repeat | Function | `print`, `range`, `math.sqrt` | An action |
 | Conjunction | and, but, or, not | Logical operators | `and`, `or`, `not` | Joins statements with logic |
-
-Below, we state a sentence in English and an analogous sentence in Python.
-
-!!! warning "Type everything"
-
-    Type all the examples to better remember Python
 
 For each example:
 
@@ -24,101 +20,58 @@ For each example:
 2. Then type the code into the Thonny code editor (**avoid copy-pasting**, it is essential to develop muscle memory for writing Python)
 3. Finally, run it to see if you were right
 
-## Comments
+!!! warning "Type everything"
 
-!!! info 
+    Type all the examples to better remember Python
 
-    Comments are lines of text that the Python interpreter ignores.
-    You usually write comments to annotate your code so that other people, and your future self, can understand your code.
+## 📃 Cheatsheets
 
-    > "Code is more often read than written" 
-    > 
-    > \- Guido van Rossum (creator of the Python programming language)
+The examples here are purposefully a little more complicated because there are already so many articles, books, and cheatsheets with simple Python examples.
 
-Write "Hungry" (this is how I am feeling right now)
+!!! note "You don't have to remember everything"
 
-```python
-# This is how I am feeling right now
-print("Hungry")
-```
+    If you ever forget how to do something in Python, see the [resources](../05_resources/) section for advice on how to search for help
 
-## Data & Data Types (Nouns)
+**Before** and **after** reading this page, I recommend studying (and typing out) the examples at [Python Cheat Sheet :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/).
+Ideally, you would work your way through all of the sections over a few weeks or months.
+But if you are short on time or energy, read the following in this order:
 
-### Strings of Text
+1. [Basics :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/cheatsheet/basics)
+2. [Built-in Functions :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/cheatsheet/built-in-functions)
+3. [Manipulating Strings :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/cheatsheet/manipulating-strings)
+4. [String formatting :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/cheatsheet/string-formatting)
+3. [Control Flow :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/cheatsheet/control-flow)
+4. [Functions :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/cheatsheet/functions)
+5. [Lists and Tuples :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/cheatsheet/lists-and-tuples)
+6. [Dictionaries :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/cheatsheet/dictionaries)
+7. [Sets :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/cheatsheet/sets)
+8. [Comprehensions Step-by-Step :fontawesome-solid-up-right-from-square:](https://www.pythoncheatsheet.org/blog/python-comprehensions-step-by-step)
 
-!!! info
+## 💬 Comments
 
-    "String" is short for "string of characters"
+Comments are lines of text that the Python interpreter ignores.
+You usually write comments to annotate your code so that other people, and your future self, can understand your code.
 
-Write the word "Apple"
+> "Code is more often read than written" 
+> 
+> \- [Guido van Rossum :fontawesome-solid-up-right-from-square:](https://en.wikipedia.org/wiki/Guido_van_Rossum) (creator of the Python programming language)
 
-```python title="String"
-print("Apple")
-```
+=== "English"
 
-Write the japanese word for "Apple"
+    Write "Hungry" (this is how I am feeling right now)
 
-```python title="Multilingual"
-print("りんご")
-```
+=== "Python"
 
-```python title="Title case"
-print("the quick brown fox jumps over the lazy dog".title())
-```
+    ```python
+    # This is how I am feeling right now
+    print("Hungry")
+    ```
 
-```python title="Upper case"
-print("the quick brown fox jumps over the lazy dog".upper())
-```
+## Examples
 
-```python title="Replace text"
-print("the quick brown fox jumps over the lazy dog".replace("dog", "frog"))
-```
-
-```python title="Format text"
-print("323 + 456 is equal to {323 + 456}")
-print(f"323 + 456 is equal to {323 + 456}")
-```
-
-```python title="Split & Join"
-print("the quick brown fox jumps over the lazy dog".split(" "))
-
-print("##".join("the quick brown fox jumps over the lazy dog".split(" ")))
-```
+### Strings
 
 ### Numbers
-
-!!! info
-
-    Python has two kinds of numbers:
-
-   1. **Integers**, like `1` or `345` or `-12`
-   2. **Floats**, like `3.14` or `-68.72`. These are similar to decimal numbers.
-
-```python title="Number types"
-print(f"5.3 is a {type(5.3)}")
-print(f"5 is a {type(5)}")
-``` 
-
-
-```python title="Operators"
-print(f"Addition: {5 + 2 =}")
-print(f"Subtraction: {5 - 2 =}")
-print(f"Multiplication: {5 * 2 =}")
-print(f"Division: {5 / 2 =}")
-print(f"Floor division: {5 // 2 =}")
-print(f"Remainder: {5 % 2 =}")
-```
-
-```python title="Spacers"
-print(478_862_301)
-```
-
-```python title="Float format"
-print(f"{47.288459}")
-print(f"{47.288459:.2f}")
-# Percentage
-print(f"{0.928:.2%}")
-```
 
 !!! note "Making numbers easier to read"
 
@@ -183,14 +136,15 @@ print(jojo.items())
 
 ### Control Flow
 
-```python title="if/else"
-temperature = 19
+Write a program that will calculate income before and after taxes based on this bracketed tax scheme:
 
-if 15 <= temperature < 24:
-    print("The temperature is perfect for me")
-else:
-    print("I'm not a fan of this temperature!")
-```
+| Tax bracket | Percent tax |
+| --- | --- |
+| > $220,000 | 33% |
+| > $150,000 | 29% |
+| > $100,000 | 26% |
+| > $50,000 | 20% |
+| <= $50,000 | 15% |
 
 ```python title="if/elif/else statement"
 income = 57456.34
@@ -214,6 +168,8 @@ if tax:
     print(f"Income after deducting {tax*100}% taxes: {income * (1.0 - tax)}")
 ```
 
+---
+
 ```python title="For loop"
 countries = ["Canada", "India", "Japan", "Germany", "Venezuela", "Kenya"]
 
@@ -236,6 +192,8 @@ for item, amount in groceries.items():
         print("(Keep it a surprise!)")
 ```
 
+---
+
 ```python title="While loop"
 age = 12
 age_chant = 1
@@ -247,8 +205,16 @@ while age_chant < age:
 print(f"Happy Birthday! You are {age_chant}!")
 ```
 
+---
+
+I have a list of files that I want to categorize.
+Write a program that will say the kind of each file.
+
 ```python title="Match"
-file = "cute-puppies.png"
+files = [
+    "cute-puppies.png",
+    ""
+]
 
 match file.split("."):
     case [filename, ("png" | "jpg" | "webp" | "svg")]:
