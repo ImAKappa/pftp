@@ -47,6 +47,7 @@ cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=pftp -
 no-cov = "cov --no-cov {args}"
 docs = "mkdocs serve --config-file ./mkdocs.yml"
 clippy = "python -m clippy"
+pymd = "python -m pftp.pymd {args}"
 
 [[tool.hatch.envs.test.matrix]]
 python = ["37", "38", "39", "310", "311"]
