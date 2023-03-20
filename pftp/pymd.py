@@ -37,8 +37,21 @@ class PyMDVisitor(ast.NodeVisitor):
 
     """
 
+    def __init__(self, src: str):
+        self.src = src
+
+    def visit_FunctionDef(self, node: FunctionDef) -> Any:
+        return super().visit_FunctionDef(node)
+
     def generic_visit(self, node):
-        print(f"entering {ast.dump(node)}")
+        # print(f"entering {ast.dump(node)}")
+        if isinstance(node, ast.FunctionDef):
+            # print(ast.dump(node))
+            # print(ast.get_source_segment(self.src, node))
+            for n in node.body:
+                print(ast.get_source_segment(self.src, n))
+            print(ast.get_docstring(node))
+            print("-"*10)
         super().generic_visit(node)
 
 
@@ -46,10 +59,10 @@ p = Path(r"docs\1-Getting-Started\reading.py")
 
 with open(p, mode="r", encoding="utf-8") as f:
     content = f.read()
-    print(content)
+    # print(content)
 
 tree = ast.parse(content)
 
-visitor = PyMDVisitor()
+visitor = PyMDVisitor(content)
 
 visitor.visit(tree)

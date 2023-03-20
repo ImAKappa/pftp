@@ -15,8 +15,7 @@ def while_loop():
     print(f"Happy Birthday! You are {age_chant}!")
 
 def structural_pattern_matching():
-    """
-    I have a list of files that I want to categorize. Write a program that will say the kind of each file.
+    """I have a list of files that I want to categorize. Write a program that will say the kind of each file.
     """
     files = [
         "cute-puppies.png",
