@@ -1,4 +1,5 @@
-"""
+"""nojumpscare
+
 This module contains no jumpscares
 """
 import time
@@ -20,13 +21,18 @@ msgs = [
     "There is no jump scare here!",
 ]
 
+DREAD = 2
+
 for msg in msgs:
+    print()
     print(f"\r{msg}", end="")
-    time.sleep(1)
+    time.sleep(DREAD)
+    # Clear the screen
     blanks = " " * len(msg)
     print(f"\r{blanks}\r", end="")
 
 print("See? Nothing to worry about :)")
 time.sleep(3)
-cute_jumpscare = "https://wallpapercave.com/wp/wp7799608.jpg"
-webbrowser.open(cute_jumpscare)
+# If you're feeling devilish >:)
+jumpscare = "https://wallpapercave.com/wp/wp7799608.jpg"
+webbrowser.open(jumpscare)

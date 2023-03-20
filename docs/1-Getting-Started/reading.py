@@ -23,7 +23,14 @@ def while_loop():
 
 def structural_pattern_matching():
     """I have a list of files that I want to categorize. Write a program that will say the kind of each file."""
-    files = ["cute-puppies.png", ""]
+    files = [
+        "cute-puppies.png",
+        "national-security.pdf",
+        "pinball3000.exe",
+        "mywebsite.html",
+        "birthday.py",
+        "mysterious-file.cia"
+    ]
 
     for file in files:
         match file.split("."):
@@ -31,6 +38,10 @@ def structural_pattern_matching():
                 print(f"'{filename}' is an image file")
             case [filename, ("csv" | "txt" | "md")]:
                 print(f"'{filename}' is a plain-text file")
+            case [filename, ("exe" | "pkg")]:
+                print(f"'{filename}' is an executable")
+            case [filename, ("pdf" | "docx")]:
+                print(f"'{filename}' is a document file")
             case [filename, "py"]:
                 print(f"'{filename}' is Python source code!")
             case _:
