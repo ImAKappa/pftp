@@ -17,7 +17,7 @@ Of course, nothing will happen if you write down these instructions on a piece o
 or if you say these instructions out loud in an empty room.
 
 Instructions in any language are only useful if there is someone there to **interpret** the instructions.
-So, you text your friend the instructions to write "apple" in uppercase. They respond with "APPLE". Your friend is the interpreter for the instruction.
+So, let's say you text your friend the instructions to write "apple" in uppercase. They respond with "APPLE". Your friend is the interpreter for the instruction.
 
 The Python language is the same. On its own the language is kind of useless, it's just a bunch of rules for how to arrange words and numbers. You need a Python **interpreter** that can understand the instructions and execute them.
 
@@ -37,9 +37,13 @@ flowchart LR
 
 !!! info "Where can I get a Python interpreter?"
 
-    While you could download the latest "official"[^1] Python interpreter [here](https://www.python.org/downloads/), for this tutorial we will use [Thonny](https://thonny.org/). It comes with version 3.10 of the "official" Python interpreter (as of time of writing). When we get more experience using Python, we will transition to the latest Python interpreter.
+    While you could download the latest traditional[^1] Python interpreter from the [Python Software Foundation](https://www.python.org/downloads/), for this tutorial we will use [Thonny](https://thonny.org/). It comes with version 3.10 of the Python interpreter (the latest version is 3.11, as of time of writing). When we get more experience using Python, we will learn how to update to the latest Python interpreter.
     
-    [^1]: By "official", we mean the most up-to-date interpreter. There's no "pirated" version of the Python interpreter because it's completely open-source and free! There are, however, several alternative implementations of the Python interpreter, like PyPy (for Python that runs fast), or MicroPython (for running Python on micro controllers). Most people should stick to the interpreter from the [Python Software Foundation](https://www.python.org/psf-landing/)
+    [^1]: By "traditional", we mean the interpreter that most people and companies use. There's no "pirated" version of the Python interpreter because it's completely open-source and free! There are, however, several alternative implementations of the Python interpreter, like PyPy (for Python that runs fast), or MicroPython (for running Python on micro controllers). Most people should stick to the interpreter from the [Python Software Foundation](https://www.python.org/psf-landing/)
+
+!!! info "Python Interpreter Cost"
+
+    The Python interpreter is free. It's also **open-source**
 
 Follow the installation instructions for [Thonny](https://thonny.org/) for your operating system (i.e. Windows or Mac)
 

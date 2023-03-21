@@ -22,7 +22,7 @@ Python is a language for talking to your computer. Knowing Python will empower y
     - Computer Graphics: [Taichi](https://github.com/taichi-dev/taichi)
     - Dashboards: [Dash](https://dash.gallery/Portal/)
 
-3. **Modelling** (not the fashion kind, although you could [use Python to help you pick out an outfit](https://github.com/sonu275981/Fashion-Recommender-system))
+3. **Do modelling** (not the fashion kind, although you could [use Python to help you pick out an outfit](https://github.com/sonu275981/Fashion-Recommender-system))
 
     - Databases
     - Simulations
@@ -31,7 +31,7 @@ Python is a language for talking to your computer. Knowing Python will empower y
 If you're most people, you will likely find the most use from **automating repetitive tasks** with Python.
 Fortunately, this is also the easiest application to get started with and will be our focus for this guide.
 
-> But don't worry, we will create some simple games and simulations near the end of the guide.
+> We will create some simple games and simulations near the end of the guide.
 
 ## Prerequisites
 
