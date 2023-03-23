@@ -28,7 +28,7 @@ Thonny is an **IDE**: An Integrated Development Environment. An IDE is any kind 
 
 Writing Python code is more than typing some words into Thonny.
 It is writing, and writing is thinking on paper.
-People who write well know how to sort out their thoughts, critique them, refine them, and express them in an accessible way to other people. The same can be said for Python. You can write convoluted code, or write simple, elegant code that says nothing beyond what it needs to say, to do things it needs to do.
+People who write well know how to sort out their thoughts, critique them, refine them, and express them in an accessible way to other people. The same can be said for Python. You can write convoluted code, or write simple, elegant code that says nothing beyond what it needs to say, to do the things it needs to do.
 
 Just like writing, learning to code well takes time. Goole developer and leading AI-researcher Peter Norvig wrote about this best in his blog post ["Teach Yourself Programming in Ten Years"](https://www.norvig.com/21-days.html). Do not be tempted to skim! Read it over in its entirety to set your expectations for learning to code.
 

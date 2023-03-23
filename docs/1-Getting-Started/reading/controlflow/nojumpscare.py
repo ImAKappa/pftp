@@ -21,18 +21,18 @@ msgs = [
     "There is no jump scare here!",
 ]
 
-DREAD = 2
+SECONDS = 2
 
 for msg in msgs:
     print()
     print(f"\r{msg}", end="")
-    time.sleep(DREAD)
+    time.sleep(SECONDS)
     # Clear the screen
     blanks = " " * len(msg)
     print(f"\r{blanks}\r", end="")
 
 print("See? Nothing to worry about :)")
 time.sleep(3)
-# If you're feeling devilish >:)
+# Heh >:)
 jumpscare = "https://wallpapercave.com/wp/wp7799608.jpg"
 webbrowser.open(jumpscare)
