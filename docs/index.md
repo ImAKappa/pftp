@@ -25,7 +25,7 @@ Python is a language for talking to your computer. Knowing Python will empower y
 3. **Do modelling** (not the fashion kind, although you could [use Python to help you pick out an outfit](https://github.com/sonu275981/Fashion-Recommender-system))
 
     - Databases
-    - Simulations
+    - Simulations: [NumPy](https://numpy.org/)
     - Machine learning: [Tensorflow](https://devlibrary.withgoogle.com/products/ml?sort=updated), [PyTorch](https://pytorch.org/community-stories)
 
 If you're most people, you will likely find the most use from **automating repetitive tasks** with Python.

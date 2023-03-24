@@ -41,7 +41,7 @@ def extract_all_text(pdf: PdfReader, pages: Optional[range] = None) -> str:
     return text.getvalue()
 
 
-def main():
+def main() -> None:
     # File source: https://www.almanac.com/sites/default/files/webform/pdf/almanac-start-a-garden.pdf
     file = Path("./almanac-start-a-garden.pdf")
     print(f"Extracting text from '{file.absolute()}'")

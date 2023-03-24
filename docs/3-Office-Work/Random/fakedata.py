@@ -24,7 +24,7 @@ def fake_businesses(fake: Faker, sample_size: int) -> pd.DataFrame:
     }
     return pd.DataFrame(data)
 
-def main():
+def main() -> None:
     fake = Faker()
     df = fake_businesses(fake, 200)
     print(df)
