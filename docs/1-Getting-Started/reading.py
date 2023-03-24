@@ -29,7 +29,7 @@ def structural_pattern_matching():
         "pinball3000.exe",
         "mywebsite.html",
         "birthday.py",
-        "mysterious-file.cia"
+        "mysterious-file.cia",
     ]
 
     for file in files:

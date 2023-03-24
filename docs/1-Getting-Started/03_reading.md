@@ -35,7 +35,7 @@ Take some time to study the example, and come up with **3** things that confuse 
 ??? success "Possibly confusing things"
 
     - What does `import webbrowser` mean?
-    - Why is `MAPS_URL` capitalized? And what's with the underscore?
+    - What's with the underscore in `maps_url`?
     - Why is `webbrowser.open_new_tab(MAPS_URL + country)` indented?
     - Why do we need the `.` and the round brackets `(` and `)`
     - What's with the colon (`:`), or the square brackets (`[` and `]`)?

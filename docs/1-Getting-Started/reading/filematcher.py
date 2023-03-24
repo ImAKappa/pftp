@@ -4,7 +4,7 @@ files = [
     "pinball3000.exe",
     "mywebsite.html",
     "filematcher.py",
-    "mysterious-file.cia"
+    "mysterious-file.cia",
 ]
 
 for file in files:

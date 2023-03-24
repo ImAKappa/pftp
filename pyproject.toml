@@ -23,7 +23,12 @@ classifiers = [
 dependencies = [
   "mkdocs",
   "mkdocs-material",
-  "pyperclip"
+  "pyperclip",
+  "PyPDF2",
+  "requests",
+  "pandas",
+  "openpyxl",
+  "faker",
 ]
 dynamic = ["version"]
 

@@ -23,6 +23,16 @@ We will use these stdlib modules for Clippy:
 | `subprocess`, `platform` | Interact with operating system |
 | `pathlib` | Manage files |
 
+!!! danger "Conflict with stdlib"
+
+    When you write your own modules, don't name them after modules found in the standard library.
+    For example, if you have a module that does something with HTML you might be tempted to call it `html.py`
+    But there already exists an `html` module in the stdlib.
+
+    If you import a library that uses the stdlib `html`, it will throw an error because the Python interpreter
+    will accidentally try to use your `html.py`. Chances are you haven't written all the code that it's in
+    the stdlib `html` module, so your code will throw an error.
+
 ## Exercises
 
 **Q1.** Search for the documentation, or tutorials, for each of the modules we will use for Clippy.

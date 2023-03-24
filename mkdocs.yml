@@ -4,6 +4,7 @@ theme:
   features:
     - content.tabs.link
     - navigation.tabs
+    - navigation.indexes
 markdown_extensions:
   - admonition
   - pymdownx.details
