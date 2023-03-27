@@ -11,8 +11,8 @@ rng = np.random.default_rng(seed=1234)
 MAX_WHITE = 69
 MAX_POWERBALL = 26
 
-winning_draw = rng.choice(np.arange(1, MAX_WHITE+1), size=5, replace=False)
-powerball = random.choice(range(1, MAX_POWERBALL+1))
+winning_draw = rng.choice(np.arange(1, MAX_WHITE + 1), size=5, replace=False)
+powerball = random.choice(range(1, MAX_POWERBALL + 1))
 
 tickets = 0
 earnings = 0
@@ -20,8 +20,8 @@ earnings = 0
 # This script is inefficient; it takes around 12s to run 5,000,000 iterations
 NUM_DRAWS = 10
 
-my_draws = rng.choice(np.arange(1, MAX_WHITE+1), size=(5, 20), replace=False)
-my_powerballs = rng.choice(np.arange(1, MAX_POWERBALL+1))
+my_draws = rng.choice(np.arange(1, MAX_WHITE + 1), size=(5, 20), replace=False)
+my_powerballs = rng.choice(np.arange(1, MAX_POWERBALL + 1))
 
 print("Notable winnings".center(30, "="))
 for draw in range(NUM_DRAWS):
@@ -30,7 +30,7 @@ for draw in range(NUM_DRAWS):
     my_powerball = random.choice(range(1, 27))
     matching_nums = len(my_draw.intersection(winning_draw))
     i_have_powerball = my_powerball == powerball
-    
+
     if matching_nums == 5:
         if i_have_powerball:
             print("OHMYGAH I WON!")
@@ -42,7 +42,7 @@ for draw in range(NUM_DRAWS):
         print("Cool 50k :)")
         earnings += 50_000
     elif matching_nums == 4 or (matching_nums == 3 and i_have_powerball):
-            earnings += 100
+        earnings += 100
     elif matching_nums == 3 or (matching_nums == 2 and i_have_powerball):
         earnings += 7
     elif i_have_powerball or (matching_nums == 1 and i_have_powerball):

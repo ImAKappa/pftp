@@ -6,6 +6,7 @@ import pandas as pd
 from faker import Faker
 from pathlib import Path
 
+
 def fake_businesses(fake: Faker, sample_size: int) -> pd.DataFrame:
     """Generates fake business data"""
     fields = {
@@ -19,10 +20,11 @@ def fake_businesses(fake: Faker, sample_size: int) -> pd.DataFrame:
         # Add more generators here!
     }
     data = {
-        field:[generator() for _ in range(sample_size)]
+        field: [generator() for _ in range(sample_size)]
         for field, generator in fields.items()
     }
     return pd.DataFrame(data)
+
 
 def main() -> None:
     fake = Faker()
@@ -32,6 +34,7 @@ def main() -> None:
     df.to_excel(file, index=False, sheet_name="Fake Businesses")
     print()
     print(f"Created '{file.absolute()}'")
+
 
 if __name__ == "__main__":
     program_name = "Fake Data Generator"
