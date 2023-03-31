@@ -10,7 +10,7 @@ powerball = random.choice(range(1, 27))
 tickets = 0
 earnings = 0
 
-NUM_DRAWS = 5_000_000
+NUM_DRAWS = 2_000_000
 
 print("Notable winnings".center(30, "="))
 for draw in range(NUM_DRAWS):

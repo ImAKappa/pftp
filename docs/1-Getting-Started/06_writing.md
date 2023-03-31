@@ -84,8 +84,24 @@ Based on what you just learned about status codes, try to complete the Python sc
     ```python title="ueslessfact.py" linenums="1"
     --8<-- "uselessfact.py"
     ```
+### 3. Changemaker
 
-### 3. Powerball
+Prompt the user to enter an amount of dollars and cents. For example $1.18.
+Display the number of quarters, dimes, nickels, and pennies to make that amount,
+making sure to maximize the amount of higher-value coins.
+
+Examples: 
+
+- If the user entered $1.18 it should output: 4 quarters, 1 dimes, 1 nickels, 3 pennies
+- If the user entered $1.02 it should output: 4 quarters, 0 dimes, 0 nickels, 2 pennies
+
+??? success "Possible solution"
+
+    ```python title="changemaker.py" linenums="1"
+    --8<-- "1-Getting-Started/writing/changemaker.py"
+    ```
+
+### 4. Powerball
 
 Write a program that simulates the chances of winning the [Powerball :fontawesome-solid-up-right-from-square:](https://www.powerball.ca/how-to-play/), and how much money you would realistically need to spend on to win.
 
@@ -109,12 +125,14 @@ Use the code below to get started:
 
 2) For notable winnings (Grand prize, 1 million, and 50 thousand), print a message
 
+3) Compare the stats from the simulation to the theoretical statistics. Are they close?
+
 ```python title="powerball.py" linenums="1"
---8<-- "powerball_incomplete.py"
+--8<-- "1-Getting-Started/writing/powerball_incomplete.py"
 ```
 
 ??? success "Possible solution"
 
     ```python title="powerball.py" linenums="1"
-    --8<-- "powerball.py"
+    --8<-- "1-Getting-Started/writing/powerball.py"
     ```

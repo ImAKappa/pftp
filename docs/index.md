@@ -3,7 +3,7 @@
 This short guide will help you go from **zero** programming experience
 to being comfortable writing in Python.
 
-Python is a language for talking to your computer. Knowing Python will empower you to:
+Python is a language for communicating with your computer. Knowing Python will empower you to:
 
 1. **Automate repetitive tasks**
 

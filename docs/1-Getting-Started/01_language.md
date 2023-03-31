@@ -143,6 +143,21 @@ When you give the Python interpreter a semantically meaningless sentence, the in
     The Python interpreter will throw lots of different kinds of errors.
     We will discuss types of errors and how to handle them later in the guide.
 
+
+!!! danger "Python is not English"
+
+    We have spent quite a bit of time emphasizing the similarities between Python and English to help us get comfortable with the idea of programming languages,
+    but it is important to keep in mind that programming languages and natural languages are **very** different things.
+    
+    Python sometimes looks like English, and uses English words; this is a blessing and a curse for native Enlgish-speakers.
+    English words give Python a sense of familiarity, but this may tempt you to write Python the way you would in English. In the beginning, you will find yourself trying to express things that seem completely valid and natural in English, but are nonsensical to the Python interpreter.
+
+    To non-native English speakers, Python may seem more foreign.
+    However this may make it easier to treat Python as something with its own system of rules,
+    as something that works differently on a fundamental level from your native language.
+
+
+
 ## 🏋️‍♀️ Exercises
 
 We'll look at a lot of examples of how to write Python with proper syntax throughout this tutorial.
