@@ -27,7 +27,9 @@ For example, if we wanted to tell our friend to open Google Maps for various cou
     --8<-- "1-Getting-Started/reading/maps.py"
     ```
 
-> ⌨️ Try typing this example into Thonny and running it using the green 'run' button.
+!!! tip "Try it yourself"
+
+    Try typing this example into Thonny and running it using the green 'run' button.
 
 Now, although Python is a readable language, this example is still probably confusing.
 Take some time to study the example, and come up with **3** things that confuse you.
@@ -50,13 +52,34 @@ When learning a language, it's helpful to know the parts of speech:
 | --- | --- | --- | --- | --- |
 | Noun (instance) | that dog there, this chair | Data | `3`, `[1, 2]`, `"Hello"`,  | Something that exists |
 | Noun (type) | animal, furniture | Data type | `int`, `list`, `str` | A kind or type of thing |
-| Pronoun | he, she, they, it, we, us, that, them | Variable/Identifier | `age`, almost any word | A placeholder/label/identifier for another thing |
+| Pronoun | he, she, they, it, we, us, that, them | Placeholder for a noun | `age`, almost any word | A placeholder/label/identifier for data |
 | Verb | Run, repeat | Function | `print`, `range`, `math.sqrt` | An action |
 | Conjunction | and, but, or, not | Logical operators | `and`, `or`, `not` | Joins statements with logic |
 
 This is a rough analogy, but it's a good place as any to start.
 
-## Data & Data Types
+## Variable (Pronoun)
+
+In Python, we can identify data with a name like so:
+
+```python
+my_name = "Reyna"
+```
+
+!!! tip "snake_case"
+
+    Python variable names are written in **snake_case**. This means
+
+    1. All lower case letters
+    2. Underscores in place of spaces
+
+!!! warning "Valid variable names"
+
+    Variable names can use the characters `A - Z`, `a - z`, `0 - 9`, `_`
+
+    Note that the first character cannot be a digit
+
+## Data & Data Types (Nouns)
 
 Data is information. In Python, this information comes in the form of numbers, text, and collections of numbers or text.
 
@@ -77,6 +100,42 @@ Python has two kinds of numbers:
     | English | comma (`,`) | `478,862,301` |
     | French | period (`.`) | `478.862.301` |
     | **Python** | underscore (`_`) | `478_862_301` |
+
+### 🅰️ Strings
+
+Strings are text.
+
+In Python, we surround text with double quotes (`"`) or single-quotes (`'`).
+It's up to you which one to use, but be consistent.
+
+If you want to write text that spans multiple lines, use triple quotes:
+
+```python
+"""This is some text.
+It spans multiple lines
+"""
+
+'''Multi-line text can also
+be surrounded
+with triple-single quotes
+'''
+```
+
+### 🫙 Lists
+
+Lists are a collection of items.
+
+```python title="List of numbers"
+
+```
+
+```python title="List of strings"
+["Apple", "Banana", "Pear", "Plum", "Strawberry"]
+```
+
+```python title="List of stuff"
+
+```
 
 ## Meta
 
