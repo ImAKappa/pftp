@@ -4,13 +4,22 @@ Let's get familiar with the two main parts of Thonny.
 
 ![Thonny Editor](../imgs/development/thonny-ide-2023-02-21.png)
 
-1. The **code editor**: This is where we will write our Python code. We use it like we do Microsoft Word
+1. The **code editor**: This is where we will write our Python code. We use it like we do Microsoft Word.
+We use this section when we write multiple lines of code that we want to execute all at once.
 
-2. The **REPL**: This stands for Read-Evaluate-Print-Loop. This bit is interactive. When we enter a valid Python instruction (that is, type the instruction after the `>>>` then press the `enter`/`return` key), we will immediately see the result
+!!! tip "Running programs"
+
+    Press the green run button to execute the code in the code editor 
+
+2. The **REPL**: This stands for Read-Evaluate-Print-Loop. This bit is interactive. When we enter a valid Python instruction (that is, type the instruction after the `>>>` then press the `enter`/`return` key), we will immediately see the result. We usually write short lines of code here when we want to test something quickly.
+
+!!! tip "Command History"
+
+    When using the REPL, you can press the `up` arrow key to load a previous command
 
 Thonny is an **IDE**: An Integrated Development Environment. An IDE is any kind of editor that has multiple sections that are for different things, like editing code, running coding interactively (like a REPL), and managing files.
 
-!!! note "Viewing files in Thonny"
+!!! tip "Viewing files in Thonny"
 
     To see your files, select "View" then check "Files" in the menu.
 
@@ -30,9 +39,9 @@ Writing Python code is more than typing some words into Thonny.
 It is writing, and writing is thinking on paper.
 People who write well know how to sort out their thoughts, critique them, refine them, and express them in an accessible way to other people. The same can be said for Python. You can write convoluted code, or write simple, elegant code that says nothing beyond what it needs to say, to do the things it needs to do.
 
-Just like writing, learning to code well takes time. Goole developer and leading AI-researcher Peter Norvig wrote about this best in his blog post ["Teach Yourself Programming in Ten Years"](https://www.norvig.com/21-days.html). Do not be tempted to skim! Read it over in its entirety to set your expectations for learning to code.
+Just like writing, learning to code well takes time. Google developer and leading AI-researcher Peter Norvig wrote about this best in his blog post [Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html). Do not be tempted to skim! Read it over in its entirety to set your expectations for learning to code.
 
-!!! tip "Read it!"
+!!! abstract "Read it!"
 
     Even if you don't understand most of it, please read [Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html).
     The blog post is aimed at people interested in professional software development. That may or may not be you, but all I want you to get out of it is that learning to code will take time and effort, so don't worry if you feel it's taking a long time for you get the hang of Python. We're all in the same boat!

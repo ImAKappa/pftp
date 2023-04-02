@@ -226,14 +226,9 @@ NOBODY EXPECTS THE SPANISH INQUISITION!
     The Python language is particular about many things, but quotation marks are not one of those things.
     It's up to you to use single-quotes or double-quotes, but it's good style to be consistent with your choice.
 
-**Q5.** Read the ["String Methods" section](https://docs.python.org/3/library/stdtypes.html#string-methods) of the Python documentation on string methods.
+**Q5.**
 
-!!! info "Method"
-
-    A method is an action that is attached to a piece of data.
-    We will talk more about methods later in the guide.
-
-Now consider this quote[^4]:
+Consider this quote[^4]:
 
 [^4]: Dr. Ian Malcolm, _Jurrasic Park_
 
@@ -245,7 +240,22 @@ Using the string methods described in the documentation:
 
 i. Replace `dinosaurs` with `yogurt`
 
+!!! info "Hint"
+
+    If we want to replace words in a sentence, we can do this:
+
+    ```python
+    print("It is morning time".replace("morning", "evening"))
+    ```
+
 ii. Which letter occurs more frequently, `e` or `a`?
+
+!!! info "Hint"
+
+    Try using something like:
+    ```python
+    "The quick brown fox jumped over the lazy dog.".count("the")
+    ```
 
 ??? success "Answer"
 
