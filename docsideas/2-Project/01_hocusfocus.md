@@ -36,13 +36,11 @@ Oh right, it's just a bundle of all the Python code in a single file.
 
 > Ok, cool. What about that `if name main` thing?
 
-Yeah, it's a little weird, I'm not entirely sure[^1].
-I know you don't technically have to have it,
-but I read somewhere it's a good thing to have.
+It's mostly a good practice to put it there, but it might take a while to explain properly[^1].
 
 [^1]: `if __name__ == "__main__"` is used to tell the Python interpreter to run specific sections of code only when the file is run as the main source file. Sometimes, we want to borrow code from other modules without actually running the borrowed code in our main module, and the `if __name__ == "__main__"` line prevents that. The statement is important to have, but a good explanation would detract from the main focus of the conversation.
 
-I think the idea is you write all your code underneath that `def main():` bit, where the word `pass` is,
+The basic idea is you write all your code underneath that `def main():` bit, where the word `pass` is,
 then when you run the code, your computer looks for that `if name main` section and sees `main()` and is like
 "Oh I should run all the code that's under the `def main():` section".
 

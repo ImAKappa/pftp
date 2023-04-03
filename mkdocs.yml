@@ -1,10 +1,25 @@
 site_name: Python for the People
 theme:
   name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+      primary: deep purple
+      accent: green
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: deep purple
+      accent: green
   features:
     - content.tabs.link
     - navigation.tabs
-    - navigation.indexes
+    # - navigation.indexes
     - navigation.footer
 markdown_extensions:
   - admonition

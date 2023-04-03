@@ -34,6 +34,11 @@ I don't remember everything about writing Python code, so when I forget things I
 
 4. Use "cheatsheets". Ideally, you would make your own as you continue to use the language, but just to get started you could use this popular [Python cheatsheet](https://github.com/gto76/python-cheatsheet)
 
+
+Practice:
+
+- https://www.w3schools.com/python/python_exercises.asp
+
 Given Python's popularity, there are an insane amount of beginner-friendly tutorials out there on the internet.
 But how do we know which one's are good? Here are my recommendations:
 

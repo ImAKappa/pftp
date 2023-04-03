@@ -9,13 +9,13 @@ Python is a language for communicating with your computer. Knowing Python will e
 
     - Getting updates from websites that change over time
     - Moving/renaming/merging files & folders
-    - Formatting/sorting/organizing text
-    - Reformatting images
+    - Formatting/sorting/organizing text and images
+    - Web scraping
 
 2. **Create apps for work and entertainment**
 
     - Games: [Pygame](https://www.youtube.com/watch?v=xVHkF1-73pw), [Panda3D](https://www.panda3d.org/features/), [RenPy](https://www.renpy.org/)
-    - Websites: [Pynecone](https://pynecone.io/), [Django](https://www.djangoproject.com/)
+    - Websites: [mkdocs](https://www.mkdocs.org/), [Pynecone](https://pynecone.io/), [Django](https://www.djangoproject.com/)
     - Apps: [Kivy](https://kivy.org/), [Anki](https://apps.ankiweb.net/)
     - 3D Modelling: [Blender](https://www.blender.org/) integrates with [Python](https://docs.blender.org/api/current/info_quickstart.html)
     - Videos: [Manim](https://www.manim.community/)
@@ -25,7 +25,7 @@ Python is a language for communicating with your computer. Knowing Python will e
 3. **Do modelling** (not the fashion kind, although you could [use Python to help you pick out an outfit](https://github.com/sonu275981/Fashion-Recommender-system))
 
     - Databases
-    - Simulations: [NumPy](https://numpy.org/)
+    - Simulations & Scientific Computing: [NumPy](https://numpy.org/)
     - Machine learning: [Tensorflow](https://devlibrary.withgoogle.com/products/ml?sort=updated), [PyTorch](https://pytorch.org/community-stories)
 
 If you're most people, you will likely find the most use from **automating repetitive tasks** with Python.
