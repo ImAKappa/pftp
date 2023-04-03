@@ -1,16 +1,18 @@
-# Introduction
+# Welcome!
 
 This short guide will help you go from **zero** programming experience
 to being comfortable writing in Python.
 
-Python is a language for communicating with your computer. Knowing Python will empower you to:
+## 🐍 Why Python?
+
+Python is a language for communicating with your computer.
+Knowing Python will empower you to:
 
 1. **Automate repetitive tasks**
 
     - Getting updates from websites that change over time
-    - Moving/renaming/merging files & folders
-    - Formatting/sorting/organizing text and images
-    - Web scraping
+    - Moving, renaming, and merging files & folders
+    - Formatting, sorting, and organizing text and images
 
 2. **Create apps for work and entertainment**
 
@@ -25,22 +27,53 @@ Python is a language for communicating with your computer. Knowing Python will e
 3. **Do modelling** (not the fashion kind, although you could [use Python to help you pick out an outfit](https://github.com/sonu275981/Fashion-Recommender-system))
 
     - Databases
-    - Simulations & Scientific Computing: [NumPy](https://numpy.org/)
+    - Simulations & Scientific Computing: [NumPy](https://numpy.org/), [SciPy](https://scipy.org/), [PyMC3](https://www.pymc.io/projects/docs/en/v3/index.html)
     - Machine learning: [Tensorflow](https://devlibrary.withgoogle.com/products/ml?sort=updated), [PyTorch](https://pytorch.org/community-stories)
 
 If you're most people, you will likely find the most use from **automating repetitive tasks** with Python.
-Fortunately, this is also the easiest application to get started with and will be our focus for this guide.
+Automation will be our focus for this guide.
 
-> We will create some simple games and simulations near the end of the guide.
+## 📖 Reading this guide
 
-## Prerequisites
+Programming is not the easiest thing to learn.
+Honestly, it's extremely frustrating at times.
+Despite this, it's a very rewarding skill.
+It can save you time ⏳ and money 💵, and will improve the way you think and problem-solve 🧠.
+
+There are a lot of guides on learning Python. Most of them are ok.
+Too many of them assume you know a thing or two about programming.
+Too few remember what it is like to not know how to program.
+I don't claim my guide is the best place to learn to program with Python,
+but I am quite confident that it's a good place to start.
+
+I wrote this for people who have never programmed before,
+people whose primary experience using a computer consists of watching videos online, sending emails,
+maybe making a spreadsheet now and then or typing up a report.
+You don't need to be good at school to read this guide.
+
+However, you **absolutely need**:
+
+1. An open mind
+2. To be okay with failure
+3. To understand that you can always improve
+
+People _mistakenly_ believe that they are not smart enough to program.
+
+This is **backwards** thinking!
+
+- 🏋️ You are not too weak to go to the gym. You get strong from trying, failing, then trying again at the gym
+- 🧘 You are not too easily distracted to meditate. You gain focus by trying, failing, then trying again to meditate
+- ✍️ You are not too bad with words to write. You become eloquent by trying, failing, then trying again to write.
+- 🧑‍💻 You are not too dumb to program. You get smart by trying, failing, then trying again to program.
+
+## 💽 Technology Prerequisites
 
 While you don't need any prior programming experience, you should own or have access to a computer of some kind.
-The computer needs to have an operating system, like Windows 10 or Mac OS, and you should be familiar with how to use the computer to install and run applications.
+The computer needs to have an **operating system**, like Windows 10 or Mac OS, and you should be familiar with how to use the computer to install and run applications.
 
 Also, you should be familiar with:
 
-- Reading and writing in English
-- Your keyboard (the `enter`/`return` key, `Ctrl`/`Cmd` keys, letters, numbers, space bar, etc.)
-- Using a web browser, like Google Chrome or Mozilla Firefox
-- Basic arithmetic (like adding, subtracting, multiplying, and dividing whole and decimal numbers)
+1. Reading and writing in English
+2. Your keyboard (the `enter`/`return` key, `Ctrl`/`Cmd` keys, letters, numbers, space bar, etc.)
+3. Using a web browser, like Google Chrome or Mozilla Firefox
+4. Navigating a website

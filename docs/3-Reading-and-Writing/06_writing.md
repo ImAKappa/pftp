@@ -4,7 +4,7 @@ To learn a language, you usually practice speaking and writing.
 Start with basic sentences, then work up to paragraphs, then essays, then stories and reports.
 
 Python is a written language only. We wrote some simple sentences in the previous section.
-Now let's try writing short paragraphs. 
+Now let's try writing short paragraphs.
 
 !!! note "Reusing code"
 
@@ -98,7 +98,7 @@ Examples:
 ??? success "Possible solution"
 
     ```python title="changemaker.py" linenums="1"
-    --8<-- "1-Getting-Started/writing/changemaker.py"
+    --8<-- "3-Reading-and-Writing/writing/changemaker.py"
     ```
 
 ### 4. Powerball
@@ -128,11 +128,11 @@ Use the code below to get started:
 3) Compare the stats from the simulation to the theoretical statistics. Are they close?
 
 ```python title="powerball.py" linenums="1"
---8<-- "1-Getting-Started/writing/powerball_incomplete.py"
+--8<-- "3-Reading-and-Writing/writing/powerball_incomplete.py"
 ```
 
 ??? success "Possible solution"
 
     ```python title="powerball.py" linenums="1"
-    --8<-- "1-Getting-Started/writing/powerball.py"
+    --8<-- "3-Reading-and-Writing/writing/powerball.py"
     ```

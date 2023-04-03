@@ -24,7 +24,7 @@ For example, if we wanted to tell our friend to open Google Maps for various cou
 === "Python"
 
     ```python title="maps.py"
-    --8<-- "1-Getting-Started/reading/maps.py"
+    --8<-- "3-Reading-and-Writing/reading/maps.py"
     ```
 
 !!! tip "Try it yourself"
@@ -186,7 +186,7 @@ You **cannot** use these words as identifiers because otherwise the Python inter
     For example,
 
     ```python title="filematcher.py"
-    --8<-- "1-Getting-Started/reading/filematcher.py"
+    --8<-- "3-Reading-and-Writing/reading/filematcher.py"
     ```
 
     Structural pattern matching uses the keywords `match`, `case`, and `_`,
@@ -232,4 +232,4 @@ For each example:
 
 ---
 
---8<-- "1-Getting-Started/reading.txt"
+--8<-- "3-Reading-and-Writing/reading.txt"

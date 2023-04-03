@@ -77,7 +77,7 @@ def copy_cells(source_sheet, target_sheet):
 EXCEL_SHEET_NAME_CHAR_LIMIT = 31
 
 if __name__ == "__main__":
-    input_dir = Path("docs/3-Office-Work/Excel/data")
+    input_dir = Path("docs/5-Office-Work/Excel/data")
     output_file = Path("combined.xlsx")
     wb_target = openpyxl.Workbook()
 

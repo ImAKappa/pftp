@@ -27,7 +27,7 @@ Well, first I made a file called `focus.py`.
 Then I wrote a little blurb that explains what the code is supposed to do plus some starter code:
 
 ```python title="focus.py"
---8<-- "2-Project/focus/01_focus.py"
+--8<-- "4-Hocus-Focus/focus/01_focus.py"
 ```
 
 > What's a module?
@@ -53,7 +53,7 @@ The `def` is short for `define`, because I'm defining a block of code with a nam
 Don't worry I'm getting there. Then I wrote:
 
 ```python title="focus.py"
---8<-- "2-Project/focus/02_focus.py"
+--8<-- "4-Hocus-Focus/focus/02_focus.py"
 ```
 
 > Ok, wait I think I can read that. You've defined two extra blocks of code called `start_focus` and `start_break`
@@ -72,7 +72,7 @@ Yeah, it's 25 minutes times 60 seconds per minute, so you get 1500 seconds. The 
 Although, now that I think about it, I could probably make the code clearer. Hold on, let me update it:
 
 ```python title="focus.py"
---8<-- "2-Project/focus/03_focus.py"
+--8<-- "4-Hocus-Focus/focus/03_focus.py"
 ```
 
 Does that make more sense?
@@ -147,7 +147,7 @@ Yeah no problem. Coding is kind hard because there's all these extra things you 
 Right, so then I added some code to repeat the focus-break sessions however many times I wanted.
 
 ```python title="focus.py"
---8<-- "2-Project/focus/04_focus.py"
+--8<-- "4-Hocus-Focus/focus/04_focus.py"
 ```
 
 And of course, for the puppies I included some code that opens a browser tab (the `import webbrowser` and `webbrowser.open()` bits) to [https://eyebleach.me/dogs/](https://eyebleach.me/dogs/)

@@ -41,7 +41,7 @@ flowchart LR
     
     [^1]: By "traditional", we mean the interpreter that most people and companies use. There's no "pirated" version of the Python interpreter because it's completely open-source and free! There are, however, several alternative implementations of the Python interpreter, like PyPy (for Python that runs fast), or MicroPython (for running Python on micro controllers). Most people should stick to the interpreter from the [Python Software Foundation](https://www.python.org/psf-landing/)
 
-!!! info "Python Interpreter Cost"
+!!! tip "Python Interpreter Cost & Licensing"
 
     The Python interpreter is free. It's also **open-source**
 
