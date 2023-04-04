@@ -1,0 +1,2 @@
+max_guesses = 10
+word_list = "./words.txt"
