@@ -50,7 +50,7 @@ Create a virtual environement inside your `projectname` directory
 === "Windows"
 
     ```powershell
-    python -m venv .venv
+    python -m venv venv
     ```
 
 === "MacOS"

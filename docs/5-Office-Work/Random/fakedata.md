@@ -1,6 +1,6 @@
 # Fake data
 
-```python title="fakedata.py"
+```python title="fakedata.py" linenums="1"
 --8<-- "5-Office-Work/Random/fakedata.py"
 ```
 

@@ -15,6 +15,9 @@ In summary, these are the tools I typically use for serious Python development:
 | Environment-level Testing | `tox` |
 | Profiling | `cProfile` |
 | Debugging | `pdb` |
+| Formatter | `black` |
+| Linter | `ruff`, `pylint` |
+| Shell | `PowerShell 7`, `Bash` (Windows Terminal) |
 
 ## IDE
 
