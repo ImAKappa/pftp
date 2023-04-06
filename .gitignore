@@ -24,3 +24,5 @@ __pycache__/
 
 # Models
 vosk-model-en-us-0.22-lgraph/
+# Fake data
+fakedata/

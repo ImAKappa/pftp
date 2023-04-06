@@ -66,15 +66,9 @@ def main() -> None:
     print(fmt_title(f"Transcription for '{audio_file}'"))
     print(transcription.getvalue())
 
-
-
 if __name__ == "__main__":
     SetLogLevel(0)
     try:
         main()
     except FileNotFoundError as err:
         print(err)
-
-
-
-
