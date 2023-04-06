@@ -21,3 +21,6 @@ __pycache__/
 
 # Root files
 /.coverage*
+
+# Models
+vosk-model-en-us-0.22-lgraph/

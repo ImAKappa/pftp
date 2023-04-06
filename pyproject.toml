@@ -30,6 +30,7 @@ dependencies = [
   "openpyxl",
   "faker",
   "numpy",
+  "vosk",
 ]
 dynamic = ["version"]
 
