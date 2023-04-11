@@ -1,0 +1,1962 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../01_language/">
+      
+      
+        <link rel="next" href="../03_resources/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+    
+    
+      
+        <title>👩‍💻 Programming - Python for the People</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="green">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#programming" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Python for the People" class="md-header__button md-logo" aria-label="Python for the People" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python for the People
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              👩‍💻 Programming
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Welcome!
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../01_language/" class="md-tabs__link md-tabs__link--active">
+        1 Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../2-Guessing-Game/" class="md-tabs__link">
+        2 Guessing Game
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../3-Reading-and-Writing/03_reading/" class="md-tabs__link">
+        3 Reading and Writing
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../4-Hocus-Focus/01_hocusfocus/" class="md-tabs__link">
+        4 Hocus Focus
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../5-Office-Work/" class="md-tabs__link">
+        5 Office Work
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../6-Theory-and-Practice/01_computers/" class="md-tabs__link">
+        6 Theory and Practice
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../7-Production-Ready/" class="md-tabs__link">
+        7 Production Ready
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Python for the People" class="md-nav__button md-logo" aria-label="Python for the People" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Python for the People
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome!
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          1 Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          1 Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_language/" class="md-nav__link">
+        🐍 The Python Language
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          👩‍💻 Programming
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        👩‍💻 Programming
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#editors" class="md-nav__link">
+    🪟 Editors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-is-writing-is-thinking" class="md-nav__link">
+    💡 Coding is Writing is Thinking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-problems-with-code" class="md-nav__link">
+    🔨 Solving Problems with Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-design" class="md-nav__link">
+    🛞 Process &amp; Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-vs-apps-vs-libraries" class="md-nav__link">
+    📦 Scripts vs Apps vs Libraries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    🏋️‍♂️ Exercises
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_resources/" class="md-nav__link">
+        🌐 Resources
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../2-Guessing-Game/">2 Guessing Game</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          2 Guessing Game
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-Guessing-Game/00_numbers/" class="md-nav__link">
+        Number Guessing Game
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-Guessing-Game/01_words/" class="md-nav__link">
+        Word Guessing Game
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          3 Reading and Writing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          3 Reading and Writing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-Reading-and-Writing/03_reading/" class="md-nav__link">
+        📔 Reading
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-Reading-and-Writing/04_reuse/" class="md-nav__link">
+        ♻️ Reuse, Reduce, Recycle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-Reading-and-Writing/06_writing/" class="md-nav__link">
+        ✍️ Writing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          4 Hocus Focus
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          4 Hocus Focus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-Hocus-Focus/01_hocusfocus/" class="md-nav__link">
+        🪶 Hocus Focus
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/">5 Office Work</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          5 Office Work
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Excel/">Excel</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Excel
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+          Files
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Files
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_1" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Files/clutterfree/">Clutterfree</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Clutterfree
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Files/dating/">Dating</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Files/zippy/">Zippy</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Zippy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/PDF/">PDF</a>
+          
+            <label for="__nav_6_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          PDF
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-Office-Work/PDF/extracttext/" class="md-nav__link">
+        Extract Text
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Random/">Random</a>
+          
+            <label for="__nav_6_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          Random
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-Office-Work/Random/fakedata/" class="md-nav__link">
+        Fake data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-Office-Work/Random/groups/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Strings/">Strings</a>
+          
+            <label for="__nav_6_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Strings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-Office-Work/Strings/htmlstrings/" class="md-nav__link">
+        HTML Strings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Transcription/">Transcription</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_7">
+          <span class="md-nav__icon md-icon"></span>
+          Transcription
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          6 Theory and Practice
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          6 Theory and Practice
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Theory-and-Practice/01_computers/" class="md-nav__link">
+        Computers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Theory-and-Practice/02_languages/" class="md-nav__link">
+        Languages
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../7-Production-Ready/">7 Production Ready</a>
+          
+            <label for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          7 Production Ready
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/00-Python-Setup/" class="md-nav__link">
+        🐍 Python Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/01-Environment-Setup/" class="md-nav__link">
+        🌎 Environment Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/02-Editor-Setup/" class="md-nav__link">
+        📝 Editor Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/02_tools/" class="md-nav__link">
+        🔨 Python Developer Tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/03_beyondpython/" class="md-nav__link">
+        🗻 Beyond Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#editors" class="md-nav__link">
+    🪟 Editors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-is-writing-is-thinking" class="md-nav__link">
+    💡 Coding is Writing is Thinking
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-problems-with-code" class="md-nav__link">
+    🔨 Solving Problems with Code
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-design" class="md-nav__link">
+    🛞 Process &amp; Design
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-vs-apps-vs-libraries" class="md-nav__link">
+    📦 Scripts vs Apps vs Libraries
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    🏋️‍♂️ Exercises
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="programming">👩‍💻 Programming</h1>
+<h2 id="editors">🪟 Editors</h2>
+<p>Let's get familiar with the two main parts of Thonny.</p>
+<p><img alt="Thonny Editor" src="../../imgs/development/thonny-ide-2023-02-21.png" /></p>
+<ol>
+<li>The <strong>code editor</strong>: This is where we will write our Python code.
+We use this section when we write multiple lines of code that we want to execute all at once.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Running programs</p>
+<p>Press the green run button to execute the code in the code editor </p>
+</div>
+<ol>
+<li>The <strong>REPL</strong>: This stands for Read-Evaluate-Print-Loop. This bit is interactive. When we enter a valid Python instruction (that is, type the instruction after the <code>&gt;&gt;&gt;</code> then press the <code>enter</code>/<code>return</code> key), we will immediately see the result. We usually write short lines of code here when we want to test something quickly.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Command History</p>
+<p>When using the REPL, you can press the <code>up</code> arrow key to load a previous command</p>
+</div>
+<p>Thonny is an <strong>IDE</strong>: An Integrated Development Environment. An IDE is any kind of editor that has multiple sections that are for different things, like editing code, running coding interactively (like a REPL), and managing files.</p>
+<div class="admonition note">
+<p class="admonition-title">Code IDEs vs Word Processors</p>
+<p>MS Word and Google Docs are examples of word processors. These apps deal with <em>rich</em> text, which is text that is embellished with lots of extra notation called <strong>markup</strong> so that the text can have fancy styles like bolding, colours, highlights, and different sizes.</p>
+<p>However, all the markup makes it difficult to write Python code in MS Word. <strong>Please <a href="https://www.youtube.com/watch?v=X34ZmkeZDos">don't write code using Microsoft Word <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></span></a></strong></p>
+<p>Instead we write Python code in a plain text file with the file extension <code>.py</code>. Plain text is the kind you would usually write in Notepad (Windows) or TextEdit (Mac). You can't change the styling of the text, but it's much simpler; it's plain.</p>
+<p>We use Thonny, instead of Notepad, because it has features that make it more convenient to edit Python code.
+These include (but are not limited to):</p>
+<ul>
+<li>Syntax highlighting: some words get a different colour, without extra markup</li>
+<li>Debugging: This feature lets you run code one instruction at a time</li>
+<li>Shell: This lets you run Python interactively </li>
+</ul>
+</div>
+<p>To see your files, select "View" then check "Files" in the menu.</p>
+<p><img alt="Thonny Files" src="../../imgs/development/thonny-ide-files-2023-02-24.png" /></p>
+<h2 id="coding-is-writing-is-thinking">💡 Coding is Writing is Thinking</h2>
+<p>Writing Python code is more than typing some words into Thonny.
+It is writing, and writing is thinking on paper.
+People who write well know how to sort out their thoughts, critique them, refine them, and express them in an accessible way to other people. The same can be said for Python. You can write convoluted, broken code, or write simple, elegant, and correct code that says nothing beyond what it needs to say, to do the things it needs to do.</p>
+<p>Just like writing, learning to code well takes time. Google developer and leading AI-researcher Peter Norvig wrote about this best in his blog post <a href="https://www.norvig.com/21-days.html">Teach Yourself Programming in Ten Years</a>. Do not be tempted to skim! Read it over in its entirety to set your expectations for learning to code.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Read it!</p>
+<p>Even if you don't understand most of it, please read <a href="https://www.norvig.com/21-days.html">Teach Yourself Programming in Ten Years</a>.
+The blog post is aimed at people interested in software development, but even if that is not you, all I want you to get out of it is that learning to code will take time and effort, so don't worry if you feel it's taking a long time for you get the hang of Python. We're all in the same boat!</p>
+</div>
+<h2 id="solving-problems-with-code">🔨 Solving Problems with Code</h2>
+<p>It's important to have a good grasp of the problem you're trying to solve with Python
+(or knowing if you even need Python at all!). 
+For some problems, it makes sense to write a <strong>program</strong>, i.e. a recipe of computations.
+Allen Downey, author of the wonderful (free!) book <a href="https://greenteapress.com/thinkpython2/html/thinkpython2002.html">Think Python</a>, says that there are really only 5 kinds of instructions that compose a program:</p>
+<table>
+<thead>
+<tr>
+<th>Instruction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input</td>
+<td>Get data from the keyboard, a file, the internet, or some other device</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Display data on the screen, save it in a file, send it over the internet, etc</td>
+</tr>
+<tr>
+<td>Math</td>
+<td>Perform some number-crunching (add a number here, multiply some numbers there)</td>
+</tr>
+<tr>
+<td>Conditional Execution</td>
+<td>Check for certain conditions and run the appropriate code</td>
+</tr>
+<tr>
+<td>Repetition</td>
+<td>Perform some action repeatedly, usually with some variation each time</td>
+</tr>
+</tbody>
+</table>
+<p>Basically, if you can express your problem as some combination of these instructions, you can write
+a program in Python to get your computer to solve your problem for you.</p>
+<h2 id="process-design">🛞 Process &amp; Design</h2>
+<p>It's very easy to write a terrible essay; you simply need to write, and then stop writing.
+Writing a great essay takes research, planning, writing, and multiple rounds of revisions and gathering feed-back.
+A similar thing happens (or at least, <em>should</em> happen) when writing software (i.e. code).
+It's easy to write code that doesn't actually solve your problems correctly or robustly.</p>
+<p>In his book, <a href="https://en.wikipedia.org/wiki/Code_Complete">Code Complete</a>, Steve McConnell laid out a few key components of the software development process<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
+<!-- TODO: Turn into flow chart -->
+
+<table>
+<thead>
+<tr>
+<th>Step of Process</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Problem definition</td>
+<td>What problem are we trying to solve? (Don't offer solutions yet!)</td>
+</tr>
+<tr>
+<td>Requirements development</td>
+<td>What features does our solution have to have? Does Python offer these features?</td>
+</tr>
+<tr>
+<td>Construction planning</td>
+<td>Think about how we could implement the solution, step by step</td>
+</tr>
+<tr>
+<td>Coding &amp; debugging</td>
+<td>Implement the solution in Python. Fix bugs.</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scripts-vs-apps-vs-libraries">📦 Scripts vs Apps vs Libraries</h2>
+<p>A <strong>script</strong> is a short piece of code, usually in a single file, that does one main thing.
+For example, this script fetches a random useless fact from the internet:</p>
+<div class="highlight"><span class="filename">uselessfact.py</span><pre><span></span><code><span class="sd">&quot;&quot;&quot;uselessfact.py</span>
+
+<span class="sd">This script fetches a useless fact from the useless facts website</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">urllib</span> <span class="kn">import</span> <span class="n">request</span>
+<span class="c1"># Data from the internet is passed around in a format called JSON</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="c1"># Fetch useless fact from some website in JSON form</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s2">&quot;https://uselessfacts.jsph.pl/api/v2/facts/random&quot;</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="c1"># Successful request!</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Did you know?&quot;</span><span class="p">)</span>
+    <span class="c1"># Convert JSON form to something easier to work with in Python</span>
+    <span class="n">useless_fact</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">useless_fact</span><span class="p">[</span><span class="s2">&quot;text&quot;</span><span class="p">])</span>
+<span class="k">elif</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="mi">404</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Uh oh, couldn&#39;t find a useless fact :(&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="c1"># Any other status code is a mystery...</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Not sure what happend, but no useless fact :(&quot;</span><span class="p">)</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Try it yourself</p>
+<p>You don't need to <em>how</em> this code works at this point in the guide, but try typing this code into
+the code editor section of Thonny (the top portion, not the Shell).
+Then press the green run button, and look at the Shell section to see the result.</p>
+<p>Try re-running the script a few times to see different useless facts. </p>
+</div>
+<p>Scripts are different from applications, or <strong>apps</strong>, which are bundles of code that you use to accomplish one or more tasks. 
+Apps are typically more complicated than scripts.
+Compare the script above to something like your calendar app, which can send notifications, set reminders, store data related to events, dates, and times, has a user interface, and can synchronize data across multiple devices.</p>
+<p>There is another kind of software called a <strong>library</strong>.
+A library is a bundle of code that is meant to be used in other people's code.
+Libraries tend to be pretty hard to write because you have to think about how the code will be used on many different operating systems, and write lot's of tests, publish documentation on how to use the library, and maintain it when people find bugs or are looking for more features.
+Python developers typically use the word "<strong>packages</strong>" instead of library.
+<a href="https://pypi.org/">PyPI</a> is where you can find Python packages. </p>
+<p>Specific to Python, we have <strong>modules</strong>. These are files with reusable bits of code.
+Python comes pre-installed with many modules.
+For example, we can use the <code>random</code> module which lets us write code that can generate random numbers</p>
+<div class="highlight"><span class="filename">Python random module</span><pre><span></span><code><span class="kn">import</span> <span class="nn">random</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here&#39;s a random number from 1 to 10:&quot;</span><span class="p">,</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</code></pre></div>
+<p>We need to write <code>import random</code> to tell the Python interpreter to load the code from the random module.
+It's a good thing the interpreter doesn't automatically load every single built-in module,
+otherwise it would take a while to start up. Better for us to explicitly ask for specific modules.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this guide, we will stick to writing modules and scripts</p>
+</div>
+<h2 id="exercises">🏋️‍♂️ Exercises</h2>
+<p><strong>Q1.</strong> What's an IDE?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>An Integrated Development Environment. It's a piece of software that makes it
+easier to write and edit code.</p>
+</details>
+<p><strong>Q2.</strong> What is a program? What are the different instruction types for a program?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>A program is a sequence of instructions of how to perform a computation.
+In other words, a recipe of computations.</p>
+<table>
+<thead>
+<tr>
+<th>Instruction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input</td>
+<td>Get data from the keyboard, a file, the internet, or some other device</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Display data on the screen, save it in a file, send it over the internet, etc</td>
+</tr>
+<tr>
+<td>Math</td>
+<td>Perform some number-crunching (add a number here, multiply some numbers there)</td>
+</tr>
+<tr>
+<td>Conditional Execution</td>
+<td>Check for certain conditions and run the appropriate code</td>
+</tr>
+<tr>
+<td>Repetition</td>
+<td>Perform some action repeatedly, usually with some variation each time</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p><strong>Q3.</strong> What is the process for writing code?</p>
+<details class="success">
+<summary>Answer</summary>
+<table>
+<thead>
+<tr>
+<th>Part of Process</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Problem definition</td>
+<td>What problem are we trying to solve? (Don't offer solutions yet!)</td>
+</tr>
+<tr>
+<td>Requirements development</td>
+<td>What features does our solution have to have? Does Python offer these features?</td>
+</tr>
+<tr>
+<td>Construction planning</td>
+<td>Think about how we could implement the solution, step by step</td>
+</tr>
+<tr>
+<td>Coding &amp; debugging</td>
+<td>Implement the solution in Python. Fix bugs.</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p><strong>Q4.</strong> What is the difference between a script, an app, and a library? Provide an example for each</p>
+<details class="success">
+<summary>Answer</summary>
+<table>
+<thead>
+<tr>
+<th>Type of Software</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Script</td>
+<td>Typically a single file of code that accomplishes a few simple/short tasks</td>
+<td>A script to download files from the internet</td>
+</tr>
+<tr>
+<td>App</td>
+<td>A bundle of software that people use to accomplish a few complicated tasks</td>
+<td><a href="https://thonny.org/">Thonny</a> is an app for editing Python code</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>A bundle of software that people can use in their own code</td>
+<td><a href="https://pandas.pydata.org/">pandas</a> is data analysis library for Python</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p><strong>Q5.</strong> Consider this Python code that verifies if someone is old enough to drink</p>
+<div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age: &quot;</span><span class="p">))</span>
+
+<span class="n">drinking_age</span> <span class="o">=</span> <span class="mi">19</span>
+
+<span class="k">if</span> <span class="n">age</span> <span class="o">==</span> <span class="n">drinking_age</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You may enter the bar&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sorry, you are not old enough to drink&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>Type it into Thonny, then run it. You can enter an age by typing it into the Shell, then pressing the <code>enter</code>/<code>return</code> key.</p>
+<p><img alt="Thonny interactive" src="../../imgs/development/thonny-ide-testing-2023-02-24.png" /></p>
+<p>i. Does the program do what it's supposed to? Why or why not? Rerun the code and try a few different ages</p>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>No</strong>, the code produces an incorrect result for ages greater than 19. It should respond "You may enter the bar", but doesn't.</p>
+<p>This is because the code checks if <code>age</code> equals <code>drinking age</code>. Instead it should check if <code>age</code> is greater than or equal to <code>drinking_age</code>.</p>
+<p>Don't worry if you weren't sure how to read the Python script, yet (after all, we haven't properly gone over the basic words and phrases you can use in Python).</p>
+<p>If you were able to figure it out, great! Can you try and fix the code? </p>
+</details>
+<p>ii. Can you think of any inputs you can give that will crash the program (i.e. cause it to throw an error)?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>The program will crash if you provide inputs that don't make any sense, like letters or punctuation.</p>
+<p>If you haven't already, try running the code again and input <code>abc</code> or something similar.</p>
+</details>
+<p>iii. Why is testing your code so important?</p>
+<details class="success">
+<summary>Possible Answer</summary>
+<p>It's easy to accidentally mistype something without realizing it, so you need to run tests to bring your attention to errors in your code</p>
+<p>It's also useful to think about all the invalid inputs that you or other people could give when using your Python scripts. Testing and then tweaking your code helps make sure your scripts are more robust.</p>
+</details>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The full software development process is much lengthier and much more involved, but this list is good enough for most of the software you write as beginner Python programmer&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../01_language/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🐍 The Python Language" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                🐍 The Python Language
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03_resources/" class="md-footer__link md-footer__link--next" aria-label="Next: 🌐 Resources" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                🌐 Resources
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.tabs", "navigation.indexes", "navigation.footer"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

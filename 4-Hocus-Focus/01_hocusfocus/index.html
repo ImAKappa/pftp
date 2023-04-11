@@ -1,0 +1,1870 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../3-Reading-and-Writing/06_writing/">
+      
+      
+        <link rel="next" href="../../5-Office-Work/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.6">
+    
+    
+      
+        <title>🪶 Hocus Focus - Python for the People</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ded33207.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="green">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hocus-focus" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Python for the People" class="md-header__button md-logo" aria-label="Python for the People" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python for the People
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              🪶 Hocus Focus
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="green"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="green"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Welcome!
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../1-Getting-Started/01_language/" class="md-tabs__link">
+        1 Getting Started
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../2-Guessing-Game/" class="md-tabs__link">
+        2 Guessing Game
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../3-Reading-and-Writing/03_reading/" class="md-tabs__link">
+        3 Reading and Writing
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        4 Hocus Focus
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../5-Office-Work/" class="md-tabs__link">
+        5 Office Work
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../6-Theory-and-Practice/01_computers/" class="md-tabs__link">
+        6 Theory and Practice
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../7-Production-Ready/" class="md-tabs__link">
+        7 Production Ready
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Python for the People" class="md-nav__button md-logo" aria-label="Python for the People" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Python for the People
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Welcome!
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          1 Getting Started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          1 Getting Started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Getting-Started/01_language/" class="md-nav__link">
+        🐍 The Python Language
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Getting-Started/02_programming/" class="md-nav__link">
+        👩‍💻 Programming
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1-Getting-Started/03_resources/" class="md-nav__link">
+        🌐 Resources
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../2-Guessing-Game/">2 Guessing Game</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          2 Guessing Game
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-Guessing-Game/00_numbers/" class="md-nav__link">
+        Number Guessing Game
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-Guessing-Game/01_words/" class="md-nav__link">
+        Word Guessing Game
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          3 Reading and Writing
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          3 Reading and Writing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-Reading-and-Writing/03_reading/" class="md-nav__link">
+        📔 Reading
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-Reading-and-Writing/04_reuse/" class="md-nav__link">
+        ♻️ Reuse, Reduce, Recycle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3-Reading-and-Writing/06_writing/" class="md-nav__link">
+        ✍️ Writing
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          4 Hocus Focus
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          4 Hocus Focus
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          🪶 Hocus Focus
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        🪶 Hocus Focus
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timer" class="md-nav__link">
+    Timer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#puppies" class="md-nav__link">
+    Puppies
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/">5 Office Work</a>
+          
+            <label for="__nav_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          5 Office Work
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Excel/">Excel</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_2">
+          <span class="md-nav__icon md-icon"></span>
+          Excel
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+          Files
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_3">
+          <span class="md-nav__icon md-icon"></span>
+          Files
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_1" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Files/clutterfree/">Clutterfree</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_1_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Clutterfree
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Files/dating/">Dating</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dating
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3_3" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Files/zippy/">Zippy</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_3_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Zippy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/PDF/">PDF</a>
+          
+            <label for="__nav_6_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_4">
+          <span class="md-nav__icon md-icon"></span>
+          PDF
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-Office-Work/PDF/extracttext/" class="md-nav__link">
+        Extract Text
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Random/">Random</a>
+          
+            <label for="__nav_6_5">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          Random
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-Office-Work/Random/fakedata/" class="md-nav__link">
+        Fake data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-Office-Work/Random/groups/" class="md-nav__link">
+        Groups
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Strings/">Strings</a>
+          
+            <label for="__nav_6_6">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_6">
+          <span class="md-nav__icon md-icon"></span>
+          Strings
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5-Office-Work/Strings/htmlstrings/" class="md-nav__link">
+        HTML Strings
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../5-Office-Work/Transcription/">Transcription</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6_7">
+          <span class="md-nav__icon md-icon"></span>
+          Transcription
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          6 Theory and Practice
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          6 Theory and Practice
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Theory-and-Practice/01_computers/" class="md-nav__link">
+        Computers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Theory-and-Practice/02_languages/" class="md-nav__link">
+        Languages
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../7-Production-Ready/">7 Production Ready</a>
+          
+            <label for="__nav_8">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          7 Production Ready
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/00-Python-Setup/" class="md-nav__link">
+        🐍 Python Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/01-Environment-Setup/" class="md-nav__link">
+        🌎 Environment Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/02-Editor-Setup/" class="md-nav__link">
+        📝 Editor Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/02_tools/" class="md-nav__link">
+        🔨 Python Developer Tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../7-Production-Ready/03_beyondpython/" class="md-nav__link">
+        🗻 Beyond Python
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timer" class="md-nav__link">
+    Timer
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#puppies" class="md-nav__link">
+    Puppies
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="hocus-focus">🪶 Hocus Focus</h1>
+<blockquote>
+<p>How do you focus so well?"</p>
+</blockquote>
+<p>I can't. At best I can study for 25 minutes. Then I need a break.
+But usually 5 minutes of just looking at puppy photos is all I need to cool down my brain</p>
+<blockquote>
+<p>That's kinda weird, but also sounds cute</p>
+</blockquote>
+<p>Uh, yeah I guess, but it works.</p>
+<blockquote>
+<p>So, do you use an app for that? Like a pomodoro timer or something?</p>
+</blockquote>
+<p>I tried a few, but I didn't really vibe with them.
+Plus, none of them would show me puppies during my break, so I made my own</p>
+<blockquote>
+<p>Really, how?</p>
+</blockquote>
+<p>I wrote a Python script</p>
+<blockquote>
+<p>Ok, cool, but like how?</p>
+</blockquote>
+<h2 id="setup">Setup</h2>
+<p>Well, first I made a file called <code>focus.py</code>.</p>
+<p>Then I wrote a little blurb that explains what the code is supposed to do plus some starter code:</p>
+<div class="highlight"><span class="filename">focus.py</span><pre><span></span><code><span class="sd">&quot;&quot;&quot;focus</span>
+
+<span class="sd">This module helps me focus by showing me puppy photos after a focus period,</span>
+<span class="sd">and a &quot;time to to focus&quot; message after a quick break.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="k">pass</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<blockquote>
+<p>What's a module?</p>
+</blockquote>
+<p>Oh right, it's just a bundle of all the Python code in a single file.</p>
+<blockquote>
+<p>Ok, cool. What about that <code>if name main</code> thing?</p>
+</blockquote>
+<p>It's mostly a good practice to put it there, but it might take a while to explain properly<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>.</p>
+<p>The basic idea is you write all your code underneath that <code>def main():</code> bit, where the word <code>pass</code> is,
+then when you run the code, your computer looks for that <code>if name main</code> section and sees <code>main()</code> and is like
+"Oh I should run all the code that's under the <code>def main():</code> section".</p>
+<p>The <code>def</code> is short for <code>define</code>, because I'm defining a block of code with a name called <code>main</code></p>
+<h2 id="timer">Timer</h2>
+<blockquote>
+<p>Sure, I sort of get it. But where's all the timer stuff and the puppy photos?</p>
+</blockquote>
+<p>Don't worry I'm getting there. Then I wrote:</p>
+<div class="highlight"><span class="filename">focus.py</span><pre><span></span><code><span class="sd">&quot;&quot;&quot;focus</span>
+
+<span class="sd">This module helps me focus by showing me puppy photos after a focus period,</span>
+<span class="sd">and a &quot;time to to focus&quot; message after a quick break.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">start_focus</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">second</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span> <span class="o">*</span> <span class="mi">25</span><span class="p">):</span>
+        <span class="c1"># Pause 1 second</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[FOCUS] </span><span class="si">{</span><span class="n">second</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> seconds has passed&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">start_break</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">second</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">60</span> <span class="o">*</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="c1"># Pause 1 second</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[BREAK] </span><span class="si">{</span><span class="n">second</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> seconds has passed&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Start focus? [y]/n: &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">start</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+        <span class="n">start_focus</span><span class="p">()</span>
+        <span class="n">start_break</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">start</span> <span class="o">==</span> <span class="s2">&quot;n&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ok, stopping app&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Expected &#39;y&#39; or &#39;n&#39;, instead got </span><span class="si">{</span><span class="n">start</span><span class="si">}</span><span class="s2">. Stopping app.&quot;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<blockquote>
+<p>Ok, wait I think I can read that. You've defined two extra blocks of code called <code>start_focus</code> and <code>start_break</code></p>
+</blockquote>
+<p>Yeah, exactly.</p>
+<blockquote>
+<p>And in the <code>main</code> block, the script asks you if you want to start, then you say 'y' for yes, and 'n' for no.
+If you say yes, then it will start the focus timer, and then the break timer.</p>
+</blockquote>
+<p>Yep, and if you say <code>n</code> or some other random thing, then the script will just stop.</p>
+<blockquote>
+<p>But what's with those numbers, the 60, 5, and 25?
+Or does that mean 25 minute focus and 5 minute break?</p>
+</blockquote>
+<p>Yeah, it's 25 minutes times 60 seconds per minute, so you get 1500 seconds. The code only works with seconds, that's why.
+Although, now that I think about it, I could probably make the code clearer. Hold on, let me update it:</p>
+<div class="highlight"><span class="filename">focus.py</span><pre><span></span><code><span class="sd">&quot;&quot;&quot;focus</span>
+
+<span class="sd">This module helps me focus by showing me puppy photos after a focus period,</span>
+<span class="sd">and a &quot;time to to focus&quot; message after a quick break.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">start_focus</span><span class="p">():</span>
+    <span class="n">SEC_PER_MIN</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="n">FOCUS_MIN</span> <span class="o">=</span> <span class="mi">25</span>
+    <span class="k">for</span> <span class="n">second</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">SEC_PER_MIN</span> <span class="o">*</span> <span class="n">FOCUS_MIN</span><span class="p">):</span>
+        <span class="c1"># Pause 1 second</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[FOCUS] </span><span class="si">{</span><span class="n">second</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> seconds has passed&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">start_break</span><span class="p">():</span>
+    <span class="n">SEC_PER_MIN</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="n">BREAK_MIN</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="k">for</span> <span class="n">second</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">SEC_PER_MIN</span> <span class="o">*</span> <span class="n">BREAK_MIN</span><span class="p">):</span>
+        <span class="c1"># Pause 1 second</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[BREAK] </span><span class="si">{</span><span class="n">second</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> seconds has passed&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Start focus? [y]/n: &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">start</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+        <span class="n">start_focus</span><span class="p">()</span>
+        <span class="n">start_break</span><span class="p">()</span>
+    <span class="k">elif</span> <span class="n">start</span> <span class="o">==</span> <span class="s2">&quot;n&quot;</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ok, stopping app&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Expected &#39;y&#39; or &#39;n&#39;, instead got </span><span class="si">{</span><span class="n">start</span><span class="si">}</span><span class="s2">. Stopping app.&quot;</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<p>Does that make more sense?</p>
+<blockquote>
+<p>Yeah, a little. But I don't get what the <code>time.sleep(1)</code> is for</p>
+</blockquote>
+<p>Oh, so basically I'm telling the code to pause, or <code>sleep</code>, for 1 second.
+You see how it says <code>for second in range(SEC_PER_MIN * FOCUS_MIN)</code> and inside the range is the number of seconds?</p>
+<p>The code counts up one by one until the number of seconds, like 1500 in the focus timer,
+and every time it counts up, it pauses (<code>sleep</code>s) for 1 second. So in total it will sleep for 1500 seconds
+for the focus period.</p>
+<p>I could have done <code>time.sleep(1500)</code> but I wanted to print a message every second.</p>
+<blockquote>
+<p>Why the dot? And how come you have to import time? Why don't you need to export time?</p>
+</blockquote>
+<p>Time is another module, a python file, that someone else wrote. When I want to use blocks of code that come with the <code>time</code> module, I use <code>module.block</code>. Also need to explicitly tell the computer that I want to use the <code>time</code> module, otherwise how would it know?
+And I don't need to export anything, I didn't write my module to be used by other people.</p>
+<blockquote>
+<p>What about the lines with the <code>#</code> symbol?</p>
+</blockquote>
+<p>Oh those are comments to remind me what the code is doing. The computer ignores those, but they're a useful reminder.</p>
+<p>So then I ...</p>
+<blockquote>
+<p>Wait, one last thing. Or maybe a few last things.</p>
+</blockquote>
+<p>Yeah?</p>
+<blockquote>
+<p>How come you do <code>second + 1</code>?
+And what's with the <code>f</code> in <code>f"[FOCUS] {second+1} seconds has passed"</code>, and the curly brackets?</p>
+</blockquote>
+<p>So, computers start counting from 0, so if I just used <code>second</code> without the <code>+ 1</code>, the computer would print </p>
+<div class="highlight"><pre><span></span><code>[FOCUS] 0 seconds has passed
+[FOCUS] 1 seconds has passed
+</code></pre></div>
+<p>But with the <code>second + 1</code>, the computer prints:</p>
+<div class="highlight"><pre><span></span><code>[FOCUS] 1 seconds has passed
+[FOCUS] 2 seconds has passed
+</code></pre></div>
+<blockquote>
+<p>This might be silly, but do you actually print out paper every time you run the script?</p>
+</blockquote>
+<p>Oh lol no, by <code>print</code> I mean the script will display some text on the screen.
+The script is not a fancy app; there's no buttons or user interface or anything.
+It's all completely text-based. It was a fair question.</p>
+<p>About the <code>f</code> and curly braces, the <code>f</code> (short for <code>format</code>) tells the computer that to insert insert data inside the curly braces.
+Without it, the script would literally print <code>{second}</code> instead of an actual number.</p>
+<div class="highlight"><pre><span></span><code>[FOCUS] {second} seconds has passed
+[FOCUS] {second} seconds has passed
+</code></pre></div>
+<p>And of course, the curly braces surround the placeholder text.</p>
+<blockquote>
+<p>Ok, thanks, I think that makes sense</p>
+</blockquote>
+<p>Yeah no problem. Coding is kind hard because there's all these extra things you have to remember to write.</p>
+<h2 id="puppies">Puppies</h2>
+<blockquote>
+<p>Alright, so I think I get the timer part, but what about the puppies?</p>
+</blockquote>
+<p>Right, so then I added some code to repeat the focus-break sessions however many times I wanted.</p>
+<div class="highlight"><span class="filename">focus.py</span><pre><span></span><code><span class="sd">&quot;&quot;&quot;focus</span>
+
+<span class="sd">This module helps me focus by showing me puppy photos after a focus period,</span>
+<span class="sd">and a &quot;time to to focus&quot; message after a quick break.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">webbrowser</span>
+
+<span class="k">def</span> <span class="nf">start_focus</span><span class="p">():</span>
+    <span class="n">SEC_PER_MIN</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="n">FOCUS_MIN</span> <span class="o">=</span> <span class="mi">25</span>
+    <span class="k">for</span> <span class="n">second</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">SEC_PER_MIN</span> <span class="o">*</span> <span class="n">FOCUS_MIN</span><span class="p">):</span>
+        <span class="c1"># Pause 1 second</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[FOCUS] </span><span class="si">{</span><span class="n">second</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> seconds has passed&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">start_break</span><span class="p">():</span>
+    <span class="n">SEC_PER_MIN</span> <span class="o">=</span> <span class="mi">60</span>
+    <span class="n">BREAK_MIN</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">webbrowser</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;https://eyebleach.me/dogs/&quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">second</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">SEC_PER_MIN</span> <span class="o">*</span> <span class="n">BREAK_MIN</span><span class="p">):</span>
+        <span class="c1"># Pause 1 second</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[BREAK] </span><span class="si">{</span><span class="n">second</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2"> seconds has passed&quot;</span><span class="p">)</span>
+    <span class="c1"># Back to work!</span>
+    <span class="n">webbrowser</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;https://www.animalbehaviorcollege.com/wp-content/uploads/2021/11/DogCatMoney-768x564.jpg&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">NUM_FOCUS_SESSIONS</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="k">for</span> <span class="n">session</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NUM_FOCUS_SESSIONS</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Session </span><span class="si">{</span><span class="n">session</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">NUM_FOCUS_SESSIONS</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Start focus? [y]/n: &quot;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">start</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+            <span class="n">start_focus</span><span class="p">()</span>
+            <span class="n">start_break</span><span class="p">()</span>
+        <span class="k">elif</span> <span class="n">start</span> <span class="o">==</span> <span class="s2">&quot;n&quot;</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ok, stopping app&quot;</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Expected &#39;y&#39; or &#39;n&#39;, instead got </span><span class="si">{</span><span class="n">start</span><span class="si">}</span><span class="s2">. Stopping app.&quot;</span><span class="p">)</span>
+            <span class="k">break</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<p>And of course, for the puppies I included some code that opens a browser tab (the <code>import webbrowser</code> and <code>webbrowser.open()</code> bits) to <a href="https://eyebleach.me/dogs/">https://eyebleach.me/dogs/</a></p>
+<p>After the break is over, it opens another image showing some <a href="https://www.animalbehaviorcollege.com/wp-content/uploads/2021/11/DogCatMoney-768x564.jpg">working animals</a> to remind me to get back to work lol.</p>
+<blockquote>
+<p>Awww the puppies are so cute! But why is it called eyebleach?</p>
+</blockquote>
+<p>Ah, normally people use the site after they accidentally see something traumatizing online.</p>
+<blockquote>
+<p>...</p>
+</blockquote>
+<p>😅 </p>
+<p>Anyways, that's it. That's the script.</p>
+<blockquote>
+<p>Neat! Do you think you could help me write some code to do something similar?
+Like, I get what you did, but I wouldn't be able to write that myself</p>
+</blockquote>
+<p>Yeah of course. And don't worry, it took a few tries to get right, coding is hard 😭.
+Actually, I could just send you the file, and I'll help you modify it slightly.</p>
+<p>What do like to do during breaks? I'm guessing you do other stuff instead of looking at puppy photos.</p>
+<blockquote>
+<p>Oh I do like to look a pictures, but I prefer looking at <a href="https://www.reddit.com/r/birdswitharms/">birds with arms</a> when I take study breaks.</p>
+</blockquote>
+<p>And to think you called me weird 🙄</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><code>if __name__ == "__main__"</code> is used to tell the Python interpreter to run specific sections of code only when the file is run as the main source file. Sometimes, we want to borrow code from other modules without actually running the borrowed code in our main module, and the <code>if __name__ == "__main__"</code> line prevents that. The statement is important to have, but a good explanation would detract from the main focus of the conversation.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../3-Reading-and-Writing/06_writing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ✍️ Writing" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                ✍️ Writing
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../5-Office-Work/" class="md-footer__link md-footer__link--next" aria-label="Next: 🏢 Office Work" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                🏢 Office Work
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.tabs", "navigation.indexes", "navigation.footer"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.51198bba.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
