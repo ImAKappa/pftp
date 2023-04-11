@@ -52,8 +52,8 @@ def main() -> None:
     new_fake_folders(root, n=100)
     zip_all_folders(root)
     remove_unzipped(root)
-    extract_all_folders(root)
-    remove_zipped_folders(root)
+    # extract_all_folders(root)
+    # remove_zipped_folders(root)
 
 if __name__ == "__main__":
     main()

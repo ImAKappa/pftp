@@ -52,6 +52,7 @@ def main() -> None:
     pprint(count_file_extensions(root))
     for file in root.iterdir():
         move_file(file)
+    # TODO: Handle the case where the script is run repeatedly
 
 if __name__ == "__main__":
     main()
