@@ -1,64 +1,52 @@
 # Welcome!
 
 This short guide will help you go from **zero** programming experience
-to being comfortable writing in Python.
+to being comfortable reading and writing in Python.
 
 ## 🐍 Why Python?
 
-Python is a language for communicating with your computer.
-Knowing Python will empower you to:
+Python is a language for instructing computers to do stuff.
+People have done some pretty awesome things with Python:
 
-1. **Automate repetitive tasks**
+- **[Render the first ever image of a blackhole](https://numpy.org/case-studies/blackhole-image/)**: The Python package [NumPy](https://numpy.org/) was used to process data collected from telescopes all around the world to form the famous blackhole picture.
+- **[Support a social media platform for billions of users](https://instagram-engineering.com/tagged/python)** Instagram uses Python to manage their web servers so that you and billions of other people can share photos and videos.
+- **[Power machine learning](https://www.tensorflow.org/about/case-studies)** Python is one of main languages used for machine learning. "Machine Learning" means getting computers to learn from data. This includes generative models for text (ChatGPT) and images (Dall-E, Midjourney), recommendation systems (YouTube algorithm), computer vision & object recognition, personalized medicine, robotics, and countless other applications. Popular Python packages include [Sci-Kit Learn](https://scikit-learn.org/), [PyTorch](https://pytorch.org/tutorials/beginner/basics/intro.html), and [TensorFlow](https://www.tensorflow.org/).
 
-    - Getting updates from websites that change over time
-    - Moving, renaming, and merging files & folders
-    - Formatting, sorting, and organizing text and images
 
-2. **Create apps for work and entertainment**
+Now, let's be real here. You probably won't be using Python to do any of these things, at least not immediately.
+So what can *you* realistically do with it when you're just getting started?
 
-    - Games: [Pygame](https://www.youtube.com/watch?v=xVHkF1-73pw), [Panda3D](https://www.panda3d.org/features/), [RenPy](https://www.renpy.org/)
-    - Websites: [mkdocs](https://www.mkdocs.org/), [Pynecone](https://pynecone.io/), [Django](https://www.djangoproject.com/)
-    - Apps: [Kivy](https://kivy.org/), [Anki](https://apps.ankiweb.net/)
-    - 3D Modelling: [Blender](https://www.blender.org/) integrates with [Python](https://docs.blender.org/api/current/info_quickstart.html)
-    - Videos: [Manim](https://www.manim.community/)
-    - Computer Graphics: [Taichi](https://github.com/taichi-dev/taichi)
-    - Dashboards: [Dash](https://dash.gallery/Portal/)
+As with learning any new skill, we will start our journey by facing more modest problems.
+In this guide, you will learn to create programs that can automatically:
 
-3. **Do modelling** (not the fashion kind, although you could [use Python to help you pick out an outfit](https://github.com/sonu275981/Fashion-Recommender-system))
-
-    - Databases
-    - Simulations & Scientific Computing: [NumPy](https://numpy.org/), [SciPy](https://scipy.org/), [PyMC3](https://www.pymc.io/projects/docs/en/v3/index.html)
-    - Machine learning: [Tensorflow](https://devlibrary.withgoogle.com/products/ml?sort=updated), [PyTorch](https://pytorch.org/community-stories)
-
-If you're most people, you will likely find the most use from **automating repetitive tasks** with Python.
-Automation will be our focus for this guide.
+1. Move, rename, and merge files & folders *really* fast
+2. Process data, like Excel files, to generate reports
+3. Do calculations to solve problems relevant to your everyday personal and work life
 
 ## 📖 Reading this guide
 
 Programming is not the easiest thing to learn.
 Honestly, it's extremely frustrating at times.
 Despite this, it's a very rewarding skill.
-It can save you time ⏳ and money 💵, and will improve the way you think and problem-solve 🧠.
+It can save you time ⏳ and money 💵, it can make your resume stand out 💪, it's a great hobby to share with people 🫂, and it will improve the way you think and problem-solve 🧠.
 
-There are a lot of guides on learning Python. Most of them are ok.
+There are a lot of guides on learning Python. Some are really good, most are ok.
 Too many of them assume you know a thing or two about programming.
-Too few remember what it is like to not know how to program.
+Too few authors actually remember what it is like to not know how to program.
 I don't claim my guide is the best place to learn to program with Python,
 but I am quite confident that it's a good place to start.
 
 I wrote this for people who have never programmed before,
 people whose primary experience using a computer consists of watching videos online, sending emails,
-maybe making a spreadsheet now and then or typing up a report.
-You don't need to be good at school to read this guide.
+maybe making a spreadsheet now and then or typing up a report. People who don't know what a programming language even is.
 
-However, you **absolutely need**:
+Despite not needing any background knowledge, you do, however, **absolutely need**:
 
 1. An open mind
 2. To be okay with failure
 3. To understand that you can always improve
 
 People _mistakenly_ believe that they are not smart enough to program.
-
 This is **backwards** thinking!
 
 - 🏋️ You are not too weak to go to the gym. You get strong from trying, failing, then trying again at the gym

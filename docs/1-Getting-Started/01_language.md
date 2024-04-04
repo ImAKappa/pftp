@@ -23,7 +23,7 @@ The Python language is the same. On its own the language is kind of useless, it'
 
 ```mermaid
 flowchart LR
-    lang(["Hey, write 'apple' in upper case letters"]) -- "👂 Listen" --> interp["Person"]
+    lang(["Hey, write 'apple' in upper case letters"]) -- "👀 Read" --> interp["Person"]
     interp["Person"] -- "✍️ Write" --> result(["'APPLE'"])
     style interp fill:#36464e,stroke:#333,color:#fff
 ```
