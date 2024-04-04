@@ -73,7 +73,7 @@ Python also has a syntax; there is a right and wrong way to structure sentences 
 | 📝 English | `Hey, write the word 'apple' in uppercase letters` | `'apple' in, uppercase write Hey letters word the` |
 | 🐍 Python | `print('apple'.upper())` | `Hey, write the word 'apple' in uppercase letters` |
 
-Let's revisit the sum example, where you texted your friend:
+Let's revisit the apple example, where you texted your friend:
 
 ```
 Hey, write the word 'apple' in uppercase letters
