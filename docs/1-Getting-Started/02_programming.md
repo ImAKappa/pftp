@@ -2,7 +2,7 @@
 
 ## 🪟 Editors
 
-Let's get familiar with the two main parts of Thonny.
+Let's get familiar with the two main parts of our code editor, Thonny.
 
 ![Thonny Editor](../imgs/development/thonny-ide-2023-02-21.png)
 
@@ -76,7 +76,7 @@ a program in Python to get your computer to solve your problem for you.
 ## 🛞 Process & Design
 
 It's very easy to write a terrible essay; you simply need to write, and then stop writing.
-Writing a great essay takes research, planning, writing, and multiple rounds of revisions and gathering feed-back.
+Writing a _great_ essay takes research, planning, writing, and multiple rounds of revisions and gathering feed-back.
 A similar thing happens (or at least, _should_ happen) when writing software (i.e. code).
 It's easy to write code that doesn't actually solve your problems correctly or robustly.
 
@@ -117,7 +117,7 @@ Compare the script above to something like your calendar app, which can send not
 
 There is another kind of software called a **library**.
 A library is a bundle of code that is meant to be used in other people's code.
-Libraries tend to be pretty hard to write because you have to think about how the code will be used on many different operating systems, and write lot's of tests, publish documentation on how to use the library, and maintain it when people find bugs or are looking for more features.
+Libraries tend to be pretty hard to write because you have to think about how the code will be used on many different operating systems, and write lots of tests, publish documentation on how to use the library, and maintain it when people find bugs or are looking for more features.
 Python developers typically use the word "**packages**" instead of library.
 [PyPI](https://pypi.org/) is where you can find Python packages. 
 
@@ -132,7 +132,7 @@ print("Here's a random number from 1 to 10:", random.randint(1, 10))
 
 We need to write `import random` to tell the Python interpreter to load the code from the random module.
 It's a good thing the interpreter doesn't automatically load every single built-in module,
-otherwise it would take a while to start up. Better for us to explicitly ask for specific modules.
+otherwise it would take a while to start up. Better for us to explicitly ask for just the specific modules we need.
 
 !!! note
 
@@ -226,6 +226,12 @@ iii. Why is testing your code so important?
 
 ??? success "Possible Answer"
 
-    It's easy to accidentally mistype something without realizing it, so you need to run tests to bring your attention to errors in your code
+    Testing brings your attention to errors in your code. There are many reasons for errors:
 
-    It's also useful to think about all the invalid inputs that you or other people could give when using your Python scripts. Testing and then tweaking your code helps make sure your scripts are more robust.
+    - It's easy to accidentally mistype something without realizing it
+    - Sometimes your solution to the problem isn't actually correct, or doesn't work the way you expect
+    - When you change one part of your code, you could inadvertently break some other place in your code
+    - Users of your code _will_ find a way to break your code by accidentally giving inputs you could have never expected
+    - [Malicious actors](https://xkcd.com/327/) can purposely give unexpected inputs that exploit security vulnerabilities in your code
+
+    Testing helps ensure your code is more robust!

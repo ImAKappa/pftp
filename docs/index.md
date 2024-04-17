@@ -17,11 +17,14 @@ Now, let's be real here. You probably won't be using Python to do any of these t
 So what can *you* realistically do with it when you're just getting started?
 
 As with learning any new skill, we will start our journey by facing more modest problems.
-In this guide, you will learn to create programs that can automatically:
+In this guide, you will learn to create the following programs:
 
-1. Move, rename, and merge files & folders *really* fast
-2. Process data, like Excel files, to generate reports
-3. Do calculations to solve problems relevant to your everyday personal and work life
+| Project | Description | Skills |
+| --- | --- | --- |
+| **The Decider** | Are you indecisive? Well, not anymore | Python basics |
+| **Clean Your ~~Room~~ Downloads Folder** | Sort your downloads folder, instantly | Working with files and folders |
+| **Powerballers** | How many tickets should you buy to win big? | Number-crunching, simulations, and data analysis |
+| **NoGPT** | Generative text _without_ fancy AI programming | Working with files, data analysis |
 
 ## 📖 Reading this guide
 

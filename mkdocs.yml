@@ -26,6 +26,7 @@ theme:
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
   - footnotes

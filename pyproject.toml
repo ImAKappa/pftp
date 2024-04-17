@@ -49,6 +49,7 @@ dependencies = [
   "black"
 ]
 [tool.hatch.envs.default.scripts]
+test = "pytest test {args}"
 cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=pftp --cov=tests {args}"
 no-cov = "cov --no-cov {args}"
 docs = "mkdocs serve --config-file ./mkdocs.yml"

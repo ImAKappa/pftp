@@ -30,7 +30,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    lang(["print('apple'.upper())"]) -- "👂 Parse" --> interp["Python Interpreter"]
+    lang(["print('apple'.upper())"]) -- "👀 Parse" --> interp["Python Interpreter"]
     interp["Python Interpreter"] -- "✍️ Print" --> result(["'APPLE'"])
     style interp fill:#36464e,stroke:#333,color:#fff
 ```
@@ -170,7 +170,7 @@ For now, I highly recommend you try the exercises below.
 
     Something that can understand instructions in a language and execute those instructions
 
-    For the English language, people are the interpreter.
+    For the English language, a person is an interpreter.
 
     For Python, it is a piece of software called the Python Interpreter. 
 
@@ -223,7 +223,7 @@ NOBODY EXPECTS THE SPANISH INQUISITION!
     "NOBODY EXPECTS THE SPANISH INQUISITION!".lower()
     ```
 
-    The Python language is particular about many things, but quotation marks are not one of those things.
+    The Python language is particular about many things, but quotation marks are not one of them.
     It's up to you to use single-quotes or double-quotes, but it's good style to be consistent with your choice.
 
 **Q5.**
@@ -289,6 +289,8 @@ ii. Which letter occurs more frequently, `e` or `a`?
 
     1. Develop industry-relevant skills
     2. I need to pass a course in school
-    3. Automate boring, repetitive tasks at work and home
-    4. Learn for the fun of it
-    5. I'm soooooooooooo boooooooored
+    3. I have the Next Big App idea
+    4. Automate boring, repetitive tasks at work and home
+    5. M a c h i n e  L e a r n i n g
+    6. Learn for fun!
+    7. I'm a future 10x developer 🔥😎👌🔥
