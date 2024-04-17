@@ -9,7 +9,13 @@ from pftp.codealong import CodeAlong, CodeAlongWriter
 class Decider(CodeAlong):
 
     def __init__(self) -> Self:
-        super().__init__("Decider")
+        super().__init__("Decider",
+            sections=[
+                self.decider_0,
+                self.decider_1,
+                self.decider_2,
+            ]               
+        )
 
     def decider_0(self) -> None:
         """Hard-coded list of suggestions (Part 0)"""
@@ -57,8 +63,33 @@ class Decider(CodeAlong):
         for i in range(num_suggestions):
             print(f"{i+1}. {decide(things_i_could_be_doing)}")
 
+
+    def decider_2(self) -> None:
+        """This time, let's make use of `random.choices` method"""
+
+        import random
+
+        def decide(l: list, top_n: int = 3) -> str:
+            return random.choices(l, k=top_n)
+        
+        things_i_could_be_doing = [
+            "Exercise",
+            "Study",
+            "Walk the dog",
+            "Party",
+            "Watch anime",
+            "Watch a movie",
+            "Hang out with friends",
+            "Start a business",
+            "Doomscroll on TikTok",
+            "Play volleyball"
+        ]
+
+        for i, item in enumerate(decide(things_i_could_be_doing)):
+            print(f"{i+1}. {item}")
+
 if __name__ == "__main__":
-    print("Hi")
-    writer = CodeAlongWriter(Decider())
+    print("Decider")
+    writer = CodeAlongWriter(Decider(), indent_amount=2)
     output = Path("./docs/0-The-Decider/decider")
     writer.write(output)

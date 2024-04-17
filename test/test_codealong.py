@@ -8,12 +8,13 @@ def test_codealong():
     class HelloWorld(CodeAlong):
 
         def __init__(self) -> Self:
-            super().__init__("Hello World")
-            self._sections = [
-                self.hello_world_1,
-                self.hello_world_2,
-            ]
-        
+            super().__init__("Hello World", 
+                sections=[
+                    self.hello_world_1,
+                    self.hello_world_2,
+                ]
+            )
+            
         def hello_world_1(self) -> None:
             """Module for 'Hello, World!' program - part 1"""
             
@@ -25,7 +26,7 @@ def test_codealong():
             if __name__ == "__main__":
                 print("Hello, World!")
 
-    writer = CodeAlongWriter(HelloWorld())
+    writer = CodeAlongWriter(HelloWorld(), indent_amount=3)
     root_dir = Path("./test/codealong")
     writer.write(root_dir)
 
