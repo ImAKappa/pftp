@@ -53,6 +53,7 @@ class CodeAlongWriter:
 
     def parse_func_body(self, f: Callable[[None], None]) -> str:
         """Parses the body from the function"""
+        # BUG: Triple indent's don't work for some reason. Need more tests
         src = inspect.getsource(f)
         _, src_without_doc = src.split(f.__doc__)
         lines = src_without_doc.splitlines()

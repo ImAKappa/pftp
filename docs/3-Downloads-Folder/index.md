@@ -4,7 +4,7 @@ It was clean two weeks ago, I swear.
 But yet again, my downloads folder has become a mountainous dump of assorted images, videos, several documents with at least five different versions of each, audio files, app installers, spreadsheets, and what might possibly be a virus or two??
 My friend has a chronic hoarding problem and even they held an intervention for me 😖.
 
-![My Downloads Folder](..\imgs\landfill-collab_media-unsplash.jpg)
+![My Downloads Folder](./03_downloads_folder-landfill_collab_media-unsplash.jpg)
 
 > Fig 1. My downloads folder. Maybe the intervention was warranted ...
 >  

@@ -31,7 +31,10 @@ markdown_extensions:
       alternate_style: true
   - footnotes
   - pymdownx.snippets:
-      base_path: ["./docs", "./scripts", "./pftp/clippy-in-parts"]
+      base_path: [
+        "./scripts",
+        "./docs/1-Fortune-Telling/fortune/",
+      ]
 #   - pymdownx.highlight:
 #       anchor_linenums: true
 #       line_spans: __span

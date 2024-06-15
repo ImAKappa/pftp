@@ -4,7 +4,7 @@
 
 Let's get familiar with the two main parts of our code editor, Thonny.
 
-![Thonny Editor](../imgs/development/thonny-ide-2023-02-21.png)
+![User interface of Thonny code editor](./00_programming-thonny_ide-2023-02-21.png)
 
 1. The **code editor**: This is where we will write our Python code.
 We use this section when we write multiple lines of code that we want to execute all at once.
@@ -39,7 +39,7 @@ Thonny is an **IDE**: An Integrated Development Environment. An IDE is any kind 
 
 To see your files, select "View" then check "Files" in the menu.
 
-![Thonny Files](../imgs/development/thonny-ide-files-2023-02-24.png)
+![Files menu in the Thonny code editor](../00_programming-thonny_ide_files-2023-02-24)
 
 
 ## 💡 Coding is Writing is Thinking
@@ -109,7 +109,10 @@ For example, this script fetches a random useless fact from the internet:
     the code editor section of Thonny (the top portion, not the Shell).
     Then press the green run button, and look at the Shell section to see the result.
 
-    Try re-running the script a few times to see different useless facts. 
+    ![uselessfact.py in Thonny](./00_programming-thonny_useless_fact-2024-06-14.png)
+
+    Try re-running the script a few times to see different useless facts.
+
 
 Scripts are different from applications, or **apps**, which are bundles of code that you use to accomplish one or more tasks. 
 Apps are typically more complicated than scripts.

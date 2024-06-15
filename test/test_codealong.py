@@ -52,3 +52,6 @@ if __name__ == "__main__":
 '''
 
     assert (root_dir/"hello_world_2.py").read_text() == expected
+
+def test_codealong_multiple_idents():
+    assert False
