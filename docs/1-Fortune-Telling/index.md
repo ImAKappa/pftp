@@ -34,14 +34,14 @@ the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the 
 Pythia sees all, knows all, but has a fairly limited list of possible responses.
 
 ```python title="fortune.py"
---8<-- "fortune_0.py"
+--8<-- "1-Fortune-Telling/fortune/fortune_0.py"
 ```
 
 Hm, but wait, it doesn't really make sense for Pythia to give us unsolicited fortunes.
 We should be able to ask her a question, first.
 
 ```python title="fortune.py"
---8<-- "fortune_1.py"
+--8<-- "1-Fortune-Telling/fortune/fortune_1.py"
 ```
 
 That's better. But it's weird for her to respond if we don't ask a question.
@@ -51,13 +51,13 @@ That's better. But it's weird for her to respond if we don't ask a question.
 Pythia should double check that we've asked her a question.
 
 ```python title="fortune.py"
---8<-- "fortune_2.py"
+--8<-- "1-Fortune-Telling/fortune/fortune_2.py"
 ```
 
 Finally, Pythia is a patient seer, and will continue to answer our questions until we are satisified.
 
 ```python title="fortune.py"
---8<-- "fortune_3.py"
+--8<-- "1-Fortune-Telling/fortune/fortune_3.py"
 ```
 
 ![Example usage of fortune_3.py script in Thonny](./01-fortune_3_thonny-2024-06-15.png)

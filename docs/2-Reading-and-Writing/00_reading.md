@@ -1,5 +1,7 @@
 # 📔 Reading
 
+> ✏️ Section undergoing re-write. Come back soon.
+
 ## 👀 Reading Python
 
 > "Code is more often read than written" 
@@ -24,7 +26,7 @@ For example, if we wanted to tell our friend to open Google Maps for various cou
 === "Python"
 
     ```python title="maps.py"
-    --8<-- "3-Reading-and-Writing/reading/maps.py"
+    --8<-- "2-Reading-and-Writing/reading/maps.py"
     ```
 
 !!! tip "Try it yourself"
@@ -126,7 +128,7 @@ with triple-single quotes
 Lists are a collection of items.
 
 ```python title="List of numbers"
-
+[1, 2, 3, 4, 5]
 ```
 
 ```python title="List of strings"
@@ -134,7 +136,7 @@ Lists are a collection of items.
 ```
 
 ```python title="List of stuff"
-
+[1, "a", {1, 2, 3}, 3.14]
 ```
 
 ## Meta
@@ -186,7 +188,7 @@ You **cannot** use these words as identifiers because otherwise the Python inter
     For example,
 
     ```python title="filematcher.py"
-    --8<-- "3-Reading-and-Writing/reading/filematcher.py"
+    --8<-- "2-Reading-and-Writing/reading/filematcher.py"
     ```
 
     Structural pattern matching uses the keywords `match`, `case`, and `_`,
@@ -232,4 +234,4 @@ For each example:
 
 ---
 
---8<-- "3-Reading-and-Writing/reading.txt"
+--8<-- "2-Reading-and-Writing/reading.txt"

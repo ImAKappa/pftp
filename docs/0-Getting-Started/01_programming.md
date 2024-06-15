@@ -4,7 +4,7 @@
 
 Let's get familiar with the two main parts of our code editor, Thonny.
 
-![User interface of Thonny code editor](./00_programming-thonny_ide-2023-02-21.png)
+![User interface of Thonny code editor](./01_programming-thonny_ide-2023-02-21.png)
 
 1. The **code editor**: This is where we will write our Python code.
 We use this section when we write multiple lines of code that we want to execute all at once.
@@ -39,7 +39,7 @@ Thonny is an **IDE**: An Integrated Development Environment. An IDE is any kind 
 
 To see your files, select "View" then check "Files" in the menu.
 
-![Files menu in the Thonny code editor](../00_programming-thonny_ide_files-2023-02-24)
+![Files menu in the Thonny code editor](../01_programming-thonny_ide_files-2023-02-24)
 
 
 ## 💡 Coding is Writing is Thinking
@@ -58,7 +58,7 @@ Just like writing, learning to code well takes time. Google developer and leadin
 ## 🔨 Solving Problems with Code
 
 It's important to have a good grasp of the problem you're trying to solve with Python
-(or knowing if you even need Python at all!). 
+(or knowing if you even need Python at all!).
 For some problems, it makes sense to write a **program**, i.e. a recipe of computations.
 Allen Downey, author of the wonderful (free!) book [Think Python](https://greenteapress.com/thinkpython2/html/thinkpython2002.html), says that there are really only 5 kinds of instructions that compose a program:
 
@@ -109,7 +109,7 @@ For example, this script fetches a random useless fact from the internet:
     the code editor section of Thonny (the top portion, not the Shell).
     Then press the green run button, and look at the Shell section to see the result.
 
-    ![uselessfact.py in Thonny](./00_programming-thonny_useless_fact-2024-06-14.png)
+    ![uselessfact.py in Thonny](./01_programming-thonny_useless_fact-2024-06-14.png)
 
     Try re-running the script a few times to see different useless facts.
 

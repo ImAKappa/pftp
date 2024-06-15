@@ -19,3 +19,5 @@ It would be pretty nice if I could at least group the files into bins like "Offi
 Of course, the biggest issue is I know that even if I get super motivated and power through it, the folder will become a landfill of files in two weeks. The last intervention was super cringe, I don't think I could handle another one 😭.
 
 If only there was an easy, repeatable, and automatic way to organize my downloads folder ...
+
+> ✏️ Section in Progress. Come back soon.
