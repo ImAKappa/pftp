@@ -45,7 +45,7 @@ from collections import namedtuple
 import logging
 
 logging.basicConfig(level=logging.WARNING)
-from combparser import ParserCombinator, ParserError
+from pftp.combparser import ParserCombinator, ParserError
 
 # A collection to hold an English expression and a roughly equivalent Python expression
 EngVsPy = namedtuple("EngVsPy", ["english", "python"])

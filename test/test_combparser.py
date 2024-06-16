@@ -14,7 +14,7 @@ def src():
 Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists. 
 Remind me to thank John for a lovely weekend. 
 Do you have any idea how long it takes those cups to decompose. 
-Just my luck, no ice. 
+Just my luck, no ice.
 This thing comes fully loaded. 
 AM/FM radio, reclining bucket seats, and... power windows."""
 

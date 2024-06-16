@@ -4,7 +4,7 @@ Module for 'Decider' program code-along
 """
 from typing import Self
 from pathlib import Path
-from pftp.codealong import CodeAlong, CodeAlongWriter
+from pftp.codealong import CodeAlong, CodeAlongWriter, CodeAlongTester
 
 class FortuneTeller(CodeAlong):
 
@@ -103,7 +103,10 @@ class FortuneTeller(CodeAlong):
             print()
 
 if __name__ == "__main__":
-    print("Decider")
-    writer = CodeAlongWriter(FortuneTeller(), indent_amount=2)
+
+    tester = CodeAlongTester()
+    tester.test_for_errors(FortuneTeller())
+
+    writer = CodeAlongWriter()
     output = Path("./docs/1-Fortune-Telling/fortune")
-    writer.write(output)
+    writer.write(output, FortuneTeller())

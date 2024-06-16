@@ -13,3 +13,7 @@ View the tutorial at [https://imakappa.github.io/pftp/](https://imakappa.github.
 - `pftp` core library for automation and writing utilities
 - `teaching` Notes on teaching
 - `test` automated testing
+
+## TODO
+
+- [ ] Make navbar appear up when scrolling up

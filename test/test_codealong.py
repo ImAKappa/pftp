@@ -1,60 +1,47 @@
 import pytest
 from pftp.codealong import CodeAlong, CodeAlongWriter
+from pathlib import Path
 
-@pytest.fixture()
-def hello_world() -> CodeAlong:
-    """An example CodeAlong writer"""
-    class HelloWorld(CodeAlong):
+class TestCodeAlongWriter:
 
-        def __init__(self):
-            super().__init__("Hello World", 
-                sections=[
-                    self.hello_world_1,
-                    self.hello_world_2,
-                ]
-            )
-            
-        def hello_world_1(self) -> None:
-            """Module for 'Hello, World!' program - part 1"""
+    def test_func_to_str(self):
+        def f() -> None:
+            """A function, f"""
             
             print("Hello, World!")
 
-        def hello_world_2(self) -> None:
-            """Module for 'Hello, World!' program - part 2"""
+        writer = CodeAlongWriter()
+        actual = writer.func_to_filestring(f)
 
-            if __name__ == "__main__":
-                print("Hello, World!")
+        expected = '''"""f
 
-    return HelloWorld
-
-def test_codealong(hello_world: CodeAlong):
-    from pathlib import Path
-
-    writer = CodeAlongWriter(hello_world(), indent_amount=3)
-    root_dir = Path("./test/codealong")
-    writer.write(root_dir)
-
-    expected = '''"""hello_world_1
-
-Module for 'Hello, World!' program - part 1
+A function, f
 """
 
 print("Hello, World!")
 '''
 
-    assert (root_dir/"hello_world_1.py").read_text() == expected
+        assert actual == expected
 
+    def test_func_to_str_multiline_docstring(self):
+        def f() -> None:
+            """
+            A function, f
+            """
 
-    expected = '''"""hello_world_2
+            print("Hello, World!")
 
-Module for 'Hello, World!' program - part 2
+        writer = CodeAlongWriter()
+        actual = writer.func_to_filestring(f)
+
+        expected = '''"""f
+
+A function, f
 """
 
-if __name__ == "__main__":
-    print("Hello, World!")
+print("Hello, World!")
 '''
+        assert actual == expected
 
-    assert (root_dir/"hello_world_2.py").read_text() == expected
 
-def test_codealong_multiple_idents():
-    assert False
+        

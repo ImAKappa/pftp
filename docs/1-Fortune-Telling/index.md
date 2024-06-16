@@ -23,8 +23,11 @@ the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the 
 !!! note "It's normal to be confused. In fact, it's all part of the plan."
 
     The code below is purposely NOT explained in detail.
-    The goal here is simply to get exposed to writing Python code.
-    Before understanding the why and how, we first need to develop some baseline familiarity with typing Python and running code in Thonny.
+    There are two reasons:
+
+    1. **To develop familiarity with Python** -
+    Before understanding the why, we first need to develop some baseline familiarity with typing Python and running code in Thonny.
+    2. **To get comfy with being confused** - Being confused about novel code is completely normal for even experienced programmers, and it's good to practice getting used to that. In general, being able to sit with the discomfort of confusion is a useful skill when learning.
 
 !!! danger "Type, don't copy"
 
@@ -32,6 +35,7 @@ the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the 
     You're **wasting your time** if you just copy and paste.
 
 Pythia sees all, knows all, but has a fairly limited list of possible responses.
+She's a bit picky and expects questions with "yes" or "no" answers.
 
 ```python title="fortune.py"
 --8<-- "1-Fortune-Telling/fortune/fortune_0.py"
@@ -44,6 +48,11 @@ We should be able to ask her a question, first.
 --8<-- "1-Fortune-Telling/fortune/fortune_1.py"
 ```
 
+!!! question
+
+    What happens when you remove the `\n` character?
+    Re-run the script and compare the difference.
+
 That's better. But it's weird for her to respond if we don't ask a question.
 
 ![Example usage of fortune_1.py script in Thonny](./01-fortune_1_thonny-2024-06-15.png)
@@ -53,6 +62,11 @@ Pythia should double check that we've asked her a question.
 ```python title="fortune.py"
 --8<-- "1-Fortune-Telling/fortune/fortune_2.py"
 ```
+
+!!! tip
+
+    Pressing the `enter` key will submit your question to Pythia.
+    Make sure to type your question first.
 
 Finally, Pythia is a patient seer, and will continue to answer our questions until we are satisified.
 
@@ -64,9 +78,11 @@ Finally, Pythia is a patient seer, and will continue to answer our questions unt
 
 ## 🪞 Reflection
 
-> Section in progress ✏️. Come back soon.
+Take the time to complete the following reflection questions.
 
-!!! note "Order of execution"
-
-    As always, Python code is executed from top to bottom, one line at a time
-    so the order of our instructions really matters!
+1. Modify the code so that Pythia asks "What do you desire to know?"
+2. Make a list of everything that confused you. Here are some sample prompts to get you started:
+   1. Why did we write _____?
+   2. What does _____ do?
+   3. How does _____ work?
+3. 
