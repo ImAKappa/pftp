@@ -1,13 +1,12 @@
 import pytest
 from pftp.codealong import CodeAlong, CodeAlongWriter
 
-def test_codealong():
-    from typing import Self
-    from pathlib import Path
-
+@pytest.fixture()
+def hello_world() -> CodeAlong:
+    """An example CodeAlong writer"""
     class HelloWorld(CodeAlong):
 
-        def __init__(self) -> Self:
+        def __init__(self):
             super().__init__("Hello World", 
                 sections=[
                     self.hello_world_1,
@@ -26,10 +25,14 @@ def test_codealong():
             if __name__ == "__main__":
                 print("Hello, World!")
 
-    writer = CodeAlongWriter(HelloWorld(), indent_amount=3)
+    return HelloWorld
+
+def test_codealong(hello_world: CodeAlong):
+    from pathlib import Path
+
+    writer = CodeAlongWriter(hello_world(), indent_amount=3)
     root_dir = Path("./test/codealong")
     writer.write(root_dir)
-
 
     expected = '''"""hello_world_1
 
