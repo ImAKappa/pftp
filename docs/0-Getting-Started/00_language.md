@@ -51,12 +51,12 @@ Follow the installation instructions for [Thonny](https://thonny.org/) for your 
 
     Make sure to pick "Standard"
     
-    ![Thonny Install](../imgs/language/thonny-install-2023-02-21.png)
+    ![Thonny Install](./img/00_thonny_install-2023-02-21.png)
 
 
 When the software is finished installing, open it. You should see something like this:
 
-![Thonny Install](../imgs/language/thonny-app-2023-02-21.png)
+![Thonny Install](./img/00_thonny_app-2023-02-21.png)
 
 ## 📝 Syntax 
 
@@ -81,7 +81,7 @@ Hey, write the word 'apple' in uppercase letters
 
 If you try typing this into Thonny, specifically the section of the app that says "Shell", then press `enter`:
 
-![Python Syntax](../imgs/language/python-syntax-error-2023-03-15.png)
+![Python Syntax](./img/00_python_syntax_error-2023-03-15.png)
 
 The Python interpreter doesn't understand what we're saying, because we haven't structured the sentence correctly in the Python language. Unlike your friend, the Python interpreter won't bother to ask us to clarify or rephrase what we meant. It will give up trying to understand our instructions very quickly, but will usually tell us why it gave up.
 In this case, the interpreter gave up, or **threw an error**, because it didn't understand the syntax of the instruction we provided to it. The Python interpreter doesn't speak English, it speaks Python.
@@ -115,7 +115,7 @@ There are lots of valid ways to ask someone to write "apple" in uppercase letter
     Hey, write the word 'apple' in uppercase letters
     ```
 
-![Python Syntax Part 2](../imgs/language/python-syntax-correct-2023-03-15.png)
+![Python Syntax Part 2](./img/00_python_syntax_correct-2023-03-15.png)
 
 ## 💡 Semantics
 
@@ -136,7 +136,7 @@ Here's the same example in Python:
 
 When you give the Python interpreter a semantically meaningless sentence, the interpreter will throw an error, but usually a different kind of error depending on what you were trying to do.
 
-![Python Syntax Part 2](../imgs/language/semantics/python-semantic-error-2023-03-15.png)
+![Python Syntax Part 2](./img/00_python_semantic_error-2023-03-15.png)
 
 !!! note "Errors"
 

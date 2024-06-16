@@ -203,7 +203,7 @@ else:
 
 Type it into Thonny, then run it. You can enter an age by typing it into the Shell, then pressing the `enter`/`return` key.
 
-![Thonny interactive](../imgs/development/thonny-ide-testing-2023-02-24.png)
+![Thonny exercise](./01_programming-thonny_exercise-2023-02-24.png)
 
 i. Does the program do what it's supposed to? Why or why not? Rerun the code and try a few different ages
 
