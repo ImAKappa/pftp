@@ -15,10 +15,24 @@ class FortuneTeller(CodeAlong):
                 self.fortune_1,
                 self.fortune_2,
                 self.fortune_3,
+                self.fortune_4,
             ]     
         )
 
     def fortune_0(self) -> None:
+        """Tell my fortune, oh great Pythia"""
+
+        fortunes = [
+            "'Tis certain",
+            "Yes, indubitubly.",
+            "Most likely",
+            "Very doubtful",
+            "My sources say no",
+            "Reply hazy, try again.",
+            "Um, you don't want to know",
+        ]
+
+    def fortune_1(self) -> None:
         """Tell my fortune, oh great Pythia"""
 
         import random
@@ -30,12 +44,12 @@ class FortuneTeller(CodeAlong):
             "Very doubtful",
             "My sources say no",
             "Reply hazy, try again.",
-            "Um, you don't want to know"
+            "Um, you don't want to know",
         ]
 
         print(random.choice(fortunes))
 
-    def fortune_1(self) -> None:
+    def fortune_2(self) -> None:
         """Tell my fortune, oh great Pythia"""
 
         import random
@@ -54,7 +68,7 @@ class FortuneTeller(CodeAlong):
         print(random.choice(fortunes))
 
 
-    def fortune_2(self) -> None:
+    def fortune_3(self) -> None:
         """Tell my fortune, oh great Pythia"""
 
         import random
@@ -76,7 +90,7 @@ class FortuneTeller(CodeAlong):
         else:
             print("That is a statement.")
 
-    def fortune_3(self) -> None:
+    def fortune_4(self) -> None:
         """Tell my fortune, oh great Pythia"""
 
         import random

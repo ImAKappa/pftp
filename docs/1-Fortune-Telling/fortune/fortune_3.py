@@ -15,13 +15,9 @@ fortunes = [
     "Um, you don't want to know"
 ]
 
-while True:
-    prompt = input("What answers do you seek, child?\n")
-    if prompt.endswith("?"):
-        print(random.choice(fortunes))
-    elif prompt == "Goodbye":
-        print("Until next time 🐍")
-        break
-    else:
-        print("That is a statement.")
-    print()
+prompt = input("What answers do you seek, child?\n")
+
+if prompt.endswith("?"):
+    print(random.choice(fortunes))
+else:
+    print("That is a statement.")

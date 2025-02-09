@@ -5,12 +5,12 @@ My astrologist said I have a healthy aura this month.
 But ... my astrologist is really freaking expensive.
 Sadly, I can't afford any more of their readings 🫤.
 
-However, fortune bestows her favour upon me, for I can channel the spirit of
+However, fortune bestows her favour upon me for I can channel the spirit of
 the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the sacred language, Python 🙏.
 
 [^1]: Disclaimer: your Python code is (probably) not actually haunted by the spirit of [Pythia (Wikipedia)](https://en.wikipedia.org/wiki/Pythia), a prominent oracle in greek mythology.
 
-![Priestess of Delphi (1891) by John Collier](./01_fortune_telling-john_collier-priestess_of_delphi.jpg)
+<img src="./01_fortune_telling-john_collier-priestess_of_delphi.jpg" alt="Priestess of Delphi (1891) by John Collier" width="200" style="display: block; margin-left: auto; margin-right: auto;">
 
 > Fig 1. Tell my fortune, oh great Pythia
 >  
@@ -41,26 +41,33 @@ She's a bit picky and expects questions with "yes" or "no" answers.
 --8<-- "1-Fortune-Telling/fortune/fortune_0.py"
 ```
 
-Hm, but wait, it doesn't really make sense for Pythia to give us unsolicited fortunes.
-We should be able to ask her a question, first.
+She chooses an answer according to the Spirit of Delphi, which is fickle
+and divinely random.
 
 ```python title="fortune.py"
 --8<-- "1-Fortune-Telling/fortune/fortune_1.py"
 ```
 
-!!! question
+Hm, but wait, Pythia shouldn't be giving us unsolicited fortunes.
+We should ask her a question, first.
+
+```python title="fortune.py"
+--8<-- "1-Fortune-Telling/fortune/fortune_2.py"
+```
+
+!!! question "What if you did this?"
 
     What happens when you remove the `\n` character?
     Re-run the script and compare the difference.
 
 That's better. But it's weird for her to respond if we don't ask a question.
 
-![Example usage of fortune_1.py script in Thonny](./01-fortune_1_thonny-2024-06-15.png)
+![Example usage of fortune_2.py script in Thonny](./01-fortune_2_thonny-2024-06-15.png)
 
 Pythia should double check that we've asked her a question.
 
 ```python title="fortune.py"
---8<-- "1-Fortune-Telling/fortune/fortune_2.py"
+--8<-- "1-Fortune-Telling/fortune/fortune_3.py"
 ```
 
 !!! tip
@@ -71,18 +78,133 @@ Pythia should double check that we've asked her a question.
 Finally, Pythia is a patient seer, and will continue to answer our questions until we are satisified.
 
 ```python title="fortune.py"
---8<-- "1-Fortune-Telling/fortune/fortune_3.py"
+--8<-- "1-Fortune-Telling/fortune/fortune_4.py"
 ```
 
-![Example usage of fortune_3.py script in Thonny](./01-fortune_3_thonny-2024-06-15.png)
+![Example usage of fortune_3.py script in Thonny](./01-fortune_4_thonny-2024-06-15.png)
 
 ## 🪞 Reflection
 
 Take the time to complete the following reflection questions.
 
-1. Modify the code so that Pythia asks "What do you desire to know?"
-2. Make a list of everything that confused you. Here are some sample prompts to get you started:
-   1. Why did we write _____?
-   2. What does _____ do?
-   3. How does _____ work?
-3. 
+**Q1.** Modify the code so that Pythia asks `"What do you desire to know?"`
+
+??? success "Answer"
+
+    Change this line:
+
+    ```python
+    prompt = input("What answers do you seek, child?\n")
+    ```
+
+    To this instead:
+
+    ```python
+    prompt = input("What do you desire to know?\n")
+    ```
+
+**Q2.** Pythia has sensitive ears. Modify the code so she tells us to quiet down if we yell at her.
+For example, if we tell her `WHY IS CODING SO HARD?` or `WHYYYYYYYYY?!?!?`, she should respond with
+`"Shush! I have sensitive ears and can't concentrate on the future if you yell at me"`
+
+!!! note "Not knowing is normal"
+
+    You probably will have a tough time coming up with an answer. This is normal!
+    What's more important is you try your best to think of a solution for at least a few minutes.
+    Learning this way will help you remember things better, I promise.
+
+    After thinking on your own, read through the answer below.
+    Even if the answer doesn't make sense, that's ok too!
+    Just keep reading and trying the problems.
+
+??? success "Possible Answers"
+
+    First, we should rephrase the problem into a condition that we can check.
+    Really, the question is asking us to check if the prompt we give to Pythia is in upper case letters or not.
+
+    Next, we should figure out how to check if text is in upper case in Python.
+    In the previous section we saw the `"apple".upper()` which could transform text to uppercase,
+    but that's not what we want.
+
+    A quick google search (or asking your preferred AI chatbot) will tell you that we can use a command called 
+    `.isupper()`
+
+    So we could write:
+
+    ```python
+    """fortune_4
+
+    Tell my fortune, oh great Pythia
+    """
+
+    import random
+
+    fortunes = [
+        "'Tis certain",
+        "Yes, indubitubly.",
+        "Most likely",
+        "Very doubtful",
+        "My sources say no",
+        "Reply hazy, try again.",
+        "Um, you don't want to know"
+    ]
+
+    while True:
+        prompt = input("What answers do you seek, child?\n")
+        if prompt.endswith("?"):
+            print(random.choice(fortunes))
+        elif prompt.isupper():
+            print("Shush! I have sensitive ears and can't concentrate on the future if you yell at me") 
+        elif prompt == "Goodbye":
+            print("Until next time 🐍")
+            break
+        else:
+            print("That is a statement.")
+        print()
+    ```
+
+    However, there is a problem! Here we first check if we have a question, but that will skip the check for upper case letters. Pythia won't even answer the question if we yell it at her, so we should change the order to:
+
+    ```python
+    """fortune_4
+
+    Tell my fortune, oh great Pythia
+    """
+
+    import random
+
+    fortunes = [
+        "'Tis certain",
+        "Yes, indubitubly.",
+        "Most likely",
+        "Very doubtful",
+        "My sources say no",
+        "Reply hazy, try again.",
+        "Um, you don't want to know"
+    ]
+
+    while True:
+        prompt = input("What answers do you seek, child?\n")
+        if prompt.isupper():
+            print("Shush! I have sensitive ears and can't concentrate on the future if you yell at me")
+        elif prompt.endswith("?"):
+            print(random.choice(fortunes))
+        elif prompt == "Goodbye":
+            print("Until next time 🐍")
+            break
+        else:
+            print("That is a statement.")
+        print()
+
+    ```
+
+**Q3.** Make a list of everything that confused you. Here are some sample prompts to get you started:
+
+??? success "Possible Answers"
+
+    - Why did we add the word `break`?
+    - What does `input()` do?
+    - Why are there triple quotes (`"""`) at the beginning of the file?
+    - What does `import random` do?
+    - How accurate are these fortunes?
+    - Why did we write `while True`?

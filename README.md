@@ -17,3 +17,10 @@ View the tutorial at [https://imakappa.github.io/pftp/](https://imakappa.github.
 ## TODO
 
 - [ ] Make navbar appear up when scrolling up
+
+## Roadmap
+
+- [ ] Chapter 0
+- [ ] Project 1: Fortune Telling
+- [ ] Project 2: Downloads folder organizer
+- [ ] Project 3: Lottery odds

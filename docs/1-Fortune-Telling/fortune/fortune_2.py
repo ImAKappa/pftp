@@ -15,9 +15,5 @@ fortunes = [
     "Um, you don't want to know"
 ]
 
-prompt = input("What answers do you seek, child?\n")
-
-if prompt.endswith("?"):
-    print(random.choice(fortunes))
-else:
-    print("That is a statement.")
+input("What answers do you seek, child?\n")
+print(random.choice(fortunes))
