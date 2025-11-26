@@ -4,7 +4,7 @@
 
 Let's get familiar with the two main parts of our code editor, Thonny.
 
-![User interface of Thonny code editor](./01_programming-thonny_ide-2023-02-21.png)
+![User interface of Thonny code editor](./img/01_programming-thonny_ide-2023-02-21.png)
 
 1. The **code editor**: This is where we will write our Python code.
 We use this section when we write multiple lines of code that we want to execute all at once.
@@ -39,7 +39,7 @@ Thonny is an **IDE**: An Integrated Development Environment. An IDE is any kind 
 
 To see your files, select "View" then check "Files" in the menu.
 
-![Files menu in the Thonny code editor](../01_programming-thonny_ide_files-2023-02-24)
+![Files menu in the Thonny code editor](./img/01_programming-thonny_ide_files-2023-02-24.png)
 
 
 ## 💡 Coding is Writing is Thinking
@@ -109,7 +109,7 @@ For example, this script fetches a random useless fact from the internet:
     the code editor section of Thonny (the top portion, not the Shell).
     Then press the green run button, and look at the Shell section to see the result.
 
-    ![uselessfact.py in Thonny](./01_programming-thonny_useless_fact-2024-06-14.png)
+    ![uselessfact.py in Thonny](./img/01_programming-thonny_useless_fact-2024-06-14.png)
 
     Try re-running the script a few times to see different useless facts.
 
@@ -203,7 +203,7 @@ else:
 
 Type it into Thonny, then run it. You can enter an age by typing it into the Shell, then pressing the `enter`/`return` key.
 
-![Thonny exercise](./01_programming-thonny_exercise-2023-02-24.png)
+![Thonny exercise](./img/01_programming-thonny_exercise-2023-02-24.png)
 
 i. Does the program do what it's supposed to? Why or why not? Rerun the code and try a few different ages
 
