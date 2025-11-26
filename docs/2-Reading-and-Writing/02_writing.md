@@ -1,6 +1,8 @@
 # ✍️ Writing
 
-> ✏️ Section undergoing re-write. Come back soon.
+!!! danger "✏️ Section undergoing re-write"
+
+    Feel free to peruse, but there are likely errors or miscommunicated ideas.
 
 To learn a language, you usually practice speaking and writing.
 Start with basic sentences, then work up to paragraphs, then essays, then stories and reports.

@@ -9,14 +9,15 @@ the place where people store their apps, scripts, and libraries.
 
 ### 🏋️ Exercises
 
-Practice solving problems with Python. There really is no good substitute.
+Practice solving problems with Python.
+There really is no good substitute to learn programming.
 Here are my reccomendations for a beginner:
 
 1. [W3 Python Exercises](https://www.w3schools.com/python/python_exercises.asp)
 2. [Exercism](https://exercism.org/tracks/python)
 
-Also, try to never copy-paste code. Instead, type it all out yourself to better
-memorize Python syntax.
+Also, try to avoid copy-pasting code.
+Instead, the more you type it all out yourself, the better you will memorize Python syntax.
 
 ### 🙏 Asking for help
 

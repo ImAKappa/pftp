@@ -1,6 +1,8 @@
 # 📔 Reading
 
-> ✏️ Section undergoing re-write. Come back soon.
+!!! danger "✏️ Section undergoing re-write"
+
+    Feel free to peruse, but there are likely errors or miscommunicated ideas.
 
 ## 👀 Reading Python
 

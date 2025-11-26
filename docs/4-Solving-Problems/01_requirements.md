@@ -1,5 +1,7 @@
 # Requirements
 
-Notes on the requirements for your solution.
+!!! warning "✏️ Section in progress"
 
-> ✏️ Section in Progress. Come back soon.
+    This section is incomplete. Please come back soon.
+
+Notes on how to think about the requirements of your programming solutions.

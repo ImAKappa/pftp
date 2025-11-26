@@ -1,6 +1,7 @@
 # What's the problem?
 
+!!! warning "✏️ Section in progress"
 
-Notes on how to specify a problem.
+    This section is incomplete. Please come back soon.
 
-> ✏️ Section in Progress. Come back soon.
+How to solve problems with programming.

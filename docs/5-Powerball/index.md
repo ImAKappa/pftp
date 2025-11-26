@@ -1,5 +1,9 @@
 # Powerballers
 
-How many tickets should you buy to win the PowerBall?
+!!! warning "✏️ Section in progress"
 
-> ✏️ Section in Progress. Come back soon.
+    This section is incomplete. Please come back soon.
+
+
+How many tickets should you buy to win the PowerBall?
+How much money will that cost you?

@@ -1,6 +1,8 @@
 # ♻️ Reuse, Reduce, Recycle
 
-> ✏️ Section undergoing re-write. Come back soon.
+!!! danger "✏️ Section undergoing re-write"
+
+    Feel free to peruse, but there are likely errors or miscommunicated ideas.
 
 You and your friends want to go out and do something fun, but none of you can agree on what to do.
 To help you make a decision, you decide to write a computer program that will make the decision for you.
