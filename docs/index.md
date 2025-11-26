@@ -21,10 +21,9 @@ In this guide, you will learn to create the following programs:
 
 | Project | Description | Skills |
 | --- | --- | --- |
-| **The Decider** | Are you indecisive? Well, not anymore | Python basics |
+| **Fortune Telling** | Are you anxious about the future? Let Pythia, the Oracle of Delphi set your mind at ease | Python basics |
 | **Clean Your ~~Room~~ Downloads Folder** | Sort your downloads folder, instantly | Working with files and folders |
 | **Powerballers** | How many tickets should you buy to win big? | Number-crunching, simulations, and data analysis |
-| **NoGPT** | Generative text _without_ fancy AI programming | Working with files, data analysis |
 
 ## 📖 Reading this guide
 
