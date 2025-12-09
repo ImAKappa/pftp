@@ -10,7 +10,7 @@ the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the 
 
 [^1]: Disclaimer: your Python code is (probably) not actually haunted by the spirit of [Pythia (Wikipedia)](https://en.wikipedia.org/wiki/Pythia), a prominent oracle in greek mythology.
 
-<img src="./01_fortune_telling-john_collier-priestess_of_delphi.jpg" alt="Priestess of Delphi (1891) by John Collier" width="200" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="./img/01_fortune_telling-john_collier-priestess_of_delphi.jpg" alt="Priestess of Delphi (1891) by John Collier" width="200" style="display: block; margin-left: auto; margin-right: auto;">
 
 > Fig 1. Tell my fortune, oh great Pythia
 >  
@@ -62,7 +62,7 @@ We should ask her a question, first.
 
 That's better. But it's weird for her to respond if we don't ask a question.
 
-![Example usage of fortune_2.py script in Thonny](./01-fortune_2_thonny-2024-06-15.png)
+![Example usage of fortune_2.py script in Thonny](./img/01-fortune_2_thonny-2024-06-15.png)
 
 Pythia should double check that we've asked her a question.
 
@@ -81,7 +81,7 @@ Finally, Pythia is a patient seer, and will continue to answer our questions unt
 --8<-- "1-Fortune-Telling/fortune/fortune_4.py"
 ```
 
-![Example usage of fortune_3.py script in Thonny](./01-fortune_4_thonny-2024-06-15.png)
+![Example usage of fortune_3.py script in Thonny](./img/01-fortune_4_thonny-2024-06-15.png)
 
 ## 🪞 Reflection
 

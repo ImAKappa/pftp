@@ -36,6 +36,8 @@ class CodeAlongWriter:
 
     def write(self, dir: Path, code_along: CodeAlong, encoding: str = "utf-8") -> None:
         """Writes the code-along content"""
+        dir.mkdir(parents=True, exist_ok=True)
+
         for f in code_along._sections:
             file_path = dir/f"{f.__name__}.py"
             content = self.func_to_filestring(f)

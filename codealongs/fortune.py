@@ -1,6 +1,6 @@
-"""decider
+"""fortune
 
-Module for 'Decider' program code-along
+Module for 'Fortune Teller' code-along
 """
 from typing import Self
 from pathlib import Path
