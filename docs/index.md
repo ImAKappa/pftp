@@ -1,4 +1,4 @@
-# Welcome!
+# Welcome
 
 This short guide will help you go from **zero** programming experience
 to being comfortable reading and writing in Python.
@@ -9,21 +9,29 @@ Python is a language for instructing computers to do stuff.
 People have done some pretty awesome things with Python:
 
 - **[Render the first ever image of a blackhole](https://numpy.org/case-studies/blackhole-image/)**: The Python package [NumPy](https://numpy.org/) was used to process data collected from telescopes all around the world to form the famous blackhole picture.
-- **[Support a social media platform for billions of users](https://instagram-engineering.com/tagged/python)** Instagram uses Python to manage their web servers so that you and billions of other people can share photos and videos.
-- **[Power machine learning](https://www.tensorflow.org/about/case-studies)** Python is one of main languages used for machine learning. "Machine Learning" means getting computers to learn from data. This includes generative models for text (ChatGPT) and images (Dall-E, Midjourney), recommendation systems (YouTube algorithm), computer vision & object recognition, personalized medicine, robotics, and countless other applications. Popular Python packages include [Sci-Kit Learn](https://scikit-learn.org/), [PyTorch](https://pytorch.org/tutorials/beginner/basics/intro.html), and [TensorFlow](https://www.tensorflow.org/).
+- **[Support a social media platform for billions of users](https://instagram-engineering.com/tagged/python)**: Instagram uses Python to manage their web servers so that you and billions of other people can share photos and videos.
+- **[Power machine learning](https://www.tensorflow.org/about/case-studies)**: Python is one of main languages used for machine learning. "Machine Learning" means getting computers to learn from data. This includes generative models for text (ChatGPT) and images (Dall-E, Midjourney), recommendation systems (YouTube algorithm), computer vision & object recognition, personalized medicine, robotics, and countless other applications. Popular Python packages include [Sci-Kit Learn](https://scikit-learn.org/), [PyTorch](https://pytorch.org/tutorials/beginner/basics/intro.html), and [TensorFlow](https://www.tensorflow.org/).
 
+Beyond Big Tech and science applications, lots of creative types use Python to build [games](https://www.youtube.com/watch?v=QvN28VP22AI), make programmatic [art](https://www.reddit.com/r/generative/), make [animations](https://www.youtube.com/watch?v=W1cZXEs8EIo), make [educational videos](https://www.youtube.com/watch?v=rbu7Zu5X1zI), etc.
+But even if you never plan to work on any of these things, there are still a lot of benefits to learning Python.
 
-Now, let's be real here. You probably won't be using Python to do any of these things, at least not immediately.
-So what can *you* realistically do with it when you're just getting started?
+Maybe you want a job change and want to enhance your resume.
+Maybe you have a very boring, bespoke task that you [feel can be automated](https://automatetheboringstuff.com/3e/) but there aren't any good existing software solutions.
+Maybe you just want to pick up a new skill.
+Maybe you want to become an `3l1t3 h4x0r` and [learn cybersecurity exploits](https://taggartinstitute.org/p/python-for-defenders-pt1).
+Maybe you want to enable your [goldfish to trade stocks for you](https://www.youtube.com/watch?v=USKD3vPD6ZA).
+Maybe you're just curious to know what programming is.
 
-As with learning any new skill, we will start our journey by facing more modest problems.
+All of these reasons are more than good enough to start learning Python!
+
+As with learning any new skill, we will start our journey by facing modest problems.
 In this guide, you will learn to create the following programs:
 
 | Project | Description | Skills |
 | --- | --- | --- |
-| **Fortune Telling** | Are you anxious about the future? Let Pythia, the Oracle of Delphi set your mind at ease | Python basics |
+| **Fortune Telling** | Are you anxious about the future? Let Pythia, the Oracle of Delphi, set your mind at ease | Python basics |
 | **Clean Your ~~Room~~ Downloads Folder** | Sort your downloads folder, instantly | Working with files and folders |
-| **Powerballers** | How many tickets should you buy to win big? | Number-crunching, simulations, and data analysis |
+| **Powerballers** | How many lottery tickets should you buy to win big? | Number-crunching, simulations, and data analysis |
 
 ## 📖 Reading this guide
 
@@ -33,7 +41,7 @@ Despite this, it's a very rewarding skill.
 It can save you time ⏳ and money 💵, it can make your resume stand out 💪, it's a great hobby to share with people 🫂, and it will improve the way you think and problem-solve 🧠.
 
 There are a lot of guides on learning Python. Some are really good, most are ok.
-Too many of them assume you know a thing or two about programming.
+Too many of them assume you know a thing or two about programming already.
 Too few authors actually remember what it is like to not know how to program.
 I don't claim my guide is the best place to learn to program with Python,
 but I am quite confident that it's a good place to start.
@@ -53,8 +61,8 @@ This is **backwards** thinking!
 
 - 🏋️ You are not too weak to go to the gym. You get strong from trying, failing, then trying again at the gym
 - 🧘 You are not too easily distracted to meditate. You gain focus by trying, failing, then trying again to meditate
-- ✍️ You are not too bad with words to write. You become eloquent by trying, failing, then trying again to write.
-- 🧑‍💻 You are not too dumb to program. You get smart by trying, failing, then trying again to program.
+- ✍️ You are not too bad with words to write. You become eloquent by trying, failing, then trying again to write
+- 🧑‍💻 You are not too dumb to program. You get smart by trying, failing, then trying again to program
 
 ## 💽 Technology Prerequisites
 

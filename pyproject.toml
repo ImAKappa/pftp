@@ -34,9 +34,9 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-Documentation = "https://github.com/unknown/pftp#readme"
-Issues = "https://github.com/unknown/pftp/issues"
-Source = "https://github.com/unknown/pftp"
+Documentation = "https://github.com/ImAKappa/pftp#readme"
+Issues = "https://github.com/ImAKappa/pftp/issues"
+Source = "https://github.com/ImAKappa/pftp"
 
 [tool.hatch.version]
 path = "pftp/__about__.py"
