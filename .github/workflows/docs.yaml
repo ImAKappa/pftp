@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - trunk
-      - main
 permissions:
   contents: read
   pages: write
@@ -25,5 +24,7 @@ jobs:
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
+      - run: pip install ghp-import
+      - run: ghp-import site
       - uses: actions/deploy-pages@v4
         id: deployment
