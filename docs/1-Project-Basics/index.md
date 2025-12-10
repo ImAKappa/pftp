@@ -1,4 +1,4 @@
-# Fortune Telling
+# 🥠 Fortune Telling
 
 The stars are aligning. Mercury is in retrograde.
 My astrologist said I have a healthy aura this month.

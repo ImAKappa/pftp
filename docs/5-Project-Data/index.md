@@ -1,4 +1,4 @@
-# Powerballers
+# 💸 Powerballers
 
 !!! warning "✏️ Section in progress"
 

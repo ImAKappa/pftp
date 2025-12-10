@@ -32,6 +32,7 @@ In this guide, you will learn to create the following programs:
 | **Fortune Telling** | Are you anxious about the future? Let Pythia, the Oracle of Delphi, set your mind at ease | Python basics |
 | **Clean Your ~~Room~~ Downloads Folder** | Sort your downloads folder, instantly | Working with files and folders |
 | **Powerballers** | How many lottery tickets should you buy to win big? | Number-crunching, simulations, and data analysis |
+| **AI-less GenArt** | Throwback to the original meaning of generative art | Graphics |
 
 ## 📖 Reading this guide
 

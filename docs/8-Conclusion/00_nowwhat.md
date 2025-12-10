@@ -1,4 +1,4 @@
-# Now What?
+# 🤷🏽‍♀️ Now What?
 
 If you hated this, I'm sorry 😭😔.
 Try a different tutorial before deciding programming is not for you.

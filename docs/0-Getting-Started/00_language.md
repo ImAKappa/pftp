@@ -25,14 +25,12 @@ The Python language is the same. On its own the language is kind of useless, it'
 flowchart LR
     lang(["Hey, write 'apple' in upper case letters"]) -- "👀 Read" --> interp["Person"]
     interp["Person"] -- "✍️ Write" --> result(["'APPLE'"])
-    style interp fill:#36464e,stroke:#333,color:#fff
 ```
 
 ```mermaid
 flowchart LR
     lang(["print('apple'.upper())"]) -- "👀 Parse" --> interp["Python Interpreter"]
     interp["Python Interpreter"] -- "✍️ Print" --> result(["'APPLE'"])
-    style interp fill:#36464e,stroke:#333,color:#fff
 ```
 
 !!! info "Where can I get a Python interpreter?"

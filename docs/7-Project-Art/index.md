@@ -1,7 +1,7 @@
-# ❓ What's the problem?
+# 🎨 AI-less Generative Art
 
 !!! warning "✏️ Section in progress"
 
     This section is incomplete. Please come back soon.
 
-How to solve problems with programming.
+Learn how to generate art without AI, but with math.
