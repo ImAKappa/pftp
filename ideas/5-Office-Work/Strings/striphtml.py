@@ -3,8 +3,8 @@
 This module strips html tags from blocks of text
 """
 
-from io import StringIO
 from html.parser import HTMLParser
+from io import StringIO
 
 
 class HTMLStripper(HTMLParser):

@@ -41,8 +41,8 @@ This module could convert that to Mkdocs Material syntax:
         ```
 """
 
-from collections import namedtuple
 import logging
+from collections import namedtuple
 
 logging.basicConfig(level=logging.WARNING)
 from pftp.combparser import ParserCombinator, ParserError
@@ -66,7 +66,7 @@ while len(src) > 0:
     english, src = p.take_while(lambda c: c != "\n", src)
     try:
         code, src = p.take_until("#eng", src)
-    except ParserError as err:
+    except ParserError:
         # Take until EOF
         code, src = p.take_while(lambda c: True, src)
     eng_vs_py = EngVsPy(english=english.strip(), python=code.strip())

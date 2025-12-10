@@ -3,7 +3,9 @@
 Merge separate Excel file into one
 """
 from pathlib import Path
+
 import pandas as pd
+
 
 def main() -> None:
     root = Path("data")

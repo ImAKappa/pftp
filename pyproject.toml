@@ -46,7 +46,6 @@ python = "312"
 dependencies = [
   "pytest",
   "pytest-cov",
-  "black"
 ]
 [tool.hatch.envs.default.scripts]
 test = "pytest test {args}"
@@ -72,3 +71,14 @@ exclude_lines = [
   "if __name__ == .__main__.:",
   "if TYPE_CHECKING:",
 ]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"pftp/*" = ["T201"]
+"codealongs/*" = [
+  "T201", # print debugging
+  "PLR2004", # magic values 
+  "S311", # cryptographically insecure psudeo-RNG
+  "PLC0415", # top-level imports
+  "F841", # assigned, but unused variables
+]
+"docs/.hooks/*" = ["INP001", "T201"]

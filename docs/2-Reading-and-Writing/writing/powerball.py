@@ -20,7 +20,7 @@ for draw in range(NUM_DRAWS):
     my_powerball = random.choice(range(1, 27))
     matching_nums = len(my_draw.intersection(winning_draw))
     i_have_powerball = my_powerball == powerball
-    
+
     if matching_nums == 5:
         if i_have_powerball:
             print("OHMYGAH I WON!")

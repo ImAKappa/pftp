@@ -120,7 +120,7 @@ def functions():
     Oh, and make sure the speaker is actually on before you use it!
     """
     import random
-    
+
     def jumble(s: str) -> str:
         """Jumbles each word in a string
         

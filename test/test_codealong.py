@@ -1,13 +1,12 @@
-import pytest
-from pftp.codealong import CodeAlong, CodeAlongWriter
-from pathlib import Path
+from pftp.codealong import CodeAlongWriter
+
 
 class TestCodeAlongWriter:
 
     def test_func_to_str(self):
         def f() -> None:
             """A function, f"""
-            
+
             print("Hello, World!")
 
         writer = CodeAlongWriter()
@@ -44,4 +43,3 @@ print("Hello, World!")
         assert actual == expected
 
 
-        

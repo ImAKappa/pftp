@@ -4,6 +4,7 @@ This module formats links
 """
 import re
 
+
 def fmt_links(content: str) -> str:
     """Formats links
     

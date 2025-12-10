@@ -2,9 +2,10 @@
 
 This module generates fake business data and exports to an Excel file
 """
+from pathlib import Path
+
 import pandas as pd
 from faker import Faker
-from pathlib import Path
 
 
 def fake_businesses(fake: Faker, sample_size: int) -> pd.DataFrame:

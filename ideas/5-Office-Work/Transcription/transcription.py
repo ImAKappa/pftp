@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-import wave
 import sys
+import wave
 from pathlib import Path
 
-from vosk import Model, KaldiRecognizer, SetLogLevel
+from vosk import KaldiRecognizer, Model, SetLogLevel
 
 # You can set log level to -1 to disable debug messages
 SetLogLevel(0)

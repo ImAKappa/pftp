@@ -2,19 +2,22 @@
 
 Module for 'Downloads Folder' code-along
 """
-from typing import Self
+
 from pathlib import Path
-from pftp.codealong import CodeAlong, CodeAlongWriter, CodeAlongTester
+from typing import Self
+
+from pftp.codealong import CodeAlong, CodeAlongTester, CodeAlongWriter
+
 
 class DownloadsFolder(CodeAlong):
-
     def __init__(self) -> Self:
-        super().__init__("Fortune Teller",
+        super().__init__(
+            "Fortune Teller",
             sections=[
                 self.downloads_0,
                 self.downloads_1,
                 self.downloads_2,
-            ]
+            ],
         )
 
     def downloads_0(self) -> None:
@@ -45,8 +48,8 @@ class DownloadsFolder(CodeAlong):
     def downloads_2(self) -> None:
         """Clean up on aisle 'Downloads'"""
 
-        from pathlib import Path
         import random
+        from pathlib import Path
 
         # Make fake downloads folder
         path = Path("./downloads")
@@ -63,9 +66,10 @@ class DownloadsFolder(CodeAlong):
         for file in downloads_folder.iterdir():
             print(file)
 
+
 if __name__ == "__main__":
     tester = CodeAlongTester()
-    tester.test_for_errors(DownloadsFolder())
+    tester.test_snippets(DownloadsFolder())
 
     writer = CodeAlongWriter()
     output = Path("./docs/3-Downloads-Folder/downloadsfolder")

@@ -2,10 +2,10 @@
 
 This module adds the last modified date to a file name
 """
-from datetime import datetime
 import os
+from datetime import datetime
 from pathlib import Path
-import time
+
 
 def modification_date(filename: Path) -> datetime:
     t = os.path.getmtime(filename)

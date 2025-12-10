@@ -28,9 +28,11 @@ can be converted to
 # TODO: Manipulate ast to test that no example throws an error
 
 import ast
-from pathlib import Path
-from .visitors import Fn, FnDefVisitor
 from dataclasses import dataclass
+from pathlib import Path
+
+from .visitors import Fn, FnDefVisitor
+
 
 @dataclass
 class Args:
@@ -72,7 +74,7 @@ def fn_to_md(fn: Fn) -> str:
     return s
 
 def main(args: Args):
-    with open(args.src, mode="r", encoding="utf-8") as f:
+    with open(args.src, encoding="utf-8") as f:
         content = f.read()
 
     tree = ast.parse(content)
@@ -80,5 +82,4 @@ def main(args: Args):
     visitor.visit(tree)
 
     with open(args.out, mode="w", encoding="utf-8") as f:
-        for fn in visitor.fns:
-            f.write(fn_to_md(fn))
+        f.writelines(fn_to_md(fn) for fn in visitor.fns)

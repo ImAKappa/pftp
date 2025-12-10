@@ -3,8 +3,9 @@
 This module tests the Parser class
 """
 
-from pftp.combparser import ParserCombinator, ParserError
 import pytest
+
+from pftp.combparser import ParserCombinator, ParserError
 
 p = ParserCombinator()
 

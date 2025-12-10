@@ -2,10 +2,10 @@
 
 This module extracts text from PDFs
 """
-from pathlib import Path
-from PyPDF2 import PdfReader
 from io import StringIO
-from typing import Optional
+from pathlib import Path
+
+from PyPDF2 import PdfReader
 
 
 def describe_pdf(pdf: PdfReader) -> None:
@@ -20,7 +20,7 @@ def describe_pdf(pdf: PdfReader) -> None:
     print(f"{'Pages':<20}{len(pdf.pages)}")
 
 
-def extract_all_text(pdf: PdfReader, pages: Optional[range] = None) -> str:
+def extract_all_text(pdf: PdfReader, pages: range | None = None) -> str:
     """Extracts text from every page in the document
 
     :param pdf: PdfReader object

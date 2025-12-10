@@ -3,9 +3,11 @@
 This module generates fake files for testing
 """
 
-import faker
-from pathlib import Path
 import shutil
+from pathlib import Path
+
+import faker
+
 
 def new_fake_files(fake: faker.Faker, root: Path, n: int) -> None:
     for _ in range(n):
@@ -27,6 +29,6 @@ def main() -> None:
     empty_dir(root)
     new_fake_files(fake, root, n=22)
     new_fake_folders(root, n=5)
-        
+
 if __name__ == "__main__":
     main()

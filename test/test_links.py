@@ -1,5 +1,6 @@
 import pytest
-import pftp.links as links
+
+from pftp import links
 
 
 def test_links():
@@ -11,7 +12,7 @@ def test_links():
     Goole developer and leading AI-researcher Peter Norvig wrote about this best in his blog post [Teach Yourself Programming in Ten Years :fontawesome-solid-up-right-from-square:](https://www.norvig.com/21-days.html).
     Do not be tempted to skim! Read it over in its entirety to set your expectations for learning to code.
     """
-    
+
     assert links.fmt_links(content) == expected
 
     # Should not affect LOCAL file markup

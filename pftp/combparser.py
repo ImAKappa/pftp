@@ -1,5 +1,5 @@
-from typing import Callable
 from collections import namedtuple
+from collections.abc import Callable
 
 # A collection to represent the result of a parser combinator operation
 Result = namedtuple("Result", ["captured", "rest"])
@@ -16,8 +16,7 @@ class ParserCombinator:
         """Matches a specific sequence of characters at the start of `src`"""
         if src.startswith(starting_txt):
             return Result(starting_txt, src[len(starting_txt) :])
-        else:
-            raise ParserError(f"Expected '{starting_txt}'")
+        raise ParserError(f"Expected '{starting_txt}'")
 
     def take_while(self, fn: Callable[[str], bool], src: str) -> Result:
         """Takes while `fn` is true"""

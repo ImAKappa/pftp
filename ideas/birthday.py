@@ -6,8 +6,8 @@ This script celebrates birthdays
 2. If today is their birthday, print the happy birthday song!
 3. If it's not their birthday, count how many days until their next birthday
 """
-from datetime import date
 import time
+from datetime import date
 
 
 def ask_birthday() -> str:
@@ -44,7 +44,6 @@ def sing_happy_bday(name: str, inv_speed: int = 0.1) -> None:
         # This gives a typing effect
         time.sleep(inv_speed)
     print()
-    return
 
 
 def main():

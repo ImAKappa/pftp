@@ -3,10 +3,11 @@
 This module provides functions for zipping and unzipping a collection of folders
 """
 
-from pathlib import Path
-import uuid
 import shutil
+import uuid
+from pathlib import Path
 from zipfile import ZipFile
+
 
 def empty_dir(dir: Path) -> None:
     shutil.rmtree(dir)

@@ -2,13 +2,15 @@
 
 This module transcribes audio files (.wav)
 """
+import ast
 import subprocess
 import sys
-import ast
-from pathlib import Path
 from dataclasses import dataclass
 from io import StringIO
-from vosk import Model, KaldiRecognizer, SetLogLevel
+from pathlib import Path
+
+from vosk import KaldiRecognizer, Model, SetLogLevel
+
 
 @dataclass
 class WavConfig:
@@ -32,14 +34,14 @@ def main() -> None:
 
     if not config.model.exists():
         raise FileNotFoundError(f"Could not find model at '{config.model}'")
-    
+
     model = Model(model_path=str(config.model))
     rec = KaldiRecognizer(model, config.wav.sample_rate)
 
     audio_file = Path(sys.argv[1])
     if not audio_file.exists():
         raise FileNotFoundError(f"Could not find audio at '{audio_file}'")
-        
+
     # Command to format wav file as PCM Mono
     cmd_fmt_wav = [
         "ffmpeg", "-loglevel", "quiet", "-i", str(audio_file),

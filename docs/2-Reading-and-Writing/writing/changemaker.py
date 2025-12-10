@@ -9,8 +9,9 @@ Examples:
 - If the user entered $1.18 it should output: 4 quarters, 1 dimes, 1 nickels, 3 pennies
 - If the user entered $1.02 it should output: 4 quarters, 0 dimes, 0 nickels, 2 pennies
 """
-from typing import NamedTuple
 from enum import Enum
+from typing import NamedTuple
+
 
 class Coin(NamedTuple):
     name: str
