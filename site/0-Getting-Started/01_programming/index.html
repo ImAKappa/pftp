@@ -1,0 +1,1773 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An introduction to Python for those without any programming experience">
+      
+      
+        <meta name="author" content="ImAKappa">
+      
+      
+        <link rel="canonical" href="https://imakappa.github.io/pftp/0-Getting-Started/01_programming/">
+      
+      
+        <link rel="prev" href="../00_language/">
+      
+      
+        <link rel="next" href="../../1-Project-Basics/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.11">
+    
+    
+      
+        <title>👩‍💻 Programming - Python for the People</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.bd6182e7.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/modern/palette.dfe2e883.min.css">
+      
+      
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+  
+  <style>:root{}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#programming" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Python for the People" class="md-header__button md-logo" aria-label="Python for the People" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17H18c1.1 0 2-.9 2-2s-.9-2-2-2V9c0-1 0-2-1.08-2.86.05-.21.08-.42.08-.64C17 3.57 15 2 12.5 2c-2.26 0-4.12 1.31-4.43 3H6L3.71 2.79 3 3.5l2 2-2 2 .71.71L6 6h2.07c.31 1.69 2.17 3 4.43 3 .5 0 1-.08 1.43-.2.04.07.07.14.07.2v4H8c-1.1 0-2 .9-2 2s.9 2 2 2H6.5A2.5 2.5 0 0 0 4 19.5c0 .17 0 .34.05.5H4c-1.1 0-2 .9-2 2h17.5a2.5 2.5 0 0 0 0-5M12 5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Python for the People
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              👩‍💻 Programming
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="purple" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="green"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/ImAKappa/pftp/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ImAKappa/pftp
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Python for the People" class="md-nav__button md-logo" aria-label="Python for the People" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.5 17H18c1.1 0 2-.9 2-2s-.9-2-2-2V9c0-1 0-2-1.08-2.86.05-.21.08-.42.08-.64C17 3.57 15 2 12.5 2c-2.26 0-4.12 1.31-4.43 3H6L3.71 2.79 3 3.5l2 2-2 2 .71.71L6 6h2.07c.31 1.69 2.17 3 4.43 3 .5 0 1-.08 1.43-.2.04.07.07.14.07.2v4H8c-1.1 0-2 .9-2 2s.9 2 2 2H6.5A2.5 2.5 0 0 0 4 19.5c0 .17 0 .34.05.5H4c-1.1 0-2 .9-2 2h17.5a2.5 2.5 0 0 0 0-5M12 5c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1"/></svg>
+
+    </a>
+    Python for the People
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/ImAKappa/pftp/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    ImAKappa/pftp
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0 Getting Started
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    0 Getting Started
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../00_language/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🐍 The Python Language
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👩‍💻 Programming
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    👩‍💻 Programming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#editors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🪟 Editors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-is-writing-is-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Coding is Writing is Thinking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-problems-with-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 Solving Problems with Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛞 Process &amp; Design
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-vs-apps-vs-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📦 Scripts vs Apps vs Libraries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️‍♂️ Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../1-Project-Basics/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1 Project Basics
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    1 Project Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2 Reading and Writing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2 Reading and Writing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-Reading-and-Writing/00_reading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📔 Reading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-Reading-and-Writing/01_reuse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ♻️ Reuse, Reduce, Recycle
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../2-Reading-and-Writing/02_writing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ✍️ Writing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../3-Project-Files/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3 Project Files
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    3 Project Files
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4 Solving Problems
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4 Solving Problems
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-Solving-Problems/00_problems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ❓ What's the problem?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4-Solving-Problems/01_requirements/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🗺️ Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../5-Project-Data/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5 Project Data
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    5 Project Data
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6 Computers
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    6 Computers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6-Computers/00_emeraldcurtain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🖥️ Computers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../7-Project-Art/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7 Project Art
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    7 Project Art
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8 Conclusion
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    8 Conclusion
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-Conclusion/00_nowwhat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🤷🏽‍♀️ Now What?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../8-Conclusion/01_resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🌐 Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#editors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🪟 Editors
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coding-is-writing-is-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        💡 Coding is Writing is Thinking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-problems-with-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔨 Solving Problems with Code
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛞 Process &amp; Design
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scripts-vs-apps-vs-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📦 Scripts vs Apps vs Libraries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏋️‍♂️ Exercises
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+<h1 id="programming">👩‍💻 Programming<a class="headerlink" href="#programming" title="Permanent link">&para;</a></h1>
+<h2 id="editors">🪟 Editors<a class="headerlink" href="#editors" title="Permanent link">&para;</a></h2>
+<p>Let's get familiar with the two main parts of our code editor, Thonny.</p>
+<p><img alt="User interface of Thonny code editor" src=".././img/01_programming-thonny_ide-2023-02-21.png" /></p>
+<ol>
+<li>The <strong>code editor</strong>: This is where we will write our Python code.
+We use this section when we write multiple lines of code that we want to execute all at once.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Running programs</p>
+<p>Press the green run button to execute the code in the code editor </p>
+</div>
+<ol>
+<li>The <strong>REPL</strong>: This stands for Read-Evaluate-Print-Loop. This bit is interactive. When we enter a valid Python instruction (that is, type the instruction after the <code>&gt;&gt;&gt;</code> then press the <code>enter</code>/<code>return</code> key), we will immediately see the result. We usually write short lines of code here when we want to test something quickly.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Command History</p>
+<p>When using the REPL, you can press the <code>up</code> arrow key to load a previous command</p>
+</div>
+<p>Thonny is an <strong>IDE</strong>: An Integrated Development Environment. An IDE is any kind of editor that has multiple sections that are for different things, like editing code, running coding interactively (like a REPL), and managing files.</p>
+<div class="admonition note">
+<p class="admonition-title">Code IDEs vs Word Processors</p>
+<p>MS Word and Google Docs are examples of word processors. These apps deal with <em>rich</em> text, which is text that is embellished with lots of extra notation called <strong>markup</strong> so that the text can have fancy styles like bolding, colours, highlights, and different sizes.</p>
+<p>However, all the markup makes it difficult to write Python code in MS Word. <strong>Please <a href="https://www.youtube.com/watch?v=X34ZmkeZDos">don't write code using Microsoft Word <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M290.4 19.8C295.4 7.8 307.1 0 320 0h160c17.7 0 32 14.3 32 32v160c0 12.9-7.8 24.6-19.8 29.6s-25.7 2.2-34.9-6.9L400 157.3 246.6 310.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L354.7 112l-57.3-57.4c-9.2-9.2-11.9-22.9-6.9-34.9zM0 176c0-44.2 35.8-80 80-80h80c17.7 0 32 14.3 32 32s-14.3 32-32 32H80c-8.8 0-16 7.2-16 16v256c0 8.8 7.2 16 16 16h256c8.8 0 16-7.2 16-16v-80c0-17.7 14.3-32 32-32s32 14.3 32 32v80c0 44.2-35.8 80-80 80H80c-44.2 0-80-35.8-80-80z"/></svg></span></a></strong></p>
+<p>Instead we write Python code in a plain text file with the file extension <code>.py</code>. Plain text is the kind you would usually write in Notepad (Windows) or TextEdit (Mac). You can't change the styling of the text, but it's much simpler; it's plain.</p>
+<p>We use Thonny, instead of Notepad, because it has features that make it more convenient to edit Python code.
+These include (but are not limited to):</p>
+<ul>
+<li>Syntax highlighting: some words get a different colour, without extra markup</li>
+<li>Debugging: This feature lets you run code one instruction at a time</li>
+<li>Shell: This lets you run Python interactively </li>
+</ul>
+</div>
+<p>To see your files, select "View" then check "Files" in the menu.</p>
+<p><img alt="Files menu in the Thonny code editor" src=".././img/01_programming-thonny_ide_files-2023-02-24.png" /></p>
+<h2 id="coding-is-writing-is-thinking">💡 Coding is Writing is Thinking<a class="headerlink" href="#coding-is-writing-is-thinking" title="Permanent link">&para;</a></h2>
+<p>Writing Python code is more than typing some words into Thonny.
+It is writing, and writing is thinking on paper.
+People who write well know how to sort out their thoughts, critique them, refine them, and express them in an accessible way to other people. The same can be said for Python. You can write convoluted, broken code, or write simple, elegant, and correct code that says nothing beyond what it needs to say, to do the things it needs to do.</p>
+<p>Just like writing, learning to code well takes time. Google developer and leading AI-researcher Peter Norvig wrote about this best in his blog post <a href="https://www.norvig.com/21-days.html">Teach Yourself Programming in Ten Years</a>. Do not be tempted to skim! Read it over in its entirety to set your expectations for learning to code.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Read it!</p>
+<p>Even if you don't understand most of it, please read <a href="https://www.norvig.com/21-days.html">Teach Yourself Programming in Ten Years</a>.
+The blog post is aimed at people interested in software development, but even if that is not you, all I want you to get out of it is that learning to code will take time and effort, so don't worry if you feel it's taking a long time for you get the hang of Python. We're all in the same boat!</p>
+</div>
+<h2 id="solving-problems-with-code">🔨 Solving Problems with Code<a class="headerlink" href="#solving-problems-with-code" title="Permanent link">&para;</a></h2>
+<p>It's important to have a good grasp of the problem you're trying to solve with Python
+(or knowing if you even need Python at all!).
+For some problems, it makes sense to write a <strong>program</strong>, i.e. a recipe of computations.
+Allen Downey, author of the wonderful (free!) book <a href="https://greenteapress.com/thinkpython2/html/thinkpython2002.html">Think Python</a>, says that there are really only 5 kinds of instructions that compose a program:</p>
+<table>
+<thead>
+<tr>
+<th>Instruction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input</td>
+<td>Get data from the keyboard, a file, the internet, or some other device</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Display data on the screen, save it in a file, send it over the internet, etc</td>
+</tr>
+<tr>
+<td>Math</td>
+<td>Perform some number-crunching (add a number here, multiply some numbers there)</td>
+</tr>
+<tr>
+<td>Conditional Execution</td>
+<td>Check for certain conditions and run the appropriate code</td>
+</tr>
+<tr>
+<td>Repetition</td>
+<td>Perform some action repeatedly, usually with some variation each time</td>
+</tr>
+</tbody>
+</table>
+<p>Basically, if you can express your problem as some combination of these instructions, you can write
+a program in Python to get your computer to solve your problem for you.</p>
+<h2 id="process-design">🛞 Process &amp; Design<a class="headerlink" href="#process-design" title="Permanent link">&para;</a></h2>
+<p>It's very easy to write a terrible essay; you simply need to write, and then stop writing.
+Writing a <em>great</em> essay takes research, planning, writing, and multiple rounds of revisions and gathering feed-back.
+A similar thing happens (or at least, <em>should</em> happen) when writing software (i.e. code).
+It's easy to write code that doesn't actually solve your problems correctly or robustly.</p>
+<p>In his book, <a href="https://en.wikipedia.org/wiki/Code_Complete">Code Complete</a>, Steve McConnell laid out a few key components of the software development process<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>:</p>
+<!-- TODO: Turn into flow chart -->
+
+<table>
+<thead>
+<tr>
+<th>Step of Process</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Problem definition</td>
+<td>What problem are we trying to solve? (Don't offer solutions yet!)</td>
+</tr>
+<tr>
+<td>Requirements development</td>
+<td>What features does our solution have to have? Does Python offer these features?</td>
+</tr>
+<tr>
+<td>Construction planning</td>
+<td>Think about how we could implement the solution, step by step</td>
+</tr>
+<tr>
+<td>Coding &amp; debugging</td>
+<td>Implement the solution in Python. Fix bugs.</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="scripts-vs-apps-vs-libraries">📦 Scripts vs Apps vs Libraries<a class="headerlink" href="#scripts-vs-apps-vs-libraries" title="Permanent link">&para;</a></h2>
+<p>A <strong>script</strong> is a short piece of code, usually in a single file, that does one main thing.
+For example, this script fetches a random useless fact from the internet:</p>
+<div class="language-python highlight"><span class="filename">uselessfact.py</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="o">--</span><span class="mi">8</span><span class="o">&lt;--</span> <span class="s2">&quot;uselessfact.py&quot;</span>
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Try it yourself</p>
+<p>You don't need to <em>how</em> this code works at this point in the guide, but try typing this code into
+the code editor section of Thonny (the top portion, not the Shell).
+Then press the green run button, and look at the Shell section to see the result.</p>
+<p><img alt="uselessfact.py in Thonny" src=".././img/01_programming-thonny_useless_fact-2024-06-14.png" /></p>
+<p>Try re-running the script a few times to see different useless facts.</p>
+</div>
+<p>Scripts are different from applications, or <strong>apps</strong>, which are bundles of code that you use to accomplish one or more tasks. 
+Apps are typically more complicated than scripts.
+Compare the script above to something like your calendar app, which can send notifications, set reminders, store data related to events, dates, and times, has a user interface, and can synchronize data across multiple devices.</p>
+<p>There is another kind of software called a <strong>library</strong>.
+A library is a bundle of code that is meant to be used in other people's code.
+Libraries tend to be pretty hard to write because you have to think about how the code will be used on many different operating systems, and write lots of tests, publish documentation on how to use the library, and maintain it when people find bugs or are looking for more features.
+Python developers typically use the word "<strong>packages</strong>" instead of library.
+<a href="https://pypi.org/">PyPI</a> is where you can find Python packages. </p>
+<p>Specific to Python, we have <strong>modules</strong>. These are files with reusable bits of code.
+Python comes pre-installed with many modules.
+For example, we can use the <code>random</code> module which lets us write code that can generate random numbers</p>
+<div class="language-python highlight"><span class="filename">Python random module</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here&#39;s a random number from 1 to 10:&quot;</span><span class="p">,</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</span></code></pre></div>
+<p>We need to write <code>import random</code> to tell the Python interpreter to load the code from the random module.
+It's a good thing the interpreter doesn't automatically load every single built-in module,
+otherwise it would take a while to start up. Better for us to explicitly ask for just the specific modules we need.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In this guide, we will stick to writing modules and scripts</p>
+</div>
+<h2 id="exercises">🏋️‍♂️ Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
+<p><strong>Q1.</strong> What's an IDE?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>An Integrated Development Environment. It's a piece of software that makes it
+easier to write and edit code.</p>
+</details>
+<p><strong>Q2.</strong> What is a program? What are the different instruction types for a program?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>A program is a sequence of instructions of how to perform a computation.
+In other words, a recipe of computations.</p>
+<table>
+<thead>
+<tr>
+<th>Instruction</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input</td>
+<td>Get data from the keyboard, a file, the internet, or some other device</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Display data on the screen, save it in a file, send it over the internet, etc</td>
+</tr>
+<tr>
+<td>Math</td>
+<td>Perform some number-crunching (add a number here, multiply some numbers there)</td>
+</tr>
+<tr>
+<td>Conditional Execution</td>
+<td>Check for certain conditions and run the appropriate code</td>
+</tr>
+<tr>
+<td>Repetition</td>
+<td>Perform some action repeatedly, usually with some variation each time</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p><strong>Q3.</strong> What is the process for writing code?</p>
+<details class="success">
+<summary>Answer</summary>
+<table>
+<thead>
+<tr>
+<th>Part of Process</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Problem definition</td>
+<td>What problem are we trying to solve? (Don't offer solutions yet!)</td>
+</tr>
+<tr>
+<td>Requirements development</td>
+<td>What features does our solution have to have? Does Python offer these features?</td>
+</tr>
+<tr>
+<td>Construction planning</td>
+<td>Think about how we could implement the solution, step by step</td>
+</tr>
+<tr>
+<td>Coding &amp; debugging</td>
+<td>Implement the solution in Python. Fix bugs.</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p><strong>Q4.</strong> What is the difference between a script, an app, and a library? Provide an example for each</p>
+<details class="success">
+<summary>Answer</summary>
+<table>
+<thead>
+<tr>
+<th>Type of Software</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Script</td>
+<td>Typically a single file of code that accomplishes a few simple/short tasks</td>
+<td>A script to download files from the internet</td>
+</tr>
+<tr>
+<td>App</td>
+<td>A bundle of software that people use to accomplish a few complicated tasks</td>
+<td><a href="https://thonny.org/">Thonny</a> is an app for editing Python code</td>
+</tr>
+<tr>
+<td>Library</td>
+<td>A bundle of software that people can use in their own code</td>
+<td><a href="https://pandas.pydata.org/">pandas</a> is data analysis library for Python</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p><strong>Q5.</strong> Consider this Python code that verifies if someone is old enough to drink</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Please enter your age: &quot;</span><span class="p">))</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">drinking_age</span> <span class="o">=</span> <span class="mi">19</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="k">if</span> <span class="n">age</span> <span class="o">==</span> <span class="n">drinking_age</span><span class="p">:</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You may enter the bar&quot;</span><span class="p">)</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="k">else</span><span class="p">:</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sorry, you are not old enough to drink&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>Type it into Thonny, then run it. You can enter an age by typing it into the Shell, then pressing the <code>enter</code>/<code>return</code> key.</p>
+<p><img alt="Thonny exercise" src=".././img/01_programming-thonny_exercise-2023-02-24.png" /></p>
+<p>i. Does the program do what it's supposed to? Why or why not? Rerun the code and try a few different ages</p>
+<details class="success">
+<summary>Answer</summary>
+<p><strong>No</strong>, the code produces an incorrect result for ages greater than 19. It should respond "You may enter the bar", but doesn't.</p>
+<p>This is because the code checks if <code>age</code> equals <code>drinking age</code>. Instead it should check if <code>age</code> is greater than or equal to <code>drinking_age</code>.</p>
+<p>Don't worry if you weren't sure how to read the Python script, yet (after all, we haven't properly gone over the basic words and phrases you can use in Python).</p>
+<p>If you were able to figure it out, great! Can you try and fix the code? </p>
+</details>
+<p>ii. Can you think of any inputs you can give that will crash the program (i.e. cause it to throw an error)?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>The program will crash if you provide inputs that don't make any sense, like letters or punctuation.</p>
+<p>If you haven't already, try running the code again and input <code>abc</code> or something similar.</p>
+</details>
+<p>iii. Why is testing your code so important?</p>
+<details class="success">
+<summary>Possible Answer</summary>
+<p>Testing brings your attention to errors in your code. There are many reasons for errors:</p>
+<ul>
+<li>It's easy to accidentally mistype something without realizing it</li>
+<li>Sometimes your solution to the problem isn't actually correct, or doesn't work the way you expect</li>
+<li>When you change one part of your code, you could inadvertently break some other place in your code</li>
+<li>Users of your code <em>will</em> find a way to break your code by accidentally giving inputs you could have never expected</li>
+<li><a href="https://xkcd.com/327/">Malicious actors</a> can purposely give unexpected inputs that exploit security vulnerabilities in your code</li>
+</ul>
+<p>Testing helps ensure your code is more robust!</p>
+</details>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>The full software development process is much lengthier and much more involved, but this list is good enough for most of the software you write as beginner Python programmer&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../00_language/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 🐍 The Python Language">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                🐍 The Python Language
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../1-Project-Basics/" class="md-footer__link md-footer__link--next" aria-label="Next: 🥠 Fortune Telling">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                🥠 Fortune Telling
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M247.1 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L179.2 256 41.9 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2025 ImAKappa
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["navigation.indexes","toc.follow","navigation.footer"],"search":"../../assets/javascripts/workers/search.5df7522c.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.21aa498e.min.js"></script>
+      
+    
+  </body>
+</html>
