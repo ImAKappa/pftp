@@ -1,5 +1,4 @@
 # Global directories
-__pycache__/
 
 # Global files
 *.py[cod]
@@ -8,21 +7,21 @@ __pycache__/
 *.log
 *.swp
 
-# Root directories
+# Cache
+.ruff_cache/
+.cache/
+__pycache__/
+
+# Site
+/backend/dist/
+/dist/
+/site/
+
+# Dev
 /.benchmarks/
 /.env/
 /.idea/
 /.mypy_cache/
 /.pytest_cache/
 /.vscode/
-/backend/dist/
-/dist/
-/site/
-
-# Root files
 /.coverage*
-
-# Models
-vosk-model-en-us-0.22-lgraph/
-# Fake data
-fakedata/
