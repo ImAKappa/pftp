@@ -47,23 +47,28 @@ logging.basicConfig(format="%(module)s:%(message)s")
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
 
+
 @dataclass
 class SnippetMetadata:
     """Metadata for a snippet"""
+
     comment: str = ""
     intentionally_throws_error: bool = False
     intentionally_unterminating: bool = False
     prompts: list[str] = field(default_factory=list)
 
+
 @dataclass
 class Snippet:
     """A snippet
-    
+
     A single chunk of source code + metadata for the learner to read, copy, and digest.
     The source code of a snippet is implemented as a function so that it can be tested and inspected.
     """
+
     source: Callable[[], None]
     metadata: SnippetMetadata
+
 
 class CodeAlongWriter:
     """Writes code along snippets to the source file tree of the book"""
@@ -71,13 +76,13 @@ class CodeAlongWriter:
     def __init__(self, docstring_char: str = r'"""') -> None:
         self._docstring = docstring_char
 
-    def write(self, dir: Path, snippets: list[Snippet], encoding: str = "utf-8") -> None:
+    def write(self, folder: Path, snippets: list[Snippet], encoding: str = "utf-8") -> None:
         """Writes the code-along content"""
-        dir.mkdir(parents=True, exist_ok=True)
+        folder.mkdir(parents=True, exist_ok=True)
 
         for snippet in snippets:
             f = snippet.source
-            file_path = dir/f"{f.__name__}.py"
+            file_path = folder / f"{f.__name__}.py"
             content = self.func_to_filestring(f)
             file_path.write_text(content, encoding=encoding)
             print(f"Wrote '{file_path}'")
@@ -94,20 +99,20 @@ class CodeAlongWriter:
     def func_to_module_docstring(self, f: Callable[[], None]) -> str:
         """Converts name and function docstring to module docstring"""
         if f.__doc__ is None:
-            raise ValueError(f"Snippet source code '{f.__name__}' is missing docstring")
+            msg = f"Snippet source code '{f.__name__}' is missing docstring"
+            raise ValueError(msg)
         doc = inspect.cleandoc(f.__doc__)
-        return f"\"\"\"{f.__name__}\n\n{doc}\n\"\"\"\n"
+        return f'"""{f.__name__}\n\n{doc}\n"""\n'
 
     def func_body_to_filestring(self, f: Callable[[], None]) -> str:
         """Converts the body of a function to a string, preserving identation"""
         src = inspect.getsource(f)
         # Strip docstring
         re_docstring = r'"""[\s\S]+"""\n'
-        signature, body = re.split(re_docstring, src)
+        _signature, body = re.split(re_docstring, src)
         # inspect preserves absolute indentation,
         #   but we want to only preserve relative identation
-        body = textwrap.dedent(body)
-        return body
+        return textwrap.dedent(body)
 
 
 class CodeAlongTester:
@@ -119,10 +124,10 @@ class CodeAlongTester:
 
         for snippet in snippets:
             test_header = f"Testing '{snippet.source.__name__}'"
-            print(f"{test_header}\n{len(test_header)*"-"}")
+            print(f"{test_header}\n{len(test_header) * '-'}")
 
             if snippet.metadata.intentionally_unterminating:
-                # TODO (2025-12-10) Maybe test for a timeout instead?
+                # TODO(2025-12-10): Maybe test for a timeout instead?
                 continue
             try:
                 if snippet.metadata.prompts:
@@ -135,9 +140,10 @@ class CodeAlongTester:
                 print("\tKeyboard interrupt")
             print()
 
+
 class CodeAlong:
     """A code along.
-    
+
     A series of code snippets for the learner to follow along."""
 
     def __init__(self, name: str, snippets: list[Snippet]) -> None:
@@ -152,8 +158,8 @@ class CodeAlong:
         print(ut.underline(f"Running tests for {self.name}"))
         self._tester.test_snippets(self.snippets)
 
-    def write(self, dir: Path) -> None:
+    def write(self, folder: Path) -> None:
         """Writes code along"""
         print(ut.underline(f"Writing snippets for {self.name}"))
-        dir.mkdir(parents=True, exist_ok=True)
-        self._writer.write(dir, self.snippets)
+        folder.mkdir(parents=True, exist_ok=True)
+        self._writer.write(folder, self.snippets)

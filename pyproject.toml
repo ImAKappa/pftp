@@ -72,6 +72,9 @@ exclude_lines = [
   "if TYPE_CHECKING:",
 ]
 
+[tool.ruff.format]
+quote-style = "double"
+
 [tool.ruff.lint.extend-per-file-ignores]
 "pftp/*" = ["T201"]
 "codealongs/*" = [
