@@ -38,21 +38,21 @@ Pythia sees all, knows all, but has a fairly limited list of possible responses.
 She's a bit picky and expects questions with "yes" or "no" answers.
 
 ```python title="fortune.py"
---8<-- "1-Fortune-Telling/fortune/fortune_0.py"
+--8<-- "fortune_0.py"
 ```
 
 She chooses an answer according to the Spirit of Delphi, which is fickle
 and divinely random.
 
 ```python title="fortune.py"
---8<-- "1-Fortune-Telling/fortune/fortune_1.py"
+--8<-- "fortune_1.py"
 ```
 
 Hm, but wait, Pythia shouldn't be giving us unsolicited fortunes.
 We should ask her a question, first.
 
 ```python title="fortune.py"
---8<-- "1-Fortune-Telling/fortune/fortune_2.py"
+--8<-- "fortune_2.py"
 ```
 
 !!! question "What if you did this?"
@@ -62,12 +62,13 @@ We should ask her a question, first.
 
 That's better. But it's weird for her to respond if we don't ask a question.
 
+<!-- TODO(2025-12-15): Fix this image to say fortune_2 instead of fortune_1 in the module docstring -->
 ![Example usage of fortune_2.py script in Thonny](./img/01-fortune_2_thonny-2024-06-15.png)
 
 Pythia should double check that we've asked her a question.
 
 ```python title="fortune.py"
---8<-- "1-Fortune-Telling/fortune/fortune_3.py"
+--8<-- "fortune_3.py"
 ```
 
 !!! tip
@@ -78,10 +79,10 @@ Pythia should double check that we've asked her a question.
 Finally, Pythia is a patient seer, and will continue to answer our questions until we are satisified.
 
 ```python title="fortune.py"
---8<-- "1-Fortune-Telling/fortune/fortune_4.py"
+--8<-- "fortune_4.py"
 ```
 
-![Example usage of fortune_3.py script in Thonny](./img/01-fortune_4_thonny-2024-06-15.png)
+![Example usage of fortune_4.py script in Thonny](./img/01-fortune_4_thonny-2024-06-15.png)
 
 ## 🪞 Reflection
 

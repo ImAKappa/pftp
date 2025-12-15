@@ -122,4 +122,4 @@ if __name__ == "__main__":
     )
 
     fortune_teller.test()
-    fortune_teller.write(Path("./docs/1-Fortune-Telling/fortune"))
+    fortune_teller.write(Path("./docs/1-Project-Basics/fortune"))

@@ -12,7 +12,7 @@ fortunes = [
     "Very doubtful",
     "My sources say no",
     "Reply hazy, try again.",
-    "Um, you don't want to know"
+    "Um, you don't want to know",
 ]
 
 prompt = input("What answers do you seek, child?\n")

@@ -45,3 +45,24 @@ primary = "deep purple"
 accent = "green"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to system preference"
+
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.snippets]
+base_path = [
+    # 0-Getting-Started
+    "./docs/assets/scripts/uselessfact.py",
+    # 1-Project-Basics
+    "./docs/1-Project-Basics/fortune/fortune_0.py",
+    "./docs/1-Project-Basics/fortune/fortune_1.py",
+    "./docs/1-Project-Basics/fortune/fortune_2.py",
+    "./docs/1-Project-Basics/fortune/fortune_3.py",
+    "./docs/1-Project-Basics/fortune/fortune_4.py"
+]
+check_paths = true
+[project.markdown_extensions.pymdownx.superfences]
