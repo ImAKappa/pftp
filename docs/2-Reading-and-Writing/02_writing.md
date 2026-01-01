@@ -50,15 +50,6 @@ Write a passive-agressive login authenticator.
 6. Otherwise, tell them they entered the wrong password.
 
 
-```python title="password.py" linenums="1"
---8<-- "password_incomplete.py"
-```
-
-??? success "Possible solution"
-
-    ```python title="password.py" linenums="1"
-    --8<-- "password.py"
-    ```
 
 ### 2. Fetching Useless Facts
 

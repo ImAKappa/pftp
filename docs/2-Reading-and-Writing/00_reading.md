@@ -67,5 +67,3 @@ For each example:
     Type all the examples to better remember Python
 
 ---
-
---8<-- "2-Reading-and-Writing/reading.txt"
