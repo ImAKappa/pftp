@@ -15,6 +15,7 @@ features = [
     "navigation.indexes",
     "toc.follow",
     "navigation.footer",
+    "content.tabs.link",
 ]
 
 [project.theme.icon]
@@ -66,3 +67,12 @@ base_path = [
 ]
 check_paths = true
 [project.markdown_extensions.pymdownx.superfences]
+custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
+]
+[project.markdown_extensions.pymdownx.caret]
+[project.markdown_extensions.pymdownx.mark]
+[project.markdown_extensions.pymdownx.tilde]
+[project.markdown_extensions.footnotes]
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true

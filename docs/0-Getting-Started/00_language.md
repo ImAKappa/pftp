@@ -33,40 +33,49 @@ flowchart LR
     interp["Python Interpreter"] -- "✍️ Print" --> result(["'APPLE'"])
 ```
 
-!!! info "Where can I get a Python interpreter?"
-
-    While you could download the latest traditional[^1] Python interpreter from the [Python Software Foundation](https://www.python.org/downloads/), for this tutorial we will use [Thonny](https://thonny.org/). It comes with version 3.10 of the Python interpreter (the latest version is 3.11, as of time of writing). When we get more experience using Python, we will learn how to update to the latest Python interpreter.
-    
-    [^1]: By "traditional", we mean the interpreter that most people and companies use. There's no "pirated" version of the Python interpreter because it's completely open-source and free! There are, however, several alternative implementations of the Python interpreter, like PyPy (for Python that runs fast), or MicroPython (for running Python on micro controllers). Most people should stick to the interpreter from the [Python Software Foundation](https://www.python.org/psf-landing/)
+Where can we get a Python interpreter?
+It's easy to find and free! Visit [https://www.python.org/](https://www.python.org/) and navigate to the [downloads page](https://www.python.org/downloads/).
+As of the time of writing, the latest Python interpreter version is 3.14 (found [here](https://www.python.org/downloads/release/python-3142/)), so I would recommend installing that version. You can also install the latest Python interpreter version on the website and you should still be able to follow along with your future version (but no guarantees!).
 
 !!! tip "Python Interpreter Cost & Licensing"
 
-    The Python interpreter is free. It's also **open-source**
+    The Python interpreter is free! It's also **open-source**.
 
-Follow the installation instructions for [Thonny](https://thonny.org/) for your operating system (i.e. Windows or Mac)
+Once you have the Python interpreter installed, there should be a new app on your computer called `"IDLE (Python 3.14)"` (or whatever version of you downloadeds). Open it and you should see something like this:
 
-!!! note "Thonny Initial Settings"
+![IDLE GUI](./img/00_idle-gui_2025-12-31.png)
 
-    Make sure to pick "Standard"
+IDLE stands for Integrated Development and Learning Environment. 
+
+The basic way we use IDLE is we type commands, press the `enter` key on your keyboard, and view the result. For example, let's ask our computer to write out the word "apple" in upper case letters for us.
+Type `print('apple'.upper())`, then hit the `enter` key.
+
+!!! note "Entering instructions"
+
+    After we finish typing an instruction, we need to enter the instruction into the interpreter by pressing the `enter`/`return` key on our keyboard; this is what we mean by entering an instruction. 
     
-    ![Thonny Install](./img/00_thonny_install-2023-02-21.png)
+    This is the same as when you type in a search query into Google or Bing. You have to hit enter for the search engine to actually start searching.
 
+    After we enter an instruction, the Python interpreter will try to understand the instruction and, if it does, will return the result of the instruction on the screen.
 
-When the software is finished installing, open it. You should see something like this:
+![IDLE Usage](./img/00_idle-usage_2025-12-31.png)
 
-![Thonny Install](./img/00_thonny_app-2023-02-21.png)
+And just like that, the computer listened to our command and gave us `APPLE`. We can speak to our computer in Python!
 
-## 📝 Syntax 
+!!! info "Is IDLE just a toy? Do professionals use it?"
 
-**Syntax** means the correct (i.e. mutually agreed-upon, or comprehensible) way to structure sentences
+    Yes, it's just for learning. No, I would never write my professional or hobby project Python code in IDLE. There are far more mature, feature-rich tools for writing code. However, IDLE is a very good place for us to start understanding Python. Later on in this book we will learn to use some more professional tools (like [VS Code](https://code.visualstudio.com/)), but let's take things easy for now - no use in overloading your brain with more information than you need to get things done 🤷‍♀️.
 
+## 📝 Syntax
+
+**Syntax** means the correct (i.e. mutually agreed-upon, or comprehensible) way to structure sentences.
 For example, in English we say "My birthday is today!", but we wouldn't say "is !my today Birthday"
 The second sentence uses the exact same words and punctuation, but it doesn't make sense.
 It doesn't use correct English syntax.
 
 Python also has a syntax; there is a right and wrong way to structure sentences in Python.
 
-|Language| Comprehensible | Incomprehensible |
+|Language| Correct | Incorrect |
 | --- | --- | --- |
 | 📝 English | `Hey, write the word 'apple' in uppercase letters` | `'apple' in, uppercase write Hey letters word the` |
 | 🐍 Python | `print('apple'.upper())` | `Hey, write the word 'apple' in uppercase letters` |
@@ -77,27 +86,19 @@ Let's revisit the apple example, where you texted your friend:
 Hey, write the word 'apple' in uppercase letters
 ```
 
-If you try typing this into Thonny, specifically the section of the app that says "Shell", then press `enter`:
+If you try entering this into IDLE:
 
-![Python Syntax](./img/00_python_syntax_error-2023-03-15.png)
+![Python Syntax Error](./img/00_python_syntax_error-2025-12-31.png)
 
 The Python interpreter doesn't understand what we're saying, because we haven't structured the sentence correctly in the Python language. Unlike your friend, the Python interpreter won't bother to ask us to clarify or rephrase what we meant. It will give up trying to understand our instructions very quickly, but will usually tell us why it gave up.
 In this case, the interpreter gave up, or **threw an error**, because it didn't understand the syntax of the instruction we provided to it. The Python interpreter doesn't speak English, it speaks Python.
-
-!!! note "Entering instructions"
-
-    After we finish typing an instruction, we need to enter the instruction into the interpreter by pressing the `enter`/`return` key on our keyboard; this is what we mean by entering an instruction. 
-    
-    This is the same as when you type in a search query into Google or Bing. You have to hit enter for the search engine to actually start searching.
-
-    After we enter an instruction, the Python interpreter will try to understand the instruction and, if it does, will return the result of the instruction on the screen
 
 Python can be tricky initially because:
 
 1. We're not yet fluent in the language
 2. We're used to human languages, which are a lot more flexible than Python[^2]
 
-[^2]: In my opinion. The interpreters for natural languages, our brains, are extraordinarily complex, flexible, and powerful, and the power of a language tends to be limited to the complexity of its interpreter.
+[^2]: In my opinion. The interpreters for natural languages - our brains - are extraordinarily complex, flexible, and powerful, and the power of a language tends to be limited to the complexity of its interpreter.
 
 There are lots of valid ways to ask someone to write "apple" in uppercase letters, but in Python we say:
 
@@ -112,8 +113,6 @@ There are lots of valid ways to ask someone to write "apple" in uppercase letter
     ```text
     Hey, write the word 'apple' in uppercase letters
     ```
-
-![Python Syntax Part 2](./img/00_python_syntax_correct-2023-03-15.png)
 
 ## 💡 Semantics
 
@@ -134,7 +133,7 @@ Here's the same example in Python:
 
 When you give the Python interpreter a semantically meaningless sentence, the interpreter will throw an error, but usually a different kind of error depending on what you were trying to do.
 
-![Python Syntax Part 2](./img/00_python_semantic_error-2023-03-15.png)
+![Python Syntax Part 2](./img/00_python_semantic_error-2025-12-31.png)
 
 !!! note "Errors"
 
@@ -153,8 +152,6 @@ When you give the Python interpreter a semantically meaningless sentence, the in
     To non-native English speakers, Python may seem more foreign.
     However this may make it easier to treat Python as something with its own system of rules,
     as something that works differently on a fundamental level from your native language.
-
-
 
 ## 🏋️‍♀️ Exercises
 
@@ -257,8 +254,8 @@ ii. Which letter occurs more frequently, `e` or `a`?
 
 ??? success "Answer"
 
-    Note that the `>>>` represents the prompt in the "Shell" section of Thonny.
-    You shouldn't type the arrows into the Shell.
+    Note that the `>>>` represents the prompt in IDLE.
+    You shouldn't type the arrows.
 
     i.
 
@@ -279,7 +276,7 @@ ii. Which letter occurs more frequently, `e` or `a`?
     So, there are more `a`s that `e`s in the quote.
 
 
-**Q6.** If you haven't already, skim through the [official Python tutorial](https://docs.python.org/3.11/tutorial/). A lot of it might not make sense just yet, but you should still look through it to get some more context about Python
+**Q6.** If you haven't already, skim through the [official Python tutorial](https://docs.python.org/3.14/tutorial/). A lot of it might not make sense just yet, but you should still look through it to get some more context about Python.
 
 **Q7.** Finally, and most importantly, why do you want to learn Python?
 
