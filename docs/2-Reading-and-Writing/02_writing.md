@@ -70,15 +70,6 @@ Now try [https://uselessfacts.jsph.pl/api/v2/facts/random1 :fontawesome-solid-up
 
 Based on what you just learned about status codes, try to complete the Python script below: 
 
-```python title="ueslessfact.py" linenums="1"
---8<-- "uselessfact_incomplete.py"
-```
-
-??? success "Possible solution"
-
-    ```python title="ueslessfact.py" linenums="1"
-    --8<-- "uselessfact.py"
-    ```
 ### 3. Changemaker
 
 Prompt the user to enter an amount of dollars and cents. For example $1.18.
@@ -90,11 +81,6 @@ Examples:
 - If the user entered $1.18 it should output: 4 quarters, 1 dimes, 1 nickels, 3 pennies
 - If the user entered $1.02 it should output: 4 quarters, 0 dimes, 0 nickels, 2 pennies
 
-??? success "Possible solution"
-
-    ```python title="changemaker.py" linenums="1"
-    --8<-- "3-Reading-and-Writing/writing/changemaker.py"
-    ```
 
 ### 4. Powerball
 
@@ -121,13 +107,3 @@ Use the code below to get started:
 2) For notable winnings (Grand prize, 1 million, and 50 thousand), print a message
 
 3) Compare the stats from the simulation to the theoretical statistics. Are they close?
-
-```python title="powerball.py" linenums="1"
---8<-- "3-Reading-and-Writing/writing/powerball_incomplete.py"
-```
-
-??? success "Possible solution"
-
-    ```python title="powerball.py" linenums="1"
-    --8<-- "3-Reading-and-Writing/writing/powerball.py"
-    ```
