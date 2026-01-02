@@ -124,12 +124,12 @@ Hint: You just have to swap around some strings of text, no need to add or remov
 
 Python can be used as a calculator too! In fact, it is a much more powerful calculator than the calculator app on your smartphone, because it has a wide assortment of "buttons" like `round` and offers you the flexibility to create your own "buttons" as needed (though that topic - **functions** - will come later in the book).
 
-!!! tip "Variable Names and Readability"
+!!! tip "Variables and Readability"
 
     When writing code, it's important to think about readability. In the English translations, we have so much rich context (we know the axe costs $39.98, there is a particular tax rate, etc.).
 
     However, the Python translation above is very opaque if you didn't already have the context of what the numbers meant in English translation.
-    We can improve the readability of the code by using **variable names**. Here is an alternative Python translation that better preserves the context from English:
+    We can improve the readability of the code by using **variables**. Here is an alternative Python translation that better preserves the context from English:
 
     ```python
     >>> gst = 1.13
@@ -152,6 +152,140 @@ Python can be used as a calculator too! In fact, it is a much more powerful calc
     This is a common way to format information in Python.
     We wll revisit this in a later chapter.
 
+## 🗓️ Dates & Times
+
+### Birthday Weekday
+
+=== "English"
+
+    My birthday was on May 15, 2002. What day of the week was that?
+
+=== "Python"
+
+    ```python
+    >>> from datetime import date
+    >>> import calendar
+    >>> birthday = date(2002, 5, 15)
+    >>> calendar.day_name[birthday.weekday()]
+    'Wednesday'
+    ```
+
+---
+
+Try modifying the code above to figure out what day of the week you were born!
+
+### Days Until Christmas
+
+=== "English"
+
+    Today is Halloween, Oct 31st. How many days are there until Christmas?
+
+=== "Python"
+
+    ```python
+    >>> from datetime import date
+    >>> halloween = date(2025, 10, 31)
+    >>> christmas = date(2025, 12, 25)
+    >>> christmas - halloween
+    datetime.timedelta(days=55)
+    ```
+
+---
+
+Subtracting two date objects yields a timedelta (i.e. time difference) object which tells us that there are 55 days between Halloween and Christmas.
+
 ## 🏋️ Exercises
 
-TBD
+In the first few questions, we will learn how to instruct our computers to calculate things for us.
+For each question, enter the correct Python instructions into IDLE:
+
+**Q1.** `60 / 12 = ?`
+
+??? success "Answer"
+
+    ```python
+    >>> 60 / 12
+    5.0
+    ```
+
+**Q2.** How many seconds in a week?
+
+??? success "Answer"
+
+    There are 60 seconds per minute, 60 minutes per hour, 24 hours per day, and 7 days per week.
+    Multiply all of those together and you get the total number of seconds per week.
+
+    ```python
+    >>> 60 * 60 * 24 * 7
+    604800
+    ```
+
+    We can improve readability with variables:
+
+    ```python
+    >>> sec_per_min = 60
+    >>> min_per_hour = 60
+    >>> hours_per_day = 24
+    >>> days_per_week = 7
+    >>> sec_per_week = sec_per_min * min_per_hour * hours_per_day * days_per_week
+    >>> sec_per_week
+    604800
+    ```
+
+**Q3.** I invited 12 friends over for a party. Let's say each person eats a minimum of 2 slices. How many 8-slice pizzas should I buy at minimum?
+
+??? success "Answer"
+
+    I will need $12 \times 2 = 24$ slices, minimum. 24 slices divided by 8 slices per pizza yields 3 pizzas.
+
+    ```python
+    >>> 12 * 2 / 8
+    3.0
+    ```
+
+    We can improve readability with variables:
+
+    ```python
+    >>> party_size = 12
+    >>> slices_per_person = 2
+    >>> slices_per_pizza = 8
+    >>> pizzas = party_size * slices_per_person / slices_per_pizza
+    >>> pizzas
+    3.0
+    ```
+---
+
+In next series of exercises, the main problem is to determine if it's worth speeding.
+
+**Q4.** I need to make it to my daughter's ballet recital in 15min.
+Fortunately, I just need to take a single road from my work to the ballet studio,
+which is 15km away. The road has a speed limit of 50 kilometers (km) / hour (hr).
+
+If I drive the speed limit, will I make it in time? Write a Python program to verify if I can make it.
+
+??? success "Answer"
+
+    You should really try to solve this yourself before looking for answers.
+    You cannot learn to program without thinking through it, noodling around with the numbers, and taking a stab at the problem.
+
+    If you are stuck on writing the Python program, at least work out the answer on pencil and paper (or with a calculator or an Excel spreadsheet).
+
+    If you need a hint, I cannot make it in time. But you should be able to figure out how many minutes I will be late by.
+
+    ??? success "Answer"
+
+        If I travel at 50km/hr, it will take me 18 minutes to travel 15km.
+        Here is the calculation in Python:
+
+        ```python
+        >>> speed = 50
+        >>> distance = 15
+        >>> time_in_hours = speed / distance
+        >>> time_in_min = time * 60
+        >>> time_in_min
+        18
+        >>> time_limit = 15
+        >>> late_by = time_in_min - time_limit
+        >>> late_by
+        3
+        ```

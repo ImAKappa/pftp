@@ -8,6 +8,10 @@ site_author = "ImAKappa"
 copyright = "&copy; 2025 ImAKappa"
 docs_dir = "docs"
 site_dir = "site"
+extra_javascript = [
+    "javascripts/mathjax.js",
+    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"
+]
 
 [project.theme]
 language = "en"
@@ -52,6 +56,8 @@ anchor_linenums = true
 line_spans = "__span"
 pygments_lang_class = true
 [project.markdown_extensions.admonition]
+[project.markdown_extensions.pymdownx.arithmatex]
+generic = true
 [project.markdown_extensions.pymdownx.details]
 [project.markdown_extensions.pymdownx.inlinehilite]
 [project.markdown_extensions.pymdownx.snippets]
@@ -76,3 +82,4 @@ custom_fences = [
 [project.markdown_extensions.footnotes]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
+
