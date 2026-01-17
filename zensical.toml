@@ -17,14 +17,16 @@ nav = [
     {"0. Getting Started" = [
         "0-Getting-Started/00_language.md",
         "0-Getting-Started/01_translation.md",
-        "0-Getting-Started/02_programming.md",
+        "0-Getting-Started/02_problem_solving.md",
+        "0-Getting-Started/03_tools.md",
     ]},
     {"1. Project: Fortune Telling" = "1-Project-Basics/index.md"},
-    {"2. Reading & Writing" = [
-        "2-Reading-and-Writing/00_reading.md",
-        "2-Reading-and-Writing/01_reuse.md",
-        "2-Reading-and-Writing/02_writing.md",
-    ]},
+    {"2. Project: Downloads Folder" = "3-Project-Files/index.md"}
+    # {"2. Reading & Writing" = [
+    #     "2-Reading-and-Writing/00_reading.md",
+    #     "2-Reading-and-Writing/01_reuse.md",
+    #     "2-Reading-and-Writing/02_writing.md",
+    # ]},
 
 ]
 
@@ -97,4 +99,4 @@ custom_fences = [
 [project.markdown_extensions.footnotes]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
-
+[project.markdown_extensions.attr_list]

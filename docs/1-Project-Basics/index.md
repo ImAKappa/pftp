@@ -31,7 +31,7 @@ the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the 
 
 !!! danger "Type, don't copy"
 
-    Manually type out the all the code below into the Thonny editor.
+    Manually type out the all the code below into your code editor.
     You're **wasting your time** if you just copy and paste.
 
 Pythia sees all, knows all, but has a fairly limited list of possible responses.
@@ -63,7 +63,8 @@ We should ask her a question, first.
 That's better. But it's weird for her to respond if we don't ask a question.
 
 <!-- TODO(2025-12-15): Fix this image to say fortune_2 instead of fortune_1 in the module docstring -->
-![Example usage of fortune_2.py script in Thonny](./img/01-fortune_2_thonny-2024-06-15.png)
+<!-- Replace with VS Code -->
+<!-- ![Example usage of fortune_2.py script in Thonny](./img/01-fortune_2_thonny-2024-06-15.png) -->
 
 Pythia should double check that we've asked her a question.
 
@@ -82,7 +83,8 @@ Finally, Pythia is a patient seer, and will continue to answer our questions unt
 --8<-- "fortune_4.py"
 ```
 
-![Example usage of fortune_4.py script in Thonny](./img/01-fortune_4_thonny-2024-06-15.png)
+<!-- TODO: Replace with VS Code -->
+<!-- ![Example usage of fortune_4.py script in Thonny](./img/01-fortune_4_thonny-2024-06-15.png) -->
 
 ## 🪞 Reflection
 

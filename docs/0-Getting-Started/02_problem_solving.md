@@ -1,0 +1,140 @@
+# 🎯 Problem Solving
+
+Unfortunately, to solve problems with code requires more than just the ability to translate commands from English to Python. Programming involves thinking carefully about the problem you wish to solve, and how exactly you wish for a computer to solve it.
+
+If you attempted the exercises at the end of the previous chapter (and I sincerely hope you did), you probably had to take some time to think about each question - parse it, digest it, understand what I was asking you to compute. That is at least half the battle when it comes to writing Python. The remaining work is coding, which in my opinion is the easier part, and which you will learn by osmosis as you do more projects and exercises.
+
+This section might get a little preachy, but there's a reason I want you to start thinking about problem solving this early into your programming journey. Programming languages will come and go (who knows if Python will even be relevant in 15 or 20 years), hardware will evolve, AI will (maybe?) get better. But regardless of the tools available, the constant in all this change is your ability to _think_ about problems, _design_ solutions, and _learn_ how to leverage whatever tools are around you to acheive all that you want to acheive.
+
+## 💡 Coding is Writing is Thinking
+
+Writing Python code is more than typing some words into IDLE.
+It is writing, and writing is thinking on paper (or on screen).
+People who write well know how to sort out their thoughts, critique them, refine them, and express them in an accessible way to other people. The same can be said for Python. You can write convoluted, broken code, or write simple, elegant, and correct code that says nothing beyond what it needs to say, to do the things it needs to do.
+
+Just like writing, learning to code well takes time. Google developer and leading AI-researcher Peter Norvig wrote about this best in his blog post [Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html). Do not be tempted to skim! Read it over in its entirety to set your expectations for learning to code.
+
+!!! abstract "Read it!"
+
+    Even if you don't understand most of it, please read [Teach Yourself Programming in Ten Years](https://www.norvig.com/21-days.html).
+    The blog post is aimed at people interested in software development, but even if that is not you, all I want you to get out of it is that learning to code will take time and effort, so don't worry if you feel it's taking a long time for you get the hang of Python. We're all in the same boat!
+
+## 🔨 Solving Problems with Code
+
+It's important to have a good grasp of the problem you're trying to solve with Python
+(or knowing if you even need Python at all!).
+For some problems, it makes sense to write a **program**, i.e. a recipe of computations.
+Allen Downey, author of the wonderful (free!) book [Think Python](https://greenteapress.com/thinkpython2/html/thinkpython2002.html), says that there are really only 5 kinds of instructions that compose a program:
+
+| Instruction | Description|
+| --- | --- |
+| Input | Get data from the keyboard, a file, the internet, or some other device |
+| Output | Display data on the screen, save it in a file, send it over the internet, etc|
+| Math | Perform some number-crunching (add a number here, multiply some numbers there) |
+| Conditional Execution | Check for certain conditions and run the appropriate code |
+| Repetition | Perform some action repeatedly, usually with some variation each time |
+
+Basically, if you can express your problem as some combination of these instructions, you can write
+a program in Python to get your computer to solve your problem for you.
+
+## 🛞 Process & Design
+
+It's very easy to write a terrible essay; you simply need to write.
+Writing a _great_ essay takes research, planning, writing, and multiple rounds of revisions and gathering feed-back.
+A similar thing happens (or at least, _should_ happen) when writing software.
+It's easy to write code that doesn't actually solve your problems correctly or robustly.
+
+In his book, [Code Complete](https://en.wikipedia.org/wiki/Code_Complete), Steve McConnell laid out a few key components of the software development process[^1]:
+
+[^1]: The full software development process is much lengthier and much more involved, but this list is good enough for most of the software you write as beginner Python programmer
+
+<!-- TODO: Turn into flow chart -->
+
+| Step of Process | Description |
+| --- | --- |
+| Problem definition | What problem are we trying to solve? (Don't offer solutions yet!) |
+| Requirements development | What features does our solution have to have? Does Python offer these features? |
+| Construction planning | Think about how we could implement the solution, step by step |
+| Coding & debugging | Implement the solution in Python. Fix bugs. |
+| Testing | Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes |
+
+## 🏋️‍♂️ Exercises
+
+**Q1.** What is a program? What are the different instruction types for a program?
+
+??? success "Answer"
+
+    A program is a sequence of instructions of how to perform a computation.
+    In other words, a recipe of computations.
+
+    | Instruction | Description|
+    | --- | --- |
+    | Input | Get data from the keyboard, a file, the internet, or some other device |
+    | Output | Display data on the screen, save it in a file, send it over the internet, etc|
+    | Math | Perform some number-crunching (add a number here, multiply some numbers there) |
+    | Conditional Execution | Check for certain conditions and run the appropriate code |
+    | Repetition | Perform some action repeatedly, usually with some variation each time |
+
+**Q2.** What is the process for writing code?
+
+??? success "Answer"
+
+    | Part of Process | Description |
+    | --- | --- |
+    | Problem definition | What problem are we trying to solve? (Don't offer solutions yet!) |
+    | Requirements development | What features does our solution have to have? Does Python offer these features? |
+    | Construction planning | Think about how we could implement the solution, step by step |
+    | Coding & debugging | Implement the solution in Python. Fix bugs. |
+    | Testing | Test! Test! Test! Write lots of tests for your Python code. Retest when you make changes |
+
+**Q3.** Open IDLE and create a new Python file by clicking `File > New File` in the menu. Save the file somewhere you will remember with the name `age_verification.py`. Type the following Python code that verifies if someone is old enough to drink into the file and click `Run`
+
+```python title="age_verification.py"
+age = int(input("Please enter your age: "))
+
+drinking_age = 19
+
+if age == drinking_age:
+    print("You may enter the bar")
+else:
+    print("Sorry, you are not old enough to drink")
+```
+
+i. Does the program do what it's supposed to? Why or why not? Rerun the code and try a few different ages
+
+??? success "Answer"
+
+    **No**, the code produces an incorrect result for ages greater than 19. It should respond "You may enter the bar", but doesn't.
+
+    ![Drinking Age Verification Bug](./img/02_problem-solving_drinking_2026-01-17.png)
+
+    This is because the code checks if `age` equals `drinking age`. Instead it should check if `age` is greater than or equal to `drinking_age`.
+    
+    Don't worry if you weren't sure how to read the Python script, yet (after all, we haven't properly gone over the basic words and phrases you can use in Python).
+    
+    If you were able to figure it out, great! Can you try and fix the code?
+    If not, continue reading the book and come back when you can address the bug.
+
+ii. Can you think of any inputs you can give that will crash the program (i.e. cause it to throw an error)?
+
+??? success "Answer"
+
+    The program will crash if you provide inputs that don't make any sense, like letters or punctuation.
+
+    If you haven't already, try running the code again and input `"abc"` or even `"8"`.
+
+    ![Drinking Age Verification Type Error](./img/02_problem-solving_drinking-type-error_2026-01-17.png)
+
+iii. Why is testing your code so important?
+
+??? success "Possible Answer"
+
+    Testing brings your attention to errors in your code. There are many reasons for errors:
+
+    - It's easy to accidentally mistype something without realizing it
+    - Sometimes your solution to the problem isn't actually correct, or doesn't work the way you expect
+    - When you change one part of your code, you could inadvertently break some other place in your code
+    - Users of your code _will_ find a way to break your code by accidentally giving inputs you could have never expected
+    - [Malicious actors](https://xkcd.com/327/) can purposely give unexpected inputs that exploit security vulnerabilities in your code
+
+    Testing helps ensure your code is more robust!
