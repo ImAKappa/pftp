@@ -12,6 +12,21 @@ extra_javascript = [
     "javascripts/mathjax.js",
     "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"
 ]
+nav = [
+    {"Welcome" = "index.md"},
+    {"0. Getting Started" = [
+        "0-Getting-Started/00_language.md",
+        "0-Getting-Started/01_translation.md",
+        "0-Getting-Started/02_programming.md",
+    ]},
+    {"1. Project: Fortune Telling" = "1-Project-Basics/index.md"},
+    {"2. Reading & Writing" = [
+        "2-Reading-and-Writing/00_reading.md",
+        "2-Reading-and-Writing/01_reuse.md",
+        "2-Reading-and-Writing/02_writing.md",
+    ]},
+
+]
 
 [project.theme]
 language = "en"

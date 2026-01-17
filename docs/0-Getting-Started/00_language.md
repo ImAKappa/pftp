@@ -64,7 +64,7 @@ And just like that, the computer listened to our command and gave us `APPLE`. We
 
 !!! info "Is IDLE just a toy? Do professionals use it?"
 
-    Yes, it's just for learning. No, I would never write my professional or hobby project Python code in IDLE. There are far more mature, feature-rich tools for writing code. However, IDLE is a very good place for us to start understanding Python. Later on in this book we will learn to use some more professional tools (like [VS Code](https://code.visualstudio.com/)), but let's take things easy for now - no use in overloading your brain with more information than you need to get things done 🤷‍♀️.
+    Yes, it's just for learning. No, I would never write my professional or hobby project Python code in IDLE. There are far more mature, feature-rich tools for writing code. However, IDLE is a very good place for us to start understanding Python. Later on in this book we will learn to use some more professional tools (like [Visual Studio Code](https://code.visualstudio.com/)), but let's take things easy for now - no use in overloading your brain with more information than you need to get things done 🤷‍♀️.
 
 ## 📝 Syntax
 
