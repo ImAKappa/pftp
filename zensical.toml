@@ -21,12 +21,16 @@ nav = [
         "0-Getting-Started/03_tools.md",
     ]},
     {"1. Project: Fortune Telling" = "1-Project-Basics/index.md"},
-    {"2. Project: Downloads Folder" = "3-Project-Files/index.md"}
     # {"2. Reading & Writing" = [
     #     "2-Reading-and-Writing/00_reading.md",
     #     "2-Reading-and-Writing/01_reuse.md",
     #     "2-Reading-and-Writing/02_writing.md",
     # ]},
+    {"3. Project: Downloads Folder" = "3-Project-Files/index.md"},
+    {"8. The End" = [
+        "8-The-End/00_journey.md",
+        "8-The-End/01_resources.md",
+    ]}
 ]
 
 [project.theme]

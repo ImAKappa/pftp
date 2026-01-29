@@ -36,7 +36,7 @@ the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the 
     I recommend creating a folder either on your Desktop or Documents called `pftp`.
     Inside that, create a folder called `fortune`.
     The full path to the folder might look something like `C:/Users/<username>/Desktop/pftp/fortune` on Windows,
-    or `~/Users/<username>/Desktop/` on MacOS and Linux.
+    or `~/Users/<username>/Desktop/fortune` on MacOS and Linux.
     
     Then you can open VS Code write code in that folder using `File > Open Folder`.
 
