@@ -89,4 +89,9 @@ But how do we know which one's are good? Here are my recommendations:
 
 And that's it. There are a number of other great tutorials for the specific applications mentioned in the [Welcome](../index.md) page, but generally I find it can be overwhelming to mention _too_ many resources.
 
-Have fun learning Python!
+## 🎓 How do I learn programming?
+
+Learn more languages! I highly recommend trying out JavaScript next, and the first place I would start is Daniel Shiffman's wonderful YouTube channel [The Coding Train](https://www.youtube.com/@TheCodingTrain/featured).
+
+He taught me not only the details of programming, but how to have fun with it.
+His enthusiasm is absolutely infectious.

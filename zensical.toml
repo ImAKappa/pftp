@@ -27,7 +27,6 @@ nav = [
     #     "2-Reading-and-Writing/01_reuse.md",
     #     "2-Reading-and-Writing/02_writing.md",
     # ]},
-
 ]
 
 [project.theme]

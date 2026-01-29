@@ -9,7 +9,7 @@ Various professions use tools to make it easier to do their job:
 
 So too do programmers have tools, built by programmers for programmers, to make coding much less of a pain. This section will get you up and running with some fundamental programming tools.
 
-## 🪟 Code Editors
+## 🪟 Code Editor
 
 As I mentioned previously, I don't use IDLE to write code. It's clunky and doesn't really have many features that make it easy to write code. For one thing, every Python file must be open in a new window. Also, you can't clear the history of commands without closing the app. Plus, there is no autocomplete!
 
@@ -35,7 +35,30 @@ Next, read the [Python in Visual Studio Code](https://code.visualstudio.com/docs
 
 ## 💻 Terminal
 
-!!! danger "Subsection in Progress"
+A key component of your coding workflow is working with your terminal.
+This is the entry point to text your computer commands, like running apps, reading files, downloading software and more.
+
+!!! info "History of Terminals"
+
+    For more about terminals, read [Computer Terminal - Wikipedia](https://en.wikipedia.org/wiki/Computer_terminal).
+
+Unfortunately, the language you use to interface with the terminal is different on different platforms.
+On Windows, we use PowerShell, and on MacOS and Linux we use Zsh and Bash, respectively.
+For now, the only thing you need to know is how to run Python from your terminal.
+
+![VS Code Python](./img/00_vscode-terminal-2026-01-28.png)
+
+To start the Python interpreter app, type `python` (Windows) or `python3` (MacOS/Linux), and you should see something like:
+
+![VS Code Python](./img/00_vscode-terminal-python-2026-01-28.png)
+
+Then we can enter Python commands like we did in IDLE.
+
+![VS Code Python 2](./img/00_vscode-terminal-python-2-2026-01-28.png)
+
+## 🌳 Version Control
+
+> Section in Progress ✏️
 
 ## 🏋️‍♂️ Exercises
 
@@ -48,3 +71,9 @@ Next, read the [Python in Visual Studio Code](https://code.visualstudio.com/docs
 
     Plain text is just the characters.
     VS Code, Notepad (Windows), and TextEdit (MacOS) only support plain text, which is the kind we want for code.
+
+**Q2.** Visit the tutorial at [https://code.visualstudio.com/docs/getstarted/getting-started](https://code.visualstudio.com/docs/getstarted/getting-started). Make sure to follow the instructions on installing the **Python extension** and **version control**!
+
+**Q3.** Visit the tutorial at [https://code.visualstudio.com/docs/python/python-quick-start](https://code.visualstudio.com/docs/python/python-quick-start). Specifically, understand how to run your code.
+
+**Q4.** What is version control? Why is it useful?

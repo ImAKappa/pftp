@@ -1,5 +1,7 @@
 # 🥠 Fortune Telling
 
+## 🎯 The Problem
+
 The stars are aligning. Mercury is in retrograde.
 My astrologist said I have a healthy aura this month.
 But ... my astrologist is really freaking expensive.
@@ -18,7 +20,7 @@ the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the 
 
 ---
 
-## 🐍 The Code
+## 🤚 Before We Begin
 
 !!! note "It's normal to be confused. In fact, it's all part of the plan."
 
@@ -29,10 +31,21 @@ the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the 
     Before understanding the why, we first need to develop some baseline familiarity with typing Python and running code in Thonny.
     2. **To get comfy with being confused** - Being confused about novel code is completely normal for even experienced programmers, and it's good to practice getting used to that. In general, being able to sit with the discomfort of confusion is a useful skill when learning.
 
+!!! tip "Organize your files & use VS Code"
+
+    I recommend creating a folder either on your Desktop or Documents called `pftp`.
+    Inside that, create a folder called `fortune`.
+    The full path to the folder might look something like `C:/Users/<username>/Desktop/pftp/fortune` on Windows,
+    or `~/Users/<username>/Desktop/` on MacOS and Linux.
+    
+    Then you can open VS Code write code in that folder using `File > Open Folder`.
+
 !!! danger "Type, don't copy"
 
     Manually type out the all the code below into your code editor.
     You're **wasting your time** if you just copy and paste.
+
+## 🐍 The Code
 
 Pythia sees all, knows all, but has a fairly limited list of possible responses.
 She's a bit picky and expects questions with "yes" or "no" answers.
@@ -62,9 +75,7 @@ We should ask her a question, first.
 
 That's better. But it's weird for her to respond if we don't ask a question.
 
-<!-- TODO(2025-12-15): Fix this image to say fortune_2 instead of fortune_1 in the module docstring -->
-<!-- Replace with VS Code -->
-<!-- ![Example usage of fortune_2.py script in Thonny](./img/01-fortune_2_thonny-2024-06-15.png) -->
+![Example fortune_2.py usage](./img/01-fortune_2-2026-01-28.png)
 
 Pythia should double check that we've asked her a question.
 
@@ -83,8 +94,7 @@ Finally, Pythia is a patient seer, and will continue to answer our questions unt
 --8<-- "fortune_4.py"
 ```
 
-<!-- TODO: Replace with VS Code -->
-<!-- ![Example usage of fortune_4.py script in Thonny](./img/01-fortune_4_thonny-2024-06-15.png) -->
+![Example fortune_4.py usage](./img/01-fortune_4-2026-01-28.png)
 
 ## 🪞 Reflection
 

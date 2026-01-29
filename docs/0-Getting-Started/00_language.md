@@ -192,7 +192,15 @@ iv. "Frisbee here now the !throw"
 
     iv. is not valid English syntax
 
-**Q4.** Write the following sentence[^3] in lower case letters:
+**Q4.** Watch Alan Becker's "Animation vs Coding" video.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EFmxPMdBqmU?si=8CN70OdWNohHehtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+i. What syntax do you recognize?
+
+ii. Try typing some of the commands you see in the video into IDLE. Do you get the same results?
+
+**Q5.** Write the following sentence[^3] in lower case letters:
 
 [^3]: [Monty Python](https://youtu.be/Cj8n4MfhjUc) skit. By the way, the Python language was named after this comedy group, not the snake!
 
@@ -221,7 +229,7 @@ NOBODY EXPECTS THE SPANISH INQUISITION!
     The Python language is particular about many things, but quotation marks are not one of them.
     It's up to you to use single-quotes or double-quotes, but it's good style to be consistent with your choice.
 
-**Q5.**
+**Q6.**
 
 Consider this quote[^4]:
 
@@ -276,9 +284,9 @@ ii. Which letter occurs more frequently, `e` or `a`?
     So, there are more `a`s that `e`s in the quote.
 
 
-**Q6.** If you haven't already, skim through the [official Python tutorial](https://docs.python.org/3.14/tutorial/). A lot of it might not make sense just yet, but you should still look through it to get some more context about Python.
+**Q7.** If you haven't already, skim through the [official Python tutorial](https://docs.python.org/3.14/tutorial/). A lot of it might not make sense just yet, but you should still look through it to get some more context about Python.
 
-**Q7.** Finally, and most importantly, why do you want to learn Python?
+**Q8.** Finally, and most importantly, why do you want to learn Python?
 
 ??? success "Possible answers"
 

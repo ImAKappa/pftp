@@ -11,10 +11,9 @@ People have done some pretty awesome things with Python:
 - **[Render the first ever image of a blackhole](https://numpy.org/case-studies/blackhole-image/)**: The Python package [NumPy](https://numpy.org/) was used to process data collected from telescopes all around the world to form the famous blackhole picture.
 - **[Support a social media platform for billions of users](https://instagram-engineering.com/tagged/python)**: Instagram uses Python to manage their web servers so that you and billions of other people can share photos and videos.
 - **[Power machine learning](https://www.tensorflow.org/about/case-studies)**: Python is one of main languages used for machine learning. "Machine Learning" means getting computers to learn from data. This includes generative models for text (ChatGPT) and images (Dall-E, Midjourney), recommendation systems (YouTube algorithm), computer vision & object recognition, personalized medicine, robotics, and countless other applications. Popular Python packages include [Sci-Kit Learn](https://scikit-learn.org/), [PyTorch](https://pytorch.org/tutorials/beginner/basics/intro.html), and [TensorFlow](https://www.tensorflow.org/).
+- Beyond Big Tech and science applications, lots of artsy people use Python to build [games](https://www.youtube.com/watch?v=QvN28VP22AI), make programmatic [art](https://www.reddit.com/r/generative/), make [animations](https://www.youtube.com/watch?v=W1cZXEs8EIo), make [educational videos](https://www.youtube.com/watch?v=rbu7Zu5X1zI), and more!
 
-Beyond Big Tech and science applications, lots of creative types use Python to build [games](https://www.youtube.com/watch?v=QvN28VP22AI), make programmatic [art](https://www.reddit.com/r/generative/), make [animations](https://www.youtube.com/watch?v=W1cZXEs8EIo), make [educational videos](https://www.youtube.com/watch?v=rbu7Zu5X1zI), etc.
-But even if you never plan to work on any of these things, there are still a lot of benefits to learning Python.
-
+Even if you never plan to work on any of these things, there are still a lot of benefits to learning Python.
 Maybe you want a job change and want to enhance your resume.
 Maybe you have a very boring, bespoke task that you [feel can be automated](https://automatetheboringstuff.com/3e/) but there aren't any good existing software solutions.
 Maybe you just want to pick up a new skill.
@@ -76,3 +75,15 @@ Also, you should be familiar with:
 2. Your keyboard (the `enter`/`return` key, `Ctrl`/`Cmd` keys, letters, numbers, space bar, etc.)
 3. Using a web browser, like Google Chrome or Mozilla Firefox
 4. Navigating a website
+
+## 🪶 Author's Note
+
+First, thank you for taking the time to learn programming. It's very much worth it!
+Second, thank you for choosing to read my book specifically.
+Third, despite what the smattering of emoji's and em dashes might lead you to believe, this book
+was written purely by a human, for humans. I just like writing like this 🤷‍♀️. 
+As of 2026, AI-tools have gotten scarily good at reproducing nice-looking text (including code),
+but I firmly believe that it's important to learn coding the good old fashion way with
+lots of manual typing, lots of confusion, and lots of satisfaction when you get something working yourself!
+
+> \- A kappa

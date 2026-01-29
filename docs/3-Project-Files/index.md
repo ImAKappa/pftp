@@ -4,8 +4,10 @@
 
     This section is incomplete. Please come back soon.
 
+## 🎯 The Problem
+
 It was clean two weeks ago, I swear.
-But yet again, my downloads folder has become a mountainous dump of assorted images, videos, several documents with at least five different versions of each, audio files, app installers, spreadsheets, and what might possibly be a virus or two??
+But yet again, my downloads folder has become a mountainous dump of assorted images, videos, documents, audio files, app installers, spreadsheets, and what might possibly be a virus or two??
 My friend has a chronic hoarding problem and even they held an intervention for me 😖.
 
 ![My Downloads Folder](./img/03_downloads_folder-landfill_collab_media-unsplash.jpg)
@@ -23,6 +25,8 @@ It would be pretty nice if I could at least group the files into bins like "Offi
 Of course, the biggest issue is I know that even if I get super motivated and power through it, the folder will become a landfill of files in two weeks. The last intervention was super cringe, I don't think I could handle another one 😭.
 
 If only there was an easy, repeatable, and automatic way to organize my downloads folder ...
+
+## 🤚 Before We Begin
 
 ## 🐍 The Code
 
