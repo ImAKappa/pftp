@@ -89,7 +89,13 @@ base_path = [
     "./docs/1-Project-Basics/fortune/fortune_1.py",
     "./docs/1-Project-Basics/fortune/fortune_2.py",
     "./docs/1-Project-Basics/fortune/fortune_3.py",
-    "./docs/1-Project-Basics/fortune/fortune_4.py"
+    "./docs/1-Project-Basics/fortune/fortune_4.py",
+    # 3-Project-Files
+    "./docs/3-Project-Files/downloadsfolder/downloads_0.py",
+    "./docs/3-Project-Files/downloadsfolder/downloads_1.py",
+    "./docs/3-Project-Files/downloadsfolder/downloads_2.py",
+    "./docs/3-Project-Files/downloadsfolder/downloads_3.py",
+    "./docs/3-Project-Files/downloadsfolder/downloads_4.py",
 ]
 check_paths = true
 [project.markdown_extensions.pymdownx.superfences]

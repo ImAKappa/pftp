@@ -6,7 +6,7 @@ build-backend = "hatchling.build"
 name = "pftp"
 description = 'Python for the People. An intro to Python for people with zero programming experience'
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.14"
 license = "MIT"
 keywords = ["python", "beginner"]
 authors = [
@@ -15,7 +15,7 @@ authors = [
 classifiers = [
   "Development Status :: 4 - Beta",
   "Programming Language :: Python",
-  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.14",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
@@ -33,7 +33,7 @@ Source = "https://github.com/ImAKappa/pftp"
 path = "pftp/__about__.py"
 
 [tool.hatch.envs.default]
-python = "312"
+python = "3.14"
 dependencies = [
   "pytest",
   "pytest-cov",
@@ -47,7 +47,7 @@ clippy = "python -m clippy"
 pymd = "python -m pftp.pymd {args}"
 
 [[tool.hatch.envs.test.matrix]]
-python = ["37", "38", "39", "310", "311"]
+python = ["314"]
 
 [tool.coverage.run]
 branch = true

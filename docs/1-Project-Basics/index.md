@@ -50,21 +50,21 @@ the Pythoness[^1] - the great Oracle of Delphi - by reciting a few lines of the 
 Pythia sees all, knows all, but has a fairly limited list of possible responses.
 She's a bit picky and expects questions with "yes" or "no" answers.
 
-```python title="fortune.py"
+```python title="fortune.py" linenums="1"
 --8<-- "fortune_0.py"
 ```
 
 She chooses an answer according to the Spirit of Delphi, which is fickle
 and divinely random.
 
-```python title="fortune.py"
+```python title="fortune.py" linenums="1"
 --8<-- "fortune_1.py"
 ```
 
 Hm, but wait, Pythia shouldn't be giving us unsolicited fortunes.
 We should ask her a question, first.
 
-```python title="fortune.py"
+```python title="fortune.py" linenums="1"
 --8<-- "fortune_2.py"
 ```
 
@@ -79,7 +79,7 @@ That's better. But it's weird for her to respond if we don't ask a question.
 
 Pythia should double check that we've asked her a question.
 
-```python title="fortune.py"
+```python title="fortune.py" linenums="1"
 --8<-- "fortune_3.py"
 ```
 
@@ -90,7 +90,7 @@ Pythia should double check that we've asked her a question.
 
 Finally, Pythia is a patient seer, and will continue to answer our questions until we are satisified.
 
-```python title="fortune.py"
+```python title="fortune.py" linenums="1"
 --8<-- "fortune_4.py"
 ```
 
