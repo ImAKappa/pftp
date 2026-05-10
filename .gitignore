@@ -19,6 +19,7 @@ __pycache__/
 
 # Dev
 /.benchmarks/
+/.venv/
 /.env/
 /.idea/
 /.mypy_cache/
