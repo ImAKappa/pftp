@@ -1,9 +1,5 @@
 # 📥 My Downloads Folder is a Mess
 
-!!! warning "✏️ Section in progress"
-
-    This section is incomplete. Please come back soon.
-
 ## 🎯 The Problem
 
 It was clean two weeks ago, I swear.
