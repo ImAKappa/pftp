@@ -146,4 +146,4 @@ if __name__ == "__main__":
     )
 
     downloads_cleaner.test()
-    downloads_cleaner.write(Path("./docs/3-Project-Files/downloadsfolder"))
+    downloads_cleaner.write(Path("./book/3-Project-Files/downloadsfolder"))

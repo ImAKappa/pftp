@@ -37,3 +37,17 @@ I will update them in my spare time.
 - [ ] Chapter 8. **The End**
   - [ ] Get reader to reflect on how far they have come
   - [X] List resources
+
+## 
+
+pftp
+  projects
+  book
+    img
+    js
+  docs
+    teaching
+    dev
+  src
+  test
+  

@@ -41,12 +41,17 @@ from dataclasses import dataclass, field
 from io import StringIO
 from pathlib import Path
 
-from pftp import utils as ut
-
 logging.basicConfig(format="%(module)s:%(message)s")
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
 
+def underline(s: str, char="=") -> str:
+    """Underlines text"""
+    return s + "\n" + char * len(s)
+
+
+def overline(s: str, char="=") -> str:
+    return char * len(s) + "\n" + s
 
 @dataclass
 class SnippetMetadata:
@@ -155,11 +160,11 @@ class CodeAlong:
 
     def test(self) -> None:
         """Tests code along"""
-        print(ut.underline(f"Running tests for {self.name}"))
+        print(underline(f"Running tests for {self.name}"))
         self._tester.test_snippets(self.snippets)
 
     def write(self, folder: Path) -> None:
         """Writes code along"""
-        print(ut.underline(f"Writing snippets for {self.name}"))
+        print(underline(f"Writing snippets for {self.name}"))
         folder.mkdir(parents=True, exist_ok=True)
         self._writer.write(folder, self.snippets)

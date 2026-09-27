@@ -82,7 +82,7 @@ First, thank you for taking the time to learn programming. It's very much worth 
 Second, thank you for choosing to read my book specifically.
 Third, despite what the smattering of emoji's and em dashes might lead you to believe, this book
 was written purely by a human, for humans. I just like writing like this 🤷‍♀️. 
-As of 2026, AI-tools have gotten scarily good at reproducing nice-looking text (including code),
+As of 2026, AI-tools have gotten scarily good at producing code,
 but I firmly believe that it's important to learn coding the good old fashion way with
 lots of manual typing, lots of confusion, and lots of satisfaction when you get something working yourself!
 

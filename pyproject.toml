@@ -68,11 +68,11 @@ quote-style = "double"
 
 [tool.ruff.lint.extend-per-file-ignores]
 "pftp/*" = ["T201"]
-"codealongs/*" = [
+"projects/*" = [
   "T201", # print debugging
   "PLR2004", # magic values 
   "S311", # cryptographically insecure psudeo-RNG
   "PLC0415", # top-level imports
   "F841", # assigned, but unused variables
 ]
-"docs/.hooks/*" = ["INP001", "T201"]
+"book/.hooks/*" = ["INP001", "T201"]

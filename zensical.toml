@@ -6,7 +6,7 @@ repo_name = "ImAKappa/pftp"
 site_description = "An introduction to Python for those without any programming experience"
 site_author = "ImAKappa"
 copyright = "&copy; 2025 ImAKappa"
-docs_dir = "docs"
+docs_dir = "book"
 site_dir = "site"
 extra_javascript = [
     "javascripts/mathjax.js",
@@ -83,19 +83,19 @@ generic = true
 [project.markdown_extensions.pymdownx.snippets]
 base_path = [
     # 0-Getting-Started
-    "./docs/assets/scripts/uselessfact.py",
+    "./book/assets/scripts/uselessfact.py",
     # 1-Project-Basics
-    "./docs/1-Project-Basics/fortune/fortune_0.py",
-    "./docs/1-Project-Basics/fortune/fortune_1.py",
-    "./docs/1-Project-Basics/fortune/fortune_2.py",
-    "./docs/1-Project-Basics/fortune/fortune_3.py",
-    "./docs/1-Project-Basics/fortune/fortune_4.py",
+    "./book/1-Project-Basics/fortune/fortune_0.py",
+    "./book/1-Project-Basics/fortune/fortune_1.py",
+    "./book/1-Project-Basics/fortune/fortune_2.py",
+    "./book/1-Project-Basics/fortune/fortune_3.py",
+    "./book/1-Project-Basics/fortune/fortune_4.py",
     # 3-Project-Files
-    "./docs/3-Project-Files/downloadsfolder/downloads_0.py",
-    "./docs/3-Project-Files/downloadsfolder/downloads_1.py",
-    "./docs/3-Project-Files/downloadsfolder/downloads_2.py",
-    "./docs/3-Project-Files/downloadsfolder/downloads_3.py",
-    "./docs/3-Project-Files/downloadsfolder/downloads_4.py",
+    "./book/3-Project-Files/downloadsfolder/downloads_0.py",
+    "./book/3-Project-Files/downloadsfolder/downloads_1.py",
+    "./book/3-Project-Files/downloadsfolder/downloads_2.py",
+    "./book/3-Project-Files/downloadsfolder/downloads_3.py",
+    "./book/3-Project-Files/downloadsfolder/downloads_4.py",
 ]
 check_paths = true
 [project.markdown_extensions.pymdownx.superfences]
