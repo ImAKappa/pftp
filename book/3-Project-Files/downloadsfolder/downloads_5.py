@@ -1,4 +1,4 @@
-"""downloads_4
+"""downloads_5
 
 Clean up on aisle 'Downloads'
 """
@@ -6,7 +6,7 @@ Clean up on aisle 'Downloads'
 import random
 from pathlib import Path
 
-downloads_folder = Path(r"./downloads")
+downloads_folder = Path(r"C:\Users\alexk\Downloads")
 downloads_folder.mkdir(parents=True, exist_ok=True)
 
 # Define groups
@@ -24,13 +24,6 @@ extension_to_group = {}
 for group, extensions in groups.items():
     for e in extensions:
         extension_to_group[e] = group
-
-# Randomly generate test files
-num_files = 100
-filetypes = list(extension_to_group.keys())
-for i in range(num_files):
-    file = downloads_folder/f"fake_{i}{random.choice(filetypes)}"
-    file.touch()
 
 # Organize
 for file in downloads_folder.iterdir():

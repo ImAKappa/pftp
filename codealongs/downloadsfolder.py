@@ -79,7 +79,7 @@ def downloads_3() -> None:
             case ".txt"|".pdf"|".doc"|".docx"|".xls"|".xlsx"|".ppt"|".pptx":
                 group = "docs"
             case ".mov"|".mp4"|".avi":
-                group = "videos"
+                group = "video"
             case ".png"|".jpeg"|".jpg"|".gif"|".bmp"|".webp":
                 group = "images"
             case ".wav"|".mp3"|".m4a"|".aac"|".flac":
@@ -98,11 +98,11 @@ def downloads_4() -> None:
     import random
     from pathlib import Path
 
-    downloads_folder = Path("./downloads4")
+    downloads_folder = Path(r"./downloads")
     downloads_folder.mkdir(parents=True, exist_ok=True)
 
-    # Define categories
-    categories = {
+    # Define groups
+    groups = {
         "docs": {".txt", ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx"},
         "audio": {".wav", ".mp3", ".aac", ".flac", ".m4a"},
         "video": {".mp4", ".mkv", ".mov", ".avi", ".wmv"},
@@ -111,22 +111,56 @@ def downloads_4() -> None:
         "apps": {".exe", ".msi", ".app", ".dmg"},
     }
 
-    # Create mapping from filetype to category
-    extension_to_category = {}
-    for category, extensions in categories.items():
+    # Create mapping from filetype to group
+    extension_to_group = {}
+    for group, extensions in groups.items():
         for e in extensions:
-            extension_to_category[e] = category
+            extension_to_group[e] = group
 
     # Randomly generate test files
     num_files = 100
-    filetypes = list(extension_to_category.keys())
+    filetypes = list(extension_to_group.keys())
     for i in range(num_files):
         file = downloads_folder/f"fake_{i}{random.choice(filetypes)}"
         file.touch()
 
     # Organize
     for file in downloads_folder.iterdir():
-        group = extension_to_category.get(file.suffix, None)
+        group = extension_to_group.get(file.suffix, None)
+        if group is None:
+            continue
+        destination = Path(f"{file.parent}/{group}")
+        destination.mkdir(parents=True, exist_ok=True)
+        file.move(destination/file.name)
+
+def downloads_5() -> None:
+    """Clean up on aisle 'Downloads'"""
+
+    import random
+    from pathlib import Path
+
+    downloads_folder = Path(r"C:\Users\alexk\Downloads")
+    downloads_folder.mkdir(parents=True, exist_ok=True)
+
+    # Define groups
+    groups = {
+        "docs": {".txt", ".pdf", ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx"},
+        "audio": {".wav", ".mp3", ".aac", ".flac", ".m4a"},
+        "video": {".mp4", ".mkv", ".mov", ".avi", ".wmv"},
+        "images": {".jpg", ".jpeg", ".png", ".gif", ".bmp", ".webp"},
+        "archives": {".zip", ".rar", ".7z", ".tar", ".gz"},
+        "apps": {".exe", ".msi", ".app", ".dmg"},
+    }
+
+    # Create mapping from filetype to group
+    extension_to_group = {}
+    for group, extensions in groups.items():
+        for e in extensions:
+            extension_to_group[e] = group
+
+    # Organize
+    for file in downloads_folder.iterdir():
+        group = extension_to_group.get(file.suffix, None)
         if group is None:
             continue
         destination = Path(f"{file.parent}/{group}")
@@ -142,6 +176,7 @@ if __name__ == "__main__":
             ca.Snippet(downloads_2, ca.SnippetMetadata()),
             ca.Snippet(downloads_3, ca.SnippetMetadata()),
             ca.Snippet(downloads_4, ca.SnippetMetadata()),
+            ca.Snippet(downloads_5, ca.SnippetMetadata()),
         ],
     )
 

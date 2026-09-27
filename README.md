@@ -13,15 +13,12 @@ I will update them in my spare time.
 ## TODO
 
 - [X] Welcome
-- [ ] Chapter 0. **Getting Started**
-  - [ ] Tools: Introduce virtual environments
+- [X] Chapter 0. **Getting Started**
 - [X] Chapter 1. **Project: Fortune Telling**
 - [ ] Chapter 2. **Data & Flow**
   - [ ] Introduce data structures (just `str`, `int`, `list`, and `dictionary`)
   - [ ] Introduce control flow constructs (loops, conditional logic, structural pattern matching)
-- [ ] Chapter 3. **Project: My Downloads Folder Is A Mess**
-  - [ ] Complete project tutorial
-  - [ ] Rename from Chapter 2 -> 3
+- [X] Chapter 3. **Project: My Downloads Folder Is A Mess**
 - [ ] Chapter 4. **Problem Solving**
   - [ ] Introduce how to break larger problems down into smaller ones
   - [ ] Introduce functions
@@ -37,17 +34,4 @@ I will update them in my spare time.
 - [ ] Chapter 8. **The End**
   - [ ] Get reader to reflect on how far they have come
   - [X] List resources
-
-## 
-
-pftp
-  projects
-  book
-    img
-    js
-  docs
-    teaching
-    dev
-  src
-  test
   

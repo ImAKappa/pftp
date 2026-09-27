@@ -26,7 +26,7 @@ for file in downloads_folder.iterdir():
         case ".txt"|".pdf"|".doc"|".docx"|".xls"|".xlsx"|".ppt"|".pptx":
             group = "docs"
         case ".mov"|".mp4"|".avi":
-            group = "videos"
+            group = "video"
         case ".png"|".jpeg"|".jpg"|".gif"|".bmp"|".webp":
             group = "images"
         case ".wav"|".mp3"|".m4a"|".aac"|".flac":

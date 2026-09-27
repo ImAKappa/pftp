@@ -9,8 +9,8 @@ copyright = "&copy; 2025 ImAKappa"
 docs_dir = "book"
 site_dir = "site"
 extra_javascript = [
-    "javascripts/mathjax.js",
-    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"
+    # "javascripts/mathjax.js",
+    # "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"
 ]
 nav = [
     {"Welcome" = "index.md"},
@@ -96,6 +96,7 @@ base_path = [
     "./book/3-Project-Files/downloadsfolder/downloads_2.py",
     "./book/3-Project-Files/downloadsfolder/downloads_3.py",
     "./book/3-Project-Files/downloadsfolder/downloads_4.py",
+    "./book/3-Project-Files/downloadsfolder/downloads_5.py",
 ]
 check_paths = true
 [project.markdown_extensions.pymdownx.superfences]
